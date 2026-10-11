@@ -205,12 +205,16 @@
     });
   }
 
-  // ── figure variants: a chip swaps the image it names ──────────────
+  // ── figure variants: a chip swaps the images it names ─────────────
+  // data-swap lists image selectors and data-src their new sources, both
+  // comma-separated and in the same order.
   document.querySelectorAll(".chip[data-swap]").forEach(chip => {
     chip.addEventListener("click", () => {
-      const img = document.querySelector(chip.dataset.swap);
-      if (!img) return;
-      img.src = chip.dataset.src;
+      const srcs = chip.dataset.src.split(",");
+      chip.dataset.swap.split(",").forEach((sel, i) => {
+        const img = document.querySelector(sel.trim());
+        if (img && srcs[i]) img.src = srcs[i].trim();
+      });
       chip.parentElement.querySelectorAll(".chip").forEach(c => c.classList.toggle("active", c === chip));
     });
   });

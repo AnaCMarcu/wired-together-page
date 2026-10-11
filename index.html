@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="assets/css/style.css?v=20261011b">
+<link rel="stylesheet" href="assets/css/style.css?v=20261012a">
 </head>
 <body>
 
@@ -353,8 +353,8 @@
 <section class="main alt" id="scaling">
   <header>
     <div class="container">
-      <h2>Test-time scaling: more agents, bounded talk</h2>
-      <p class="lede">New results. The same zero-shot Gemma-E4B agents, scaled at inference time from 3 to 15 per team, with each agent's messages capped at 600, 2,600 or 10,400 tokens per episode, or switched off (silent teams). Every agent gets the same prompt apart from its name, and nobody assigns roles or groups. A cell is three seeds of three episodes of up to 1,000 steps, with fewer seeds at N&nbsp;=&nbsp;15.</p>
+      <h2>Test-time scaling: self-organised structure as teams grow</h2>
+      <p class="lede">All agents receive the same prompt apart from their name, and every message is addressed to exactly one teammate. Yet as the team grows, structure appears in who talks to whom that nobody assigns. We scale zero-shot Gemma-E4B teams from 3 to 15 agents, with and without social plasticity, and give each agent 600, 2,600 or 10,400 tokens to spend on messages per episode.</p>
     </div>
   </header>
   <div class="content">
@@ -362,82 +362,94 @@
 
       <div class="findings">
         <div class="finding">
-          <span class="rq">Talking teams</span>
-          <span class="num">10 of 11 cells</span>
-          <p>When agents can talk, social plasticity completes more cooperative milestones than the baseline in 10 of the 11 budget × team-size cells that differ (4 tied; sign test p&nbsp;=&nbsp;0.012). Silent teams show no consistent difference (3 of 5).</p>
+          <span class="rq">Cooperation scales with team size</span>
+          <span class="num">9.6% → 18.5%</span>
+          <p>Team cooperative progress rises with team size under every communication budget. Averaged over the budgets, baseline MindForge agents go from 9.6% with 3 agents to 18.5% with 15, about 93% more.</p>
         </div>
         <div class="finding">
-          <span class="rq">Same cooperation, fewer agents</span>
-          <span class="num">N = 5 ≈ N = 7</span>
-          <p>Averaged over budgets, five agents with social plasticity reach 14.9%, which the baseline needs seven agents for. The gap narrows as teams grow: 18.0% against 17.6% at N&nbsp;=&nbsp;10, 19.8% against 20.3% at N&nbsp;=&nbsp;15.</p>
+          <span class="rq">Fewer agents, less compute</span>
+          <span class="num">10 of 10</span>
+          <p>Social plasticity reaches more cooperative milestones than the baseline in every team size and budget up to ten agents that is not tied (sign test p&nbsp;=&nbsp;0.002), with gains of up to 5.9 points. Five agents with it exceed seven baseline agents (14.4% vs 13.9%).</p>
         </div>
         <div class="finding">
-          <span class="rq">Self-organised groups</span>
-          <span class="num">0.22 vs 0.15</span>
-          <p>Message networks split into communities beyond what a degree-preserving random graph gives. The structure grows with team size and is stronger with social plasticity at every size (modularity above the null at N&nbsp;=&nbsp;15).</p>
+          <span class="rq">Scarce communication</span>
+          <span class="num">600 tokens</span>
+          <p>The gains are largest at the tightest budget: 9.2% → 15.0% with three agents, 13.7% → 17.0% with five and with seven. With 600 tokens, social-plasticity teams of up to ten agents beat baseline teams given a 17× larger budget (17.0% vs 9.8% with five agents).</p>
         </div>
         <div class="finding">
-          <span class="rq">A hub, not a leader</span>
+          <span class="rq">A hub and tight circles</span>
           <span class="num">9–11 partners</span>
-          <p>At N&nbsp;=&nbsp;15, agent 0 ends an episode with 9–11 distinct conversation partners, while the other agents average 2.5–2.9. It answers about one message in four within ten steps (others: one in two) and asks for direction itself.</p>
+          <p>At N&nbsp;=&nbsp;15 the focal teammate ends the episode with 9–11 distinct partners, the other agents with 2.5–2.9. Social-plasticity teams answer 6–14 points more of the messages they receive and split into tighter groups at every team size.</p>
         </div>
       </div>
-      <p class="note" style="margin: -1.2em auto 2.4em; text-align: center;">Team coop. milestone completion: share of the 17 cooperative milestones (Chambers 2–5) reached by at least one agent of the team, averaged over a run's episodes; mean ± SE over seeds. It counts the team, unlike the per-agent Coop. % in the RQ1 table, so the two are not comparable.</p>
+      <p class="note" style="margin: -1.2em auto 2.4em; text-align: center;">Team cooperative milestone completion: share of the 17 cooperative milestones (Chambers 2–5) reached by at least one agent of the team by the end of the episode, averaged over a run's episodes; mean ± SE over seeds. It counts the team, unlike the per-agent Coop. % in the RQ1 table, so the two are not comparable.</p>
 
-      <h3 style="font-weight: 300; font-size: 1.3em;">Compute against cooperation</h3>
-      <figure class="figure-block" style="margin-top: 1em;">
-        <div class="controls" style="margin-bottom: 1em;">
-          <div class="chips" role="group" aria-label="Budgets shown">
-            <span class="lbl">Budgets</span>
-            <button class="chip active" data-swap="#scaling-pareto" data-src="assets/figures/scaling_pareto.png">All, including silent</button>
-            <button class="chip" data-swap="#scaling-pareto" data-src="assets/figures/scaling_pareto_talking.png">Talking teams only</button>
-          </div>
+      <div class="controls">
+        <div class="chips" role="group" aria-label="Teams shown in the figures">
+          <span class="lbl">Teams</span>
+          <button class="chip active" data-swap="#scaling-pareto,#scaling-progress" data-src="assets/figures/scaling_pareto.png,assets/figures/scaling_progress.png">Talking (as in the paper)</button>
+          <button class="chip" data-swap="#scaling-pareto,#scaling-progress" data-src="assets/figures/scaling_pareto_silent.png,assets/figures/scaling_progress_silent.png">With silent teams</button>
         </div>
-        <span class="image fit framed"><img id="scaling-pareto" src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at four message budgets, with each arm's Pareto front. (b) Weighted modularity of the message network above a degree-preserving null against team size." loading="lazy"></span>
-        <figcaption><strong>(a) Compute vs. cooperation.</strong> One point per arm, team size and budget (fill: budget). Compute is 2 × 4.5·10<sup>9</sup> × (prompt + generated tokens), summed over every model call of every agent in an episode. Dashed steps are each arm's Pareto front; the shaded region is dominated by the joint front. Among talking teams, the social-plasticity front is higher over 70% of the compute range and the baseline's over 8%. With silent teams included the split is 52% against 21%, and silent teams make up seven of the eight cells on the joint front. <strong>(b) Self-organised groups.</strong> Weighted modularity of the message network above a degree-preserving null. Compute is measured from token logs for 17 of the 40 cells. The rest are estimated from the tokens per agent-episode of the same arm and budget.</figcaption>
-      </figure>
-
-      <div class="row" style="margin-top: 2.4em;">
-        <figure>
-          <span class="image fit framed"><img src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, in a grid of four budgets by five team sizes." loading="lazy"></span>
-          <figcaption><strong>Completion over the episode</strong>, by budget (rows) and team size (columns); dotted lines mark the chamber boundaries. The clearest gap is at the tightest budget, 600 tokens, for three to seven agents, and it opens in Chambers 3 and 4. Silent teams of three are the one large reversal (15.0% against 7.8%).</figcaption>
-        </figure>
-        <figure>
-          <span class="image fit framed"><img src="assets/figures/scaling_endpoint.png" alt="Episode-end team cooperative milestone completion against team size, averaged over budgets and per budget, with log-linear trends." loading="lazy"></span>
-          <figcaption><strong>Episode-end completion against team size</strong>: (a) the mean over budgets with log-linear trends; (b) per budget. Completion rises with team size for both arms. N&nbsp;=&nbsp;20 (shaded) is partial, with at most two seeds per cell and some budgets missing.</figcaption>
-        </figure>
       </div>
-
-      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Who works with whom at fifteen agents</h3>
-      <p class="lede" style="margin-left: 0;">Every message is addressed to exactly one teammate, so the logs record who talks to whom. Without assigned roles, a hub forms around agent 0 and the rest of the team splits into small side groups. The agents differ only in their names.</p>
-      <figure class="figure-block" style="margin-top: 1.2em;">
-        <span class="image fit framed"><img src="assets/figures/team_formation_n15.png" alt="Whole-episode interaction networks of a fifteen-agent baseline team and a social-plasticity team, both centred on agent 0, and the learned bonds of the social-plasticity team." loading="lazy"></span>
-        <figcaption><strong>Whole-episode interaction networks at N&nbsp;=&nbsp;15</strong> (2,600-token budget), one episode per arm: the one closest to its cell's median Chamber 2 structure. Node size grows with distinct partners; agent 0 and its links are black. (c) The learned bonds of the same social-plasticity episode. Bonds partly follow the messages (Spearman ρ between Chamber 2 messages and bonds: +0.53 at N&nbsp;=&nbsp;3, +0.27 at N&nbsp;=&nbsp;15). They stay weak (mean 0.10–0.13 against a starting value of 0.1), and agent 0 holds ordinary ones.</figcaption>
+      <figure class="figure-block" style="margin-top: 0;">
+        <span class="image fit framed"><img id="scaling-pareto" src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
+        <figcaption><strong>(a) Inference compute against cooperation.</strong> Each point is one arm, team size and communication budget (marker fill), with team cooperative milestone completion at the end of the episode. Step lines are each arm's Pareto front; the orange region is where the social-plasticity front exceeds the baseline front. Compute is 2 × 4.5·10<sup>9</sup> × (prompt + generated tokens) per episode. It is measured from token logs for 12 of the 30 cells (17 of 40 with silent teams) and estimated for the rest from the tokens per agent-episode of the same arm and budget. <strong>(b) Self-organised groups.</strong> Weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph; 0 means no more grouping than each agent's number of partners implies. The second view adds silent teams (messaging switched off), which the paper does not report.</figcaption>
       </figure>
 
-      <div class="row" style="margin-top: 2.4em;">
+      <figure class="figure-block" style="max-width: 920px; margin-left: auto; margin-right: auto;">
+        <span class="image fit framed"><img id="scaling-progress" src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, in a grid of budgets by five team sizes." loading="lazy"></span>
+        <figcaption><strong>Cooperative progress over the episode as teams grow.</strong> Team cooperative milestone completion over environment steps for each team size, with one row per budget: (a) 10,400, (b) 2,600 and (c) 600 tokens per agent per episode; the second view adds silent teams as row (d). Shading is ±1 SE over seeds, and dotted lines mark the chamber transitions.</figcaption>
+      </figure>
+
+      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">New forms of coordination as the team grows</h3>
+      <p class="lede" style="margin-left: 0;">Messages are addressed, so the logs are a complete record of the team's conversation. The network analyses use the Chamber 2 message graph.</p>
+      <div class="row" style="margin-top: 1.2em;">
         <figure>
           <span class="image fit framed"><img src="assets/figures/collab_chambers.png" alt="Message networks in Chambers 2, 3 and 4 for teams of 3, 5, 7, 10, 15 and 20 agents with social plasticity, with message communities shaded and milestones completed together in green." loading="lazy"></span>
-          <figcaption><strong>The network chamber by chamber as the team grows</strong> (social plasticity, 2,600 tokens). Grey areas are message communities. Green links join two agents credited for the same milestone event, almost always a Chamber 3 switch press and the door it opens.</figcaption>
+          <figcaption><strong>Who talks to whom, by team size and chamber</strong> (social plasticity, 2,600-token budget; one typical episode per team size). Edge width follows the messages exchanged; solid edges carry messages both ways, dashed edges one way. Grey bands are Louvain communities of the message graph, and green edges with a diamond join agents credited for the same milestone. Agent 0 is filled, and agents silent in that chamber sit underneath. In Chamber 3 the ring is set by the task: agent <span class="m">i</span>'s switch opens agent <span class="m">i</span>+1's door.</figcaption>
         </figure>
-        <div>
-          <figure>
-            <span class="image fit framed"><img src="assets/figures/team_formation_n15_time.png" alt="Distinct partners over the episode for agent 0 and the mean of the other agents, baseline and social plasticity, fifteen agents." loading="lazy"></span>
-            <figcaption><strong>Distinct partners over the two episodes above</strong>: agent 0 (solid) against the mean of the other agents (dashed). × marks a Chamber 5 team wipe; the shaded band is Chamber 2.</figcaption>
-          </figure>
-          <div class="cols" style="grid-template-columns: 1fr; gap: 18px;">
-            <div>
-              <h3>Circles stay small</h3>
-              <p>At every team size an agent keeps about 1.3 conversation partners in Chamber 2. Larger teams therefore split into more groups (one at N&nbsp;=&nbsp;3, three to four at N&nbsp;=&nbsp;15) rather than larger ones.</p>
-            </div>
-            <div>
-              <h3>Talk partners are not task partners</h3>
-              <p>Pairs that complete a milestone together are switch-ring neighbours, which the task fixes (93–100%). The share of them that had messaged each other in Chamber 2 falls from 67–69% at N&nbsp;=&nbsp;3 to 15–29% at N&nbsp;=&nbsp;15.</p>
-            </div>
-            <div>
-              <h3>Talk does not reach the task</h3>
-              <p>Silent teams break a Chamber 2 anvil in 13 of 81 episodes, messaging teams in 5 of 234. Agents press their Chamber 3 switch about as often without messages as with them (21.5% against 23.8%).</p>
-            </div>
+        <div class="cols" style="grid-template-columns: 1fr; gap: 18px; margin-top: 0; align-content: start;">
+          <div>
+            <h3>3 agents: direct requests</h3>
+            <p>All three agents talk to each other, and cooperation runs through requests to the teammate who can help. In the switch ring, an agent asked the teammate whose switch opens its door to press it, and the teammate pressed six steps later.</p>
+          </div>
+          <div>
+            <h3>5 agents: a focal teammate emerges</h3>
+            <p>About three in four agents open the episode by messaging agent 0, against one in four by chance. Complete request–act–acknowledge loops appear: an agent asked its neighbour to press, the neighbour pressed and reported it, and the freed agent thanked it and moved on.</p>
+          </div>
+          <div>
+            <h3>7 agents: side groups and ring-wide reasoning</h3>
+            <p>In 61% of episodes, two or three agents form a group beside the conversation around agent 0. Agents begin to reason about the ring beyond a single partner: one told its predecessor that it was pressing its switch to free its successor.</p>
+          </div>
+          <div>
+            <h3>10 agents: requests route through a hub</h3>
+            <p>Side groups form in 93% of episodes, and agents route requests through the focal teammate. An agent locked in its cell asked agent 0 to have a third agent press the switch that frees it.</p>
+          </div>
+          <div>
+            <h3>15 agents: many circles, one hub</h3>
+            <p>The team splits into about 3.5 groups around a single hub, and agents coordinate several teammates in one message, announcing a switch press meant to free two of them at once.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="figure-block">
+        <span class="image fit framed"><img src="assets/figures/team_formation_n15.png" alt="Whole-episode interaction networks of a fifteen-agent baseline team and a social-plasticity team, both centred on agent 0, and the learned bonds of the social-plasticity team." loading="lazy"></span>
+        <figcaption><strong>A focal hub in a fifteen-agent team</strong> (2,600-token budget; one typical episode per arm). (a, b) Every interaction of the episode for the baseline and social plasticity: an edge joins two agents who exchanged at least one message, and agent 0's edges are dark. (c) The learned bonds <span class="m">W</span> of the social-plasticity team in (b), with width proportional to bond strength. Layouts are force-directed, so distance on the page is not distance in the world.</figcaption>
+      </figure>
+
+      <div class="row" style="margin-top: 2.4em; align-items: start;">
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/team_formation_n15_time.png" alt="Distinct partners over the episode for agent 0 and the mean of the other agents, baseline and social plasticity, fifteen agents." loading="lazy"></span>
+          <figcaption><strong>The hub accumulates partners early.</strong> Distinct interaction partners over the two episodes above: agent 0 (solid) against the mean of the other agents (dashed). Chamber 2 is shaded; × marks the end of the episode, when the team is wiped out.</figcaption>
+        </figure>
+        <div class="cols" style="grid-template-columns: 1fr; gap: 18px; margin-top: 0;">
+          <div>
+            <h3>Teams self-organise around a hub and tight circles</h3>
+            <p>The focal teammate becomes the team's hub, a wheel that classic studies of human groups found fastest for simple coordination tasks. Around it, each agent keeps one or two conversation partners, so larger teams form more groups rather than bigger ones, and agents talk inside these groups more than chance predicts. In the baseline, modularity exceeds the degree-preserving null by 0.12–0.15 from N&nbsp;=&nbsp;10, and the excess grows with team size (ρ&nbsp;=&nbsp;+0.59, p&nbsp;=&nbsp;0.0002).</p>
+          </div>
+          <div>
+            <h3>Learned bonds tighten the conversation</h3>
+            <p>Social-plasticity agents answer 6–14 points more of the messages they receive, and they split into tighter talking groups than baseline teams at every team size: +0.10 vs −0.02 above the null at N&nbsp;=&nbsp;5, +0.22 vs +0.15 at N&nbsp;=&nbsp;15, higher in 20 of 27 matched runs (Wilcoxon p&nbsp;&lt;&nbsp;0.001). With five agents they already reach the grouping that baseline teams show only with ten. The bonds follow the conversation (Spearman ρ&nbsp;=&nbsp;+0.53 between Chamber 2 messages and bonds at N&nbsp;=&nbsp;3): remembered relationships let each message count for more.</p>
           </div>
         </div>
       </div>
@@ -783,6 +795,6 @@
 </footer>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="assets/js/main.js?v=20261011b"></script>
+<script defer src="assets/js/main.js?v=20261012a"></script>
 </body>
 </html>
