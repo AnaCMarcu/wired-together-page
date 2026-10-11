@@ -1,0 +1,8054 @@
+{
+ "tour": [
+  {
+   "name": "tour_ch1",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0
+   ],
+   "steps": [
+    40,
+    100
+   ],
+   "seconds": 10.17,
+   "fps": 6,
+   "video": "assets/videos/tour_ch1.mp4",
+   "poster": "assets/videos/tour_ch1.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "caption": "Move, dig, pick things up, kill a passive animal. Nothing here is shared, so the team enters Chamber 2 with the primitives already learned — and whatever the social layer changes later, it does not change this.",
+   "chamber": "Chamber 1 — Skill acquisition",
+   "messages": [
+    {
+     "t": 37,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm targeting the wood block ahead to help unlock the door milestone."
+    },
+    {
+     "t": 37,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Centering sheep now to help unlock door 1"
+    },
+    {
+     "t": 38,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the trunk on the left; I'll move towards the center area to scan for resources to help with the milestone."
+    },
+    {
+     "t": 38,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I hit a wall; turning right to try and find the path to Door 1."
+    },
+    {
+     "t": 39,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the structure ahead, hope to find a path to Door 1."
+    },
+    {
+     "t": 40,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to check the structure ahead."
+    },
+    {
+     "t": 40,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm continuing to push forward to find Door 1; let me know if you see anything helpful on your side."
+    },
+    {
+     "t": 41,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the wall structure, let me know if you find any openings near Door 1."
+    },
+    {
+     "t": 41,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to scan the area near the central wood structure."
+    },
+    {
+     "t": 42,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am holding position, scanning the immediate area for any visible targets to help with the milestone."
+    },
+    {
+     "t": 43,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to scan this area for resources."
+    },
+    {
+     "t": 43,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to survey this section of the room."
+    },
+    {
+     "t": 44,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm stopping to check what's ahead. Let me know if you see anything useful."
+    },
+    {
+     "t": 44,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am blocked by stone ahead; backing up now to survey."
+    },
+    {
+     "t": 45,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to see what's blocking us."
+    },
+    {
+     "t": 45,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to check the corner since we are blocked ahead."
+    },
+    {
+     "t": 46,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the blockage you found."
+    },
+    {
+     "t": 46,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm digging the tree trunk now to help unlock Door 1."
+    },
+    {
+     "t": 47,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I stopped moving; there is a solid block ahead."
+    },
+    {
+     "t": 48,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the immediate obstacle ahead."
+    },
+    {
+     "t": 48,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a wood block right here; starting to break it for the milestone."
+    },
+    {
+     "t": 49,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to confirm the boundary ahead."
+    },
+    {
+     "t": 49,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to survey around this big block."
+    },
+    {
+     "t": 50,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to observe the structure ahead; let me know if you see anything near the north wall."
+    },
+    {
+     "t": 50,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward to check the corridor ahead, hoping to find Door 1."
+    },
+    {
+     "t": 51,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still surveying the area, I'll keep moving forward to find a clear path."
+    },
+    {
+     "t": 52,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the structure ahead."
+    },
+    {
+     "t": 52,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to survey the immediate area, looking for a clear path towards the North door."
+    },
+    {
+     "t": 53,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I stopped to observe the immediate structure ahead, what do you see on your side?"
+    },
+    {
+     "t": 53,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward to survey the area, checking for the north wall."
+    },
+    {
+     "t": 54,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to check the structure ahead."
+    },
+    {
+     "t": 54,
+     "sender": 1,
+     "receiver": 0,
+     "text": "The wall is blocking forward progress here; I'm turning right to see around it."
+    },
+    {
+     "t": 55,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the blockage too; I'll check the side walls."
+    },
+    {
+     "t": 55,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward search for the north wall door."
+    },
+    {
+     "t": 56,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the structure ahead."
+    },
+    {
+     "t": 57,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the block too; turning right to check around it."
+    },
+    {
+     "t": 57,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to survey the area towards Door 1."
+    },
+    {
+     "t": 58,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward too, let me know if you find the door"
+    },
+    {
+     "t": 58,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to find Door 1"
+    },
+    {
+     "t": 59,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the trunk on the left; turning to center it now."
+    },
+    {
+     "t": 59,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a large trunk right; turning to check it out."
+    },
+    {
+     "t": 60,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to check the structure ahead. Let me know if you see anything near the door."
+    },
+    {
+     "t": 60,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Trunk is left; turning to center it for milestone progress."
+    },
+    {
+     "t": 61,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to check the immediate area, looking for anything Agent 1 saw."
+    },
+    {
+     "t": 61,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, looking for the door structure."
+    },
+    {
+     "t": 62,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the trees; I'll start digging for milestones."
+    },
+    {
+     "t": 62,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Keep moving forward, I'll watch for the door structure."
+    },
+    {
+     "t": 63,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to continue the survey for Door 1."
+    },
+    {
+     "t": 64,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I reached a solid wall; turning right to check surroundings for Door 1 structure."
+    },
+    {
+     "t": 64,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, looking for the door structure."
+    },
+    {
+     "t": 65,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the obstruction ahead, confirming the path."
+    },
+    {
+     "t": 66,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I stopped moving to check the wall texture."
+    },
+    {
+     "t": 66,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, looking for the door structure."
+    },
+    {
+     "t": 67,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Red wall is solid, no immediate dig target."
+    },
+    {
+     "t": 68,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am stationary now, looking at the wall structure ahead."
+    },
+    {
+     "t": 68,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, checking for door changes."
+    },
+    {
+     "t": 69,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to see past the teammate ahead."
+    },
+    {
+     "t": 70,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am stopped here; checking surroundings for structure."
+    },
+    {
+     "t": 71,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am checking the block directly ahead; it looks like dark stone."
+    },
+    {
+     "t": 71,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, looking for the door structure now."
+    },
+    {
+     "t": 72,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm aiming at the wood structure here; let's try to chip away at it to make progress."
+    },
+    {
+     "t": 72,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to check the immediate area near the wall structure."
+    },
+    {
+     "t": 73,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to see what's ahead of me in this dark area."
+    },
+    {
+     "t": 73,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see wood structure, turning right to aim at it to help unlock the door."
+    },
+    {
+     "t": 74,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm stopping movement to observe the immediate block texture."
+    },
+    {
+     "t": 74,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to survey the dark area ahead."
+    },
+    {
+     "t": 75,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to check the immediate surroundings for blocks or mobs to help unlock Door 1."
+    },
+    {
+     "t": 75,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward survey, look for door structure."
+    },
+    {
+     "t": 76,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am stopping to observe the immediate structure ahead, checking the environment before moving further."
+    },
+    {
+     "t": 76,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to help survey the area."
+    },
+    {
+     "t": 77,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to survey the immediate area."
+    },
+    {
+     "t": 77,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still dark here, turning right to survey structure ahead."
+    },
+    {
+     "t": 78,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I stopped moving to look closely at the immediate structure ahead."
+    },
+    {
+     "t": 78,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still surveying area, look for door structure."
+    },
+    {
+     "t": 79,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the structure ahead."
+    },
+    {
+     "t": 80,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still dark, I'm stopped by something solid here."
+    },
+    {
+     "t": 81,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to check the blockage as instructed."
+    },
+    {
+     "t": 82,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am blocked here, turning right to survey the immediate area."
+    },
+    {
+     "t": 83,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to check the wall texture."
+    },
+    {
+     "t": 84,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward into the corridor to observe the walls."
+    },
+    {
+     "t": 85,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward into the corridor, watching the wall texture."
+    },
+    {
+     "t": 86,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I stopped moving; the center is stone wall."
+    },
+    {
+     "t": 86,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to check wall texture."
+    },
+    {
+     "t": 86,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward now to scout the area, Agent0. Let me know if you spot anything near the NW wall."
+    },
+    {
+     "t": 87,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the wall texture as suggested."
+    },
+    {
+     "t": 87,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the stone wall blocking forward movement; I am turning right to survey the passage."
+    },
+    {
+     "t": 88,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Stone wall is directly ahead; I am pausing to observe the texture."
+    },
+    {
+     "t": 88,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to survey the area; watch for the north wall."
+    },
+    {
+     "t": 89,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, watching for walls like agent_1."
+    },
+    {
+     "t": 90,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am continuing forward to observe the wall structure."
+    },
+    {
+     "t": 90,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a tree trunk here, I'll start digging it to help unlock the door."
+    },
+    {
+     "t": 91,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see a tree trunk on the right, I will start digging it for the milestone."
+    },
+    {
+     "t": 92,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see a block here, starting to dig it to help unlock Door 1."
+    },
+    {
+     "t": 93,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to see what's ahead."
+    },
+    {
+     "t": 94,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see wood ahead, I will start digging it."
+    },
+    {
+     "t": 94,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to survey the area; looking for the North wall door."
+    },
+    {
+     "t": 95,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to survey the area like agent_1, I will report what I see at the wall."
+    },
+    {
+     "t": 95,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward exploration, watching for Door 1."
+    },
+    {
+     "t": 96,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am observing the block ahead; it looks like stone."
+    },
+    {
+     "t": 96,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am continuing to move forward toward the north wall to locate Door 1."
+    },
+    {
+     "t": 97,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to survey the area; let me know if you spot anything near Door 1."
+    },
+    {
+     "t": 97,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Found a log block, turning to hit it."
+    },
+    {
+     "t": 98,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm digging the wall in front of me to see what it is. Let me know if you find anything near Door 1."
+    },
+    {
+     "t": 98,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward towards the north wall now."
+    },
+    {
+     "t": 99,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to check the front boundary."
+    },
+    {
+     "t": 99,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right now to follow the critique and change my pathing loop."
+    },
+    {
+     "t": 100,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still facing the dark block, seems like a wall."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/tour_ch1_all.mp4",
+   "poster_all": "assets/videos/tour_ch1_all.jpg",
+   "bytes": 314930,
+   "bytes_all": 817136
+  },
+  {
+   "name": "tour_ch2",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0
+   ],
+   "steps": [
+    230,
+    290
+   ],
+   "seconds": 10.17,
+   "fps": 6,
+   "video": "assets/videos/tour_ch2.mp4",
+   "poster": "assets/videos/tour_ch2.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "caption": "An anvil decays exactly as fast as one agent can damage it, so digging alone is net zero. Two agents digging the same anvil inside the same short window break it. The first place where talking is not enough and the timing has to line up.",
+   "chamber": "Chamber 2 — Joint action",
+   "messages": [
+    {
+     "t": 227,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I've turned and see the anvils; I'll move closer to coordinate."
+    },
+    {
+     "t": 228,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see an anvil centered; let's coordinate a dig soon."
+    },
+    {
+     "t": 229,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to test collision boundary as planned."
+    },
+    {
+     "t": 230,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to find the center anvils. Let me know if you see them first."
+    },
+    {
+     "t": 231,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning around to survey the area we just moved through."
+    },
+    {
+     "t": 231,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward towards the center anvils. Let me know if you see them first."
+    },
+    {
+     "t": 232,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to find the anvils."
+    },
+    {
+     "t": 233,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward towards the center anvils."
+    },
+    {
+     "t": 233,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving toward the center anvils."
+    },
+    {
+     "t": 234,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to find the anvils too."
+    },
+    {
+     "t": 234,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards center anvils."
+    },
+    {
+     "t": 235,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning around to check passage."
+    },
+    {
+     "t": 236,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, expecting a collision soon."
+    },
+    {
+     "t": 236,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving toward the center; look for the anvils."
+    },
+    {
+     "t": 237,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning around to survey the path we just took."
+    },
+    {
+     "t": 237,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward toward center anvils now."
+    },
+    {
+     "t": 238,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to find the anvils."
+    },
+    {
+     "t": 238,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Keep moving toward the center anvils."
+    },
+    {
+     "t": 239,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to test the boundaries of this room."
+    },
+    {
+     "t": 239,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to find anvils"
+    },
+    {
+     "t": 240,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to find the anvils too."
+    },
+    {
+     "t": 240,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to find the center anvils."
+    },
+    {
+     "t": 241,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving toward the perceived front wall."
+    },
+    {
+     "t": 241,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward to meet up at the anvils."
+    },
+    {
+     "t": 242,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward towards collision point."
+    },
+    {
+     "t": 242,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to find the anvils; keep moving toward the center."
+    },
+    {
+     "t": 243,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am still moving forward in Ch2, aiming for the anvils."
+    },
+    {
+     "t": 243,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to join the anvil coordination."
+    },
+    {
+     "t": 244,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving toward collision point."
+    },
+    {
+     "t": 245,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to test the path until collision."
+    },
+    {
+     "t": 245,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving center now, ready for anvil coordination."
+    },
+    {
+     "t": 246,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to find the wall/object."
+    },
+    {
+     "t": 246,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving center now, ready to coordinate anvil hits."
+    },
+    {
+     "t": 247,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to hit wall"
+    },
+    {
+     "t": 248,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward towards collision point."
+    },
+    {
+     "t": 249,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to find the collision point as tasked."
+    },
+    {
+     "t": 250,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward, expecting collision soon."
+    },
+    {
+     "t": 251,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to find the collision point."
+    },
+    {
+     "t": 252,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, expecting collision soon."
+    },
+    {
+     "t": 253,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to find the boundary or the anvils."
+    },
+    {
+     "t": 254,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward towards the anvils. Let me know when you are ready for coordination."
+    },
+    {
+     "t": 255,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward towards the anvils now."
+    },
+    {
+     "t": 255,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Ready for coord"
+    },
+    {
+     "t": 256,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving toward center anvils now."
+    },
+    {
+     "t": 256,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Heading toward anvils now. Ready to coordinate digs."
+    },
+    {
+     "t": 257,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving toward anvils now."
+    },
+    {
+     "t": 257,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to meet you both at the center anvils."
+    },
+    {
+     "t": 258,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center anvils now."
+    },
+    {
+     "t": 258,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now; let's coordinate on the anvils soon."
+    },
+    {
+     "t": 259,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to find the wall as instructed."
+    },
+    {
+     "t": 259,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the log now, I'll try to break it to get wood."
+    },
+    {
+     "t": 260,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to test the boundary here, let me know if you see the anvils clearly from your angle."
+    },
+    {
+     "t": 260,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to meet at the anvils."
+    },
+    {
+     "t": 261,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to find the wall/collision point per instructions."
+    },
+    {
+     "t": 261,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to meet you at the anvils. Let me know when you are ready to dig."
+    },
+    {
+     "t": 262,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to meet you at the anvils. I'll report collision."
+    },
+    {
+     "t": 262,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm continuing to move toward the center point for anvil coordination."
+    },
+    {
+     "t": 263,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center anvils now."
+    },
+    {
+     "t": 263,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am approaching the center, ready to coordinate on the anvils."
+    },
+    {
+     "t": 264,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to find the path to the anvils."
+    },
+    {
+     "t": 264,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards center anvils."
+    },
+    {
+     "t": 265,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to meet you at the center anvils."
+    },
+    {
+     "t": 265,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward towards the anvils."
+    },
+    {
+     "t": 266,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to find the collision point for anvil coordination."
+    },
+    {
+     "t": 266,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving toward the center anvils."
+    },
+    {
+     "t": 267,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to find the boundary wall for collision confirmation."
+    },
+    {
+     "t": 267,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Keep moving forward, I'm approaching the center area too."
+    },
+    {
+     "t": 268,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to join the anvil coordination at the center."
+    },
+    {
+     "t": 268,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward center anvils now. Keep tracking."
+    },
+    {
+     "t": 269,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward toward the center anvils now, watch for collision."
+    },
+    {
+     "t": 269,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Approaching anvils now."
+    },
+    {
+     "t": 270,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving toward anvils now, tracking Agent 1."
+    },
+    {
+     "t": 270,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Approaching center anvils now, watch for coordination."
+    },
+    {
+     "t": 271,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to find the collision point."
+    },
+    {
+     "t": 271,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Keep tracking anvils"
+    },
+    {
+     "t": 272,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward to find the collision point."
+    },
+    {
+     "t": 272,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to meet the anvils."
+    },
+    {
+     "t": 273,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to find the collision point."
+    },
+    {
+     "t": 273,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Approaching center point now."
+    },
+    {
+     "t": 274,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing forward to find the collision point."
+    },
+    {
+     "t": 274,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward center anvils now."
+    },
+    {
+     "t": 275,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward to find the collision point."
+    },
+    {
+     "t": 275,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving toward anvils."
+    },
+    {
+     "t": 276,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to find the wall boundary as instructed."
+    },
+    {
+     "t": 276,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving toward the center anvils, Agent 0. Let me know when you are ready to coordinate."
+    },
+    {
+     "t": 277,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to test for collision, let me know when you are near the center anvils."
+    },
+    {
+     "t": 277,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to reach the anvils."
+    },
+    {
+     "t": 278,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to reach the anvils, Agent 1. Let's coordinate hits soon."
+    },
+    {
+     "t": 278,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward now, heading toward the center anvils."
+    },
+    {
+     "t": 279,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to test the boundary condition."
+    },
+    {
+     "t": 279,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving toward the center anvils. Let's coordinate hits soon."
+    },
+    {
+     "t": 280,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to find the wall; I'm tracking agent_1's approach to the anvils."
+    },
+    {
+     "t": 280,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to reach the anvils. Let's coordinate our dig attempts."
+    },
+    {
+     "t": 281,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward as instructed. Let me know when you see the anvils."
+    },
+    {
+     "t": 281,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to meet at anvils."
+    },
+    {
+     "t": 282,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward until I hit something solid. I'm trying to follow the path to the anvils."
+    },
+    {
+     "t": 282,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward toward the exit."
+    },
+    {
+     "t": 283,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward toward the exit."
+    },
+    {
+     "t": 283,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm still moving forward, looking for Door 1."
+    },
+    {
+     "t": 284,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward, checking for collision."
+    },
+    {
+     "t": 284,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to find Door 1"
+    },
+    {
+     "t": 285,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Hit a corner, stopping movement now."
+    },
+    {
+     "t": 285,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward now; let me know if you see the transition point to Ch2."
+    },
+    {
+     "t": 286,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, watching for collision."
+    },
+    {
+     "t": 286,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward, checking for Door 1."
+    },
+    {
+     "t": 287,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward, checking for door."
+    },
+    {
+     "t": 287,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards Door 1 in Ch1."
+    },
+    {
+     "t": 288,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am stopped against a corner, observing the block here."
+    },
+    {
+     "t": 288,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward towards Door 1, let me know if you see it."
+    },
+    {
+     "t": 289,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to confirm collision; let me know if you see the anvils."
+    },
+    {
+     "t": 289,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am continuing forward towards Door 1 now."
+    },
+    {
+     "t": 290,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to reach the anvils for coordination."
+    },
+    {
+     "t": 290,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am still moving toward Door 1 in Ch1; let me know if you see it."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/tour_ch2_all.mp4",
+   "poster_all": "assets/videos/tour_ch2_all.jpg",
+   "bytes": 589830,
+   "bytes_all": 678885
+  },
+  {
+   "name": "tour_ch3",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0,
+    1
+   ],
+   "steps": [
+    430,
+    470
+   ],
+   "seconds": 6.83,
+   "fps": 6,
+   "video": "assets/videos/tour_ch3.mp4",
+   "poster": "assets/videos/tour_ch3.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "caption": "Agents are teleported into isolated cells wired in a cycle: each agent's switch opens the next agent's door. Nobody can free themselves, and nobody can see the cell their own switch governs, so release propagates only through targeted messages.",
+   "chamber": "Chamber 3 — Communication under partial observability",
+   "messages": [
+    {
+     "t": 427,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am moving forward now to see if I can get closer to the south wall to find the switch."
+    },
+    {
+     "t": 427,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door still locked. Need switch press."
+    },
+    {
+     "t": 427,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward now to check for the transition area."
+    },
+    {
+     "t": 428,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning to sweep the cell; I need agent_2 to check if they see any visual cues from their side."
+    },
+    {
+     "t": 428,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is still locked, need switch press."
+    },
+    {
+     "t": 428,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to reach the door"
+    },
+    {
+     "t": 429,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Switch is on south wall"
+    },
+    {
+     "t": 429,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door still locked."
+    },
+    {
+     "t": 429,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to approach the south wall now."
+    },
+    {
+     "t": 430,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still locked here"
+    },
+    {
+     "t": 430,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Scanning south wall now, let me know if you see the blue switch"
+    },
+    {
+     "t": 430,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right now to face south wall; check if you see the switch from your angle."
+    },
+    {
+     "t": 431,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to get a better view of the area where you are scanning the south wall."
+    },
+    {
+     "t": 431,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'll move forward to scan the cell walls for the switch location."
+    },
+    {
+     "t": 431,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward now; check if you see the switch from your angle."
+    },
+    {
+     "t": 432,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning to face the south wall where the switch is; check if you see it from your angle."
+    },
+    {
+     "t": 432,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Scanning south wall for switch"
+    },
+    {
+     "t": 432,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to check the cell layout for the switch location."
+    },
+    {
+     "t": 433,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning to sweep the cell walls, looking for the blue switch on the south wall."
+    },
+    {
+     "t": 433,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to try and locate the switch or the main area."
+    },
+    {
+     "t": 433,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning south wall for switch cues."
+    },
+    {
+     "t": 434,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the corridor ahead."
+    },
+    {
+     "t": 434,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Agent 0, I'm turning left to scan the walls, let me know if you see the switch."
+    },
+    {
+     "t": 434,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to try and get a better look at the south wall for the switch cue."
+    },
+    {
+     "t": 435,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to scan the corridor walls, let me know if you see any switch cues on your end."
+    },
+    {
+     "t": 435,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to check the wall area, looking for the switch."
+    },
+    {
+     "t": 435,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to check the south wall area for the switch cues you mentioned."
+    },
+    {
+     "t": 436,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, watching for the switch or a doorway."
+    },
+    {
+     "t": 436,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Agent 0, I am turning left to scan the cell walls for the switch."
+    },
+    {
+     "t": 436,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning to face the south wall now, looking for the blue switch cue you mentioned."
+    },
+    {
+     "t": 437,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am waiting for the switch press. Let me know when you see it."
+    },
+    {
+     "t": 437,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still in cell, looking for the south wall switch."
+    },
+    {
+     "t": 437,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to get a better look at the south wall for the switch."
+    },
+    {
+     "t": 438,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to sweep the corridor; let me know if you see any change in the wall structure on your side."
+    },
+    {
+     "t": 438,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm scanning the walls here, looking for the blue switch or door state change."
+    },
+    {
+     "t": 438,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward, check if you spot the switch on the south wall from here."
+    },
+    {
+     "t": 439,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still stuck in cell. Check door state if you see any change."
+    },
+    {
+     "t": 439,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to find the anvils; let me know if you see the switch status change."
+    },
+    {
+     "t": 439,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm still scanning the walls for any switch cues on my end."
+    },
+    {
+     "t": 440,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to check the cell walls for the switch location."
+    },
+    {
+     "t": 440,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning to find the south wall switch, let me know if you see any door changes."
+    },
+    {
+     "t": 440,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls for any switch cues on my end."
+    },
+    {
+     "t": 441,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Blue cube is right; I'm turning to face it now."
+    },
+    {
+     "t": 441,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to see the south wall for the switch."
+    },
+    {
+     "t": 441,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning my side for any wall changes near the switch location."
+    },
+    {
+     "t": 442,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Blue switch is centered. I will press it now."
+    },
+    {
+     "t": 442,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to face the blue cube; let me know if you see any door change."
+    },
+    {
+     "t": 442,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls, no blue switch visible from my side yet."
+    },
+    {
+     "t": 443,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am digging the blue cube now; check if your door state changed."
+    },
+    {
+     "t": 443,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now"
+    },
+    {
+     "t": 443,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls for switch cues here."
+    },
+    {
+     "t": 444,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, need door open for me"
+    },
+    {
+     "t": 444,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state update?"
+    },
+    {
+     "t": 444,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Maintaining position, ready to scan for switch cues on my side."
+    },
+    {
+     "t": 445,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch now. Need Agent 2 to press theirs to open my door."
+    },
+    {
+     "t": 445,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state check needed"
+    },
+    {
+     "t": 445,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to scan the wall structure here, let me know if you see any change on your end."
+    },
+    {
+     "t": 446,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch now. Check door state."
+    },
+    {
+     "t": 446,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door should open soon"
+    },
+    {
+     "t": 446,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward too. Keep scanning walls for switch cues."
+    },
+    {
+     "t": 447,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Switch is centered, I am pressing it now."
+    },
+    {
+     "t": 447,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving out now."
+    },
+    {
+     "t": 447,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see the wall ahead is solid; I'm turning to find my switch on the south wall."
+    },
+    {
+     "t": 448,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, hoping it frees my cell."
+    },
+    {
+     "t": 448,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state still locked?"
+    },
+    {
+     "t": 448,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'll turn to find my switch cube."
+    },
+    {
+     "t": 449,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, hope door opens soon."
+    },
+    {
+     "t": 449,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 449,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward now, look for my switch to press."
+    },
+    {
+     "t": 450,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am pressing the switch cube now, hoping to open my cell door."
+    },
+    {
+     "t": 450,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving out now."
+    },
+    {
+     "t": 450,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to find my switch. Let me know when you press yours."
+    },
+    {
+     "t": 451,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing the switch now. Check your door state."
+    },
+    {
+     "t": 451,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 451,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Ready to press my switch when you are."
+    },
+    {
+     "t": 452,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch is centered, pressing now."
+    },
+    {
+     "t": 452,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 452,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Switch is centered, I'm pressing it now."
+    },
+    {
+     "t": 453,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm digging the switch now, hope it helps open the door!"
+    },
+    {
+     "t": 453,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, heading north now."
+    },
+    {
+     "t": 453,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Switch pressed, check door state"
+    },
+    {
+     "t": 454,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch pressed, check door state now."
+    },
+    {
+     "t": 454,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, heading out now."
+    },
+    {
+     "t": 454,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Pressing my switch now"
+    },
+    {
+     "t": 455,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch centered, pressing now."
+    },
+    {
+     "t": 455,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state is OPEN, moving north now."
+    },
+    {
+     "t": 455,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Waiting for door state change"
+    },
+    {
+     "t": 456,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch centered, ready to press."
+    },
+    {
+     "t": 456,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, heading north now."
+    },
+    {
+     "t": 456,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Confirm door state after your press."
+    },
+    {
+     "t": 457,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch is centered, pressing it now."
+    },
+    {
+     "t": 457,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 457,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door still locked?"
+    },
+    {
+     "t": 458,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing the switch now; let me know if the door changes state."
+    },
+    {
+     "t": 458,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving North now."
+    },
+    {
+     "t": 458,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door still locked?"
+    },
+    {
+     "t": 459,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch now, hope it helps open the door."
+    },
+    {
+     "t": 459,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving North now as the door is open, I will report when I see the communal room."
+    },
+    {
+     "t": 459,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still in cell, waiting for door state change."
+    },
+    {
+     "t": 460,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Re-pressing switch now to check door state."
+    },
+    {
+     "t": 460,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state is OPEN, moving north now."
+    },
+    {
+     "t": 460,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door state?"
+    },
+    {
+     "t": 461,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing the switch now; check door state."
+    },
+    {
+     "t": 461,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now to reach the communal area."
+    },
+    {
+     "t": 461,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Cell door is still locked, waiting for switch activation."
+    },
+    {
+     "t": 462,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Agent 2, I am Digging the switch now. Let me know if anything changes on your end."
+    },
+    {
+     "t": 462,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Cell door is open, moving out now."
+    },
+    {
+     "t": 462,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still waiting for door state update."
+    },
+    {
+     "t": 463,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch is here, digging again."
+    },
+    {
+     "t": 463,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door should open now; moving north."
+    },
+    {
+     "t": 463,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still in cell, waiting for door state update."
+    },
+    {
+     "t": 464,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch pressed, waiting on door state"
+    },
+    {
+     "t": 464,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving north now, following the directive to leave the cell and reach the communal room."
+    },
+    {
+     "t": 464,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Waiting for door state change after your dig."
+    },
+    {
+     "t": 465,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch again; check door status."
+    },
+    {
+     "t": 465,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving north towards the communal room exit."
+    },
+    {
+     "t": 465,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Did the switch press work yet?"
+    },
+    {
+     "t": 466,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch is centered, digging again to confirm state change."
+    },
+    {
+     "t": 466,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 466,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Waiting for door state update."
+    },
+    {
+     "t": 467,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing the switch now. Let me know if the door state changes."
+    },
+    {
+     "t": 467,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Cell door is open, continuing north towards the communal room."
+    },
+    {
+     "t": 467,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door still locked?"
+    },
+    {
+     "t": 468,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch centered, pressing now."
+    },
+    {
+     "t": 468,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 468,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door state?"
+    },
+    {
+     "t": 469,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch pressed"
+    },
+    {
+     "t": 469,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 469,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still locked, waiting for switch activation."
+    },
+    {
+     "t": 470,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch pressed again, check door state"
+    },
+    {
+     "t": 470,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state is key; let me know if you see any change from your end."
+    },
+    {
+     "t": 470,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still locked here."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/tour_ch3_all.mp4",
+   "poster_all": "assets/videos/tour_ch3_all.jpg",
+   "bytes": 279939,
+   "bytes_all": 244578
+  },
+  {
+   "name": "tour_ch4",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0
+   ],
+   "steps": [
+    620,
+    680
+   ],
+   "seconds": 10.17,
+   "fps": 6,
+   "video": "assets/videos/tour_ch4.mp4",
+   "poster": "assets/videos/tour_ch4.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "caption": "One zombie per agent. A fatal hit costs −10 instead of killing, which makes the chamber a rehearsal: the team can practise focusing fire where dying is not yet final.",
+   "chamber": "Chamber 4 — Team combat",
+   "messages": [
+    {
+     "t": 617,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to align with the zombies in Ch4."
+    },
+    {
+     "t": 617,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Agent 0, I see you ahead; let's coordinate on the zombies."
+    },
+    {
+     "t": 618,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to track zombies with agent_2"
+    },
+    {
+     "t": 618,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to find the zombies as per the plan."
+    },
+    {
+     "t": 619,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align with Agent 1's search for zombies."
+    },
+    {
+     "t": 619,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are here, I'm turning to engage."
+    },
+    {
+     "t": 620,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to hit the 90 degree mark."
+    },
+    {
+     "t": 620,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to join the zombie fight near agent2."
+    },
+    {
+     "t": 621,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Yaw should now be near 450 degrees; I'm aligning for the fight."
+    },
+    {
+     "t": 621,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are visible, I'm turning to join the fight."
+    },
+    {
+     "t": 621,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward now to join the fight."
+    },
+    {
+     "t": 622,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing turn to face zombies."
+    },
+    {
+     "t": 622,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Aligning for combat, I'll focus on the zombies now."
+    },
+    {
+     "t": 623,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now, should be facing combat direction."
+    },
+    {
+     "t": 623,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to engage zombies, watch for Agent0's position."
+    },
+    {
+     "t": 624,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm continuing the turn to orient towards the zombies."
+    },
+    {
+     "t": 624,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Facing right, I'm looking for the zombies now."
+    },
+    {
+     "t": 625,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still rotating, aiming for 90 degree turn."
+    },
+    {
+     "t": 625,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to engage zombies with you both."
+    },
+    {
+     "t": 625,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still looking for zombies"
+    },
+    {
+     "t": 626,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing the turn now as instructed."
+    },
+    {
+     "t": 627,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now, expect the view to shift towards the combat area."
+    },
+    {
+     "t": 627,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are present in Ch4, I'm moving toward the door/fight area."
+    },
+    {
+     "t": 628,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to align with the zombies in Ch4."
+    },
+    {
+     "t": 629,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turn complete? Let me know when you see the zombies."
+    },
+    {
+     "t": 630,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to face the zombies in Ch4."
+    },
+    {
+     "t": 630,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward to find the next passage."
+    },
+    {
+     "t": 631,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning now, ready to join fight"
+    },
+    {
+     "t": 631,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving toward the passage"
+    },
+    {
+     "t": 632,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right now to face the zombies in Ch4."
+    },
+    {
+     "t": 632,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving forward in this corridor; looking for the next passage."
+    },
+    {
+     "t": 633,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to join the fight in Ch4."
+    },
+    {
+     "t": 633,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now, expecting to find the next door or passage."
+    },
+    {
+     "t": 634,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now as requested, ready to assist in Ch4 combat."
+    },
+    {
+     "t": 635,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now, expecting to face the zombies or the door."
+    },
+    {
+     "t": 636,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align for the zombies."
+    },
+    {
+     "t": 636,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm joining the fight now, aiming for the zombie."
+    },
+    {
+     "t": 637,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now, let me know if you see the zombies."
+    },
+    {
+     "t": 637,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, I'm hitting it now."
+    },
+    {
+     "t": 638,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align with the fight."
+    },
+    {
+     "t": 639,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing the 90 degree turn now to align with the wall."
+    },
+    {
+     "t": 639,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie is left, turning to center it for attack."
+    },
+    {
+     "t": 640,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing turn for 90 deg right. Should be aligned soon."
+    },
+    {
+     "t": 641,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to align with the zombies; let me know if you see the door opening soon."
+    },
+    {
+     "t": 642,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now, expecting yaw to be closer to 450 degrees for the door."
+    },
+    {
+     "t": 642,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, starting attack."
+    },
+    {
+     "t": 643,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing the 90-degree turn as requested; I'm aiming for the wall alignment now."
+    },
+    {
+     "t": 643,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the fight; watch for zombies."
+    },
+    {
+     "t": 644,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now; aiming for 90 deg turn."
+    },
+    {
+     "t": 644,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm attacking the zombie now. Watch for drops."
+    },
+    {
+     "t": 645,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to align with the wall as planned."
+    },
+    {
+     "t": 646,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align with the next direction in Ch4."
+    },
+    {
+     "t": 647,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Ready to join the fight when I'm oriented."
+    },
+    {
+     "t": 647,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving toward Agent 0 to join the fight."
+    },
+    {
+     "t": 648,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Ready to move into the fight, I'll follow Agent 1's lead."
+    },
+    {
+     "t": 648,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still looking for Door 1 in Ch1"
+    },
+    {
+     "t": 649,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right now to get oriented for the fight in Ch4."
+    },
+    {
+     "t": 650,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right now to get oriented for the fight."
+    },
+    {
+     "t": 650,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to advance into the fight area in Ch4."
+    },
+    {
+     "t": 651,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Facing right now, ready to help fight zombies."
+    },
+    {
+     "t": 651,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to join the fight area in Ch4."
+    },
+    {
+     "t": 652,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to match target yaw"
+    },
+    {
+     "t": 652,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to meet up with the fight in Ch4"
+    },
+    {
+     "t": 653,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still turning right to match orientation for Ch4 fight."
+    },
+    {
+     "t": 653,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to meet the fight in Ch4."
+    },
+    {
+     "t": 654,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right now to match the required yaw."
+    },
+    {
+     "t": 654,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards the door in Ch1."
+    },
+    {
+     "t": 655,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing turn right to meet the 90 degree alignment goal."
+    },
+    {
+     "t": 655,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards the exit path."
+    },
+    {
+     "t": 656,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right as requested; should align better with the path now."
+    },
+    {
+     "t": 656,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward now, checking for the path to Ch2, as per the critique."
+    },
+    {
+     "t": 657,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing turn right to hit 450 yaw."
+    },
+    {
+     "t": 657,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still dark here, moving toward the exit."
+    },
+    {
+     "t": 658,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to align with the task goal."
+    },
+    {
+     "t": 658,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still looking for Door 1, I'm turning right to check the right side of the current area."
+    },
+    {
+     "t": 659,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I see the locked door ahead, ready to engage zombies."
+    },
+    {
+     "t": 659,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing to move forward to find the exit door."
+    },
+    {
+     "t": 660,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to meet the orientation goal, let me know if you see the door from your side."
+    },
+    {
+     "t": 660,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie is centered, starting attack now."
+    },
+    {
+     "t": 661,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to assess the immediate area as directed."
+    },
+    {
+     "t": 661,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie is centered, I'm attacking it now."
+    },
+    {
+     "t": 662,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to meet the orientation task goal."
+    },
+    {
+     "t": 662,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Mob is here. I'll start hitting it."
+    },
+    {
+     "t": 663,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now. Expecting to see the passage open up or hit a corner."
+    },
+    {
+     "t": 663,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still sweeping for mobs, agent_0. I'll keep turning until I see a target."
+    },
+    {
+     "t": 664,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now as instructed; I'm aiming for the door in Ch4."
+    },
+    {
+     "t": 665,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right now to align for combat with the zombies."
+    },
+    {
+     "t": 666,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Zombie centered. Starting attack."
+    },
+    {
+     "t": 667,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I see two zombies centered; I'm attacking them now to help clear the path to Ch5."
+    },
+    {
+     "t": 667,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see wood, not zombies. Turning right to find the fight."
+    },
+    {
+     "t": 668,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to hit the 90-degree yaw target as instructed."
+    },
+    {
+     "t": 668,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to join the fight, let me know if you see the zombies clearly"
+    },
+    {
+     "t": 669,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward now to align with the fight in Ch4. Let me know if you see the zombies clearly."
+    },
+    {
+     "t": 669,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to sweep for targets, Agent 0, let me know if you see the fight zone."
+    },
+    {
+     "t": 670,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to align with the objective. I see the barrel on my right."
+    },
+    {
+     "t": 670,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is centered, starting attack sequence."
+    },
+    {
+     "t": 670,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to find the fight; keep focused on the zombies."
+    },
+    {
+     "t": 671,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning to find the zombies, keep up!"
+    },
+    {
+     "t": 671,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to try and spot the zombies, let me know if you see them clearly."
+    },
+    {
+     "t": 672,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now to see the layout in Ch4, watch out for zombies."
+    },
+    {
+     "t": 672,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss centered, I'm hitting it now"
+    },
+    {
+     "t": 673,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to get to the right facing direction for the fight."
+    },
+    {
+     "t": 674,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward now to check the area for zombies or an opening."
+    },
+    {
+     "t": 674,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is centered slightly left; I'm turning to face him for combat."
+    },
+    {
+     "t": 675,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Executing turn right as instructed. I expect to be facing the zombies soon."
+    },
+    {
+     "t": 675,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Centering on zombie now. Ready to engage."
+    },
+    {
+     "t": 676,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am moving forward to see if I can get past this corner/blockage."
+    },
+    {
+     "t": 676,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is left, turning to re-center for next hit."
+    },
+    {
+     "t": 677,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now as instructed to find the zombies."
+    },
+    {
+     "t": 677,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Focusing on the wood here."
+    },
+    {
+     "t": 678,
+     "sender": 0,
+     "receiver": 2,
+     "text": "The blue block is centered; I'm moving forward to confirm if this is Ch3 or Ch4."
+    },
+    {
+     "t": 678,
+     "sender": 1,
+     "receiver": 0,
+     "text": "The front is solid red; backing up to check surroundings."
+    },
+    {
+     "t": 679,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now as instructed; checking orientation for zombie engagement."
+    },
+    {
+     "t": 679,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to track the fight, let me know if you spot any zombies."
+    },
+    {
+     "t": 680,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Continuing to turn right as requested by the critique; let me know if you see the zombies now."
+    },
+    {
+     "t": 680,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to follow the dark area mentioned in the critique; let me know if you see anything useful from your side in Ch4."
+    },
+    {
+     "t": 680,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward now to try and spot the zombies or the arena."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/tour_ch4_all.mp4",
+   "poster_all": "assets/videos/tour_ch4_all.jpg",
+   "bytes": 704407,
+   "bytes_all": 909961
+  },
+  {
+   "name": "tour_ch5",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0,
+    1
+   ],
+   "steps": [
+    830,
+    890
+   ],
+   "seconds": 10.17,
+   "fps": 6,
+   "video": "assets/videos/tour_ch5.mp4",
+   "poster": "assets/videos/tour_ch5.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "caption": "A powered zombie with three times an ordinary mob's health — more than one agent can burn through inside the time budget. Here death is real and permanent, and the episode ends when the boss falls or the whole team is down.",
+   "chamber": "Chamber 5 — Cooperative boss fight",
+   "messages": [
+    {
+     "t": 827,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join the boss fight with Agent 1."
+    },
+    {
+     "t": 827,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to join the boss fight; watch for the boss target."
+    },
+    {
+     "t": 827,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward now to find the boss fight area. Let me know when you see an opening."
+    },
+    {
+     "t": 828,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join the fight. Keep me updated on boss health."
+    },
+    {
+     "t": 828,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Turning right now to align with the boss fight."
+    },
+    {
+     "t": 828,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Turning right to locate the boss."
+    },
+    {
+     "t": 829,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align with the boss."
+    },
+    {
+     "t": 829,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to join the fight."
+    },
+    {
+     "t": 829,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward now to try and reach Ch5. Let me know if you see a clear path!"
+    },
+    {
+     "t": 830,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still turning right to align with the target orientation."
+    },
+    {
+     "t": 830,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is visible to the right, turning to center it for damage."
+    },
+    {
+     "t": 830,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning right to sweep for the boss or agent_1 in Ch5."
+    },
+    {
+     "t": 831,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to engage the boss now."
+    },
+    {
+     "t": 831,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the boss centered left, turning right to align for attack."
+    },
+    {
+     "t": 831,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to join the fight in Ch5; let me know if you need me to focus on anything specific."
+    },
+    {
+     "t": 832,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to get closer to the fight, let me know if you see a clear line of attack."
+    },
+    {
+     "t": 832,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward to locate the boss. Let me know if you see him."
+    },
+    {
+     "t": 832,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is visible on the right; I'm turning to center for focus fire."
+    },
+    {
+     "t": 833,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see a mob here, I'll start attacking it to contribute to the boss damage."
+    },
+    {
+     "t": 833,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Turning right to find the boss Agent 2 saw."
+    },
+    {
+     "t": 833,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is centered, starting damage now."
+    },
+    {
+     "t": 834,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward now to survey the corridor alignment."
+    },
+    {
+     "t": 834,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is visible; I'm starting damage now."
+    },
+    {
+     "t": 834,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to find the boss too."
+    },
+    {
+     "t": 835,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to align with the target orientation for Ch5 entry."
+    },
+    {
+     "t": 835,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm joining the fight, aiming at the boss."
+    },
+    {
+     "t": 835,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the engagement zone."
+    },
+    {
+     "t": 836,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to join the fight."
+    },
+    {
+     "t": 836,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm at 0 HP, retreating to avoid taking more damage; watch the boss health."
+    },
+    {
+     "t": 836,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now to meet the fight."
+    },
+    {
+     "t": 837,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Boss is visible in Ch5, but my view shows nature. Moving forward to confirm environment."
+    },
+    {
+     "t": 837,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to engage the boss."
+    },
+    {
+     "t": 837,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight near the boss."
+    },
+    {
+     "t": 838,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Need to align for movement"
+    },
+    {
+     "t": 838,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward towards the boss location in Ch5."
+    },
+    {
+     "t": 838,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to meet you both in the boss area."
+    },
+    {
+     "t": 839,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to get oriented for the boss fight."
+    },
+    {
+     "t": 839,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving towards the boss area now. Ready to attack."
+    },
+    {
+     "t": 839,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight."
+    },
+    {
+     "t": 840,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right now to meet the orientation task."
+    },
+    {
+     "t": 840,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Ready to join the fight, looking for the boss."
+    },
+    {
+     "t": 840,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to survey the corridor alignment."
+    },
+    {
+     "t": 841,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing turn right now"
+    },
+    {
+     "t": 841,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving forward to engage boss. Ready to take hits."
+    },
+    {
+     "t": 841,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Agent0, I see you ahead. I'm turning right to catch up to you and the boss."
+    },
+    {
+     "t": 842,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to align with the critique, let me know if you see the boss better from that angle."
+    },
+    {
+     "t": 842,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving towards the boss area now. Ready to deal damage."
+    },
+    {
+     "t": 842,
+     "sender": 2,
+     "receiver": 1,
+     "text": "See agent1 ahead, moving to join survey."
+    },
+    {
+     "t": 843,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Confirming yaw change; I'm turning right to match agent_2's survey."
+    },
+    {
+     "t": 843,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible to the right, turning to center for attack."
+    },
+    {
+     "t": 843,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to find the boss; are you seeing it yet?"
+    },
+    {
+     "t": 844,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to align for the boss fight."
+    },
+    {
+     "t": 844,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving toward the boss now, let me know when you see it too!"
+    },
+    {
+     "t": 844,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss right? I'm turning right to track."
+    },
+    {
+     "t": 845,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to match Agent2's survey direction."
+    },
+    {
+     "t": 845,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Turning right to track boss, I'm closing in."
+    },
+    {
+     "t": 845,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning to locate the boss; let me know if you see it clearly."
+    },
+    {
+     "t": 846,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to align with the boss fight area; let me know if you need support."
+    },
+    {
+     "t": 846,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I see the mobs, aiming to join the fight."
+    },
+    {
+     "t": 846,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is visible to my right; I'm turning to aim."
+    },
+    {
+     "t": 847,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Still turning right to align with the critique."
+    },
+    {
+     "t": 847,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible to my right; I'm turning to aim."
+    },
+    {
+     "t": 847,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight with you both."
+    },
+    {
+     "t": 848,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to align with the group in Ch5."
+    },
+    {
+     "t": 848,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is on the right, turning to aim for the hit."
+    },
+    {
+     "t": 848,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss right, turning to join fight."
+    },
+    {
+     "t": 849,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right to align for boss fight"
+    },
+    {
+     "t": 849,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible right, turning to center for damage."
+    },
+    {
+     "t": 849,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss right, I'll turn to join fight."
+    },
+    {
+     "t": 850,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Agent2, I am turning right to align with the boss fight direction."
+    },
+    {
+     "t": 850,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible right of center, turning to align for attack."
+    },
+    {
+     "t": 850,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the boss fight, let me know if you see the boss centered."
+    },
+    {
+     "t": 851,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Still turning right to hit 180 deg for survey."
+    },
+    {
+     "t": 851,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm turning right to center the boss, ready to contribute damage."
+    },
+    {
+     "t": 851,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is right, turning to align for attack."
+    },
+    {
+     "t": 852,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Agent2, I am turning right to align with the boss fight direction."
+    },
+    {
+     "t": 852,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Turning right to align with boss, let me know when you're ready to hit."
+    },
+    {
+     "t": 852,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is centered, starting damage now."
+    },
+    {
+     "t": 853,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to align towards the boss, let me know when you see the opening."
+    },
+    {
+     "t": 853,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving forward to join the boss fight. Let me know if I need to adjust aim."
+    },
+    {
+     "t": 853,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now to join the attack, let me know when the boss is centered for hits."
+    },
+    {
+     "t": 854,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right as instructed to face west for the survey."
+    },
+    {
+     "t": 854,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss centered, starting damage now."
+    },
+    {
+     "t": 854,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to join the boss fight, let me know when you're ready to focus fire."
+    },
+    {
+     "t": 855,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Continuing to turn right as requested to face west for surveying."
+    },
+    {
+     "t": 855,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward to join the fight. Let me know when the boss is lined up for fire."
+    },
+    {
+     "t": 855,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss centered? I'm moving in to join the fight."
+    },
+    {
+     "t": 856,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward now to locate the boss. Let me know if you see him."
+    },
+    {
+     "t": 856,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Ready to focus fire when boss is centered"
+    },
+    {
+     "t": 856,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight. Let me know when the boss is lined up for fire."
+    },
+    {
+     "t": 857,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right as instructed to align with the boss fight in Ch5."
+    },
+    {
+     "t": 857,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss visible, turning to line up for hits"
+    },
+    {
+     "t": 857,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to join the fight. Let me know when you spot the boss."
+    },
+    {
+     "t": 858,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am moving forward now to join the fight; let me know when you see the boss."
+    },
+    {
+     "t": 858,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss visible? I'm moving forward to join the attack."
+    },
+    {
+     "t": 858,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss visible, moving to join fight"
+    },
+    {
+     "t": 859,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to find the boss location, let me know if you see him first."
+    },
+    {
+     "t": 859,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss not visible yet, turning to scan area."
+    },
+    {
+     "t": 859,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss visible? Moving forward to join attack."
+    },
+    {
+     "t": 860,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is visible to my right, turning left to center him now."
+    },
+    {
+     "t": 860,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss visible, moving to join attack."
+    },
+    {
+     "t": 860,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to scan for the boss; let me know if you spot him first."
+    },
+    {
+     "t": 861,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to scan for the boss too. Let me know if you see him first."
+    },
+    {
+     "t": 861,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible, I am turning to line up attack."
+    },
+    {
+     "t": 861,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Boss on right, turning to join attack."
+    },
+    {
+     "t": 862,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is on the right, turning to join the attack."
+    },
+    {
+     "t": 862,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible on left, turning to center it for attack."
+    },
+    {
+     "t": 862,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning right to find the boss, please confirm your line of sight."
+    },
+    {
+     "t": 863,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward now to meet the boss; let me know if you see him centered."
+    },
+    {
+     "t": 863,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss centered? Ready to hit?"
+    },
+    {
+     "t": 863,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Boss right, turning to join attack"
+    },
+    {
+     "t": 864,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right to align with Agent 2's direction in Ch5."
+    },
+    {
+     "t": 864,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss visible? I'm moving forward now."
+    },
+    {
+     "t": 864,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to find the boss location."
+    },
+    {
+     "t": 865,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning to align with the boss location."
+    },
+    {
+     "t": 865,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward now, checking for the boss visibility."
+    },
+    {
+     "t": 865,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss near? Moving closer now."
+    },
+    {
+     "t": 866,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Continuing turn right as instructed by critique."
+    },
+    {
+     "t": 866,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is ahead, moving to line up for damage."
+    },
+    {
+     "t": 866,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to join the fight."
+    },
+    {
+     "t": 867,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to join the fight area, watch for the boss."
+    },
+    {
+     "t": 867,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss visible? I'm scanning the area now."
+    },
+    {
+     "t": 867,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Turning right to find the boss location; let me know when you are lined up."
+    },
+    {
+     "t": 868,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now as instructed."
+    },
+    {
+     "t": 868,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward now to close distance to the boss."
+    },
+    {
+     "t": 868,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now, look for boss center."
+    },
+    {
+     "t": 869,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to align with the boss location, Agent 2. Ready to engage."
+    },
+    {
+     "t": 869,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving forward to find the boss location"
+    },
+    {
+     "t": 869,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still moving toward the fight, looking for team."
+    },
+    {
+     "t": 870,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward to join the fight, stay close."
+    },
+    {
+     "t": 870,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to close distance, ready to attack when you line up."
+    },
+    {
+     "t": 870,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the fight"
+    },
+    {
+     "t": 871,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to join the boss fight."
+    },
+    {
+     "t": 871,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am turning to line up the boss; let me know when you see the center."
+    },
+    {
+     "t": 871,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the boss fight. Ready to attack."
+    },
+    {
+     "t": 872,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to join the fight with agent_2"
+    },
+    {
+     "t": 872,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible, I'm attacking now."
+    },
+    {
+     "t": 872,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving closer to the boss now. Ready to focus fire."
+    },
+    {
+     "t": 873,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I see Agent 2 moving forward. I'm turning to face the boss now."
+    },
+    {
+     "t": 873,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is visible ahead, moving to engage."
+    },
+    {
+     "t": 873,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning right to find the boss; let me know if you see a clear spot to attack."
+    },
+    {
+     "t": 874,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am moving forward to join the fight."
+    },
+    {
+     "t": 874,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to engage the boss. Let me know if you see a clear spot to attack."
+    },
+    {
+     "t": 874,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to center the boss, ready to join the attack."
+    },
+    {
+     "t": 875,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am moving toward the boss too. I see Agent 2 turning."
+    },
+    {
+     "t": 875,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward to find the boss spot. Let me know if you see a clear attack angle."
+    },
+    {
+     "t": 875,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving up to join the fight. Ready to focus fire."
+    },
+    {
+     "t": 876,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is ahead, turning to center it now. Ready to join."
+    },
+    {
+     "t": 876,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to join the fight. I expect to see the boss soon."
+    },
+    {
+     "t": 876,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to join the attack. Keep me updated on the boss's position."
+    },
+    {
+     "t": 877,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is visible, moving forward to engage."
+    },
+    {
+     "t": 877,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am engaging the boss now. Ready to focus fire."
+    },
+    {
+     "t": 877,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Boss is ahead; moving forward to join the attack."
+    },
+    {
+     "t": 878,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right now to find the boss position."
+    },
+    {
+     "t": 878,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward now to close distance on the boss; let me know when you see a clear attack spot."
+    },
+    {
+     "t": 878,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Boss is visible right, turning to center for attack."
+    },
+    {
+     "t": 879,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is right, turning to center for attack."
+    },
+    {
+     "t": 879,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving to join the fight; let me know if you need me to target anything specific."
+    },
+    {
+     "t": 879,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving closer now to find the boss spot for you."
+    },
+    {
+     "t": 880,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward to join the fight; boss is ahead."
+    },
+    {
+     "t": 880,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am turning to locate the boss now to join the focus fire."
+    },
+    {
+     "t": 880,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to get into range of the boss."
+    },
+    {
+     "t": 881,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to follow Agent 2's direction towards the boss."
+    },
+    {
+     "t": 881,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving forward to join the boss fight, ready to hit."
+    },
+    {
+     "t": 881,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight!"
+    },
+    {
+     "t": 882,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Agent 2, I am turning to locate the boss; I will report when I am facing it."
+    },
+    {
+     "t": 882,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Ready to focus fire on the boss when you are in range."
+    },
+    {
+     "t": 882,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to join the fight, ready to support the attack."
+    },
+    {
+     "t": 883,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right to face the boss."
+    },
+    {
+     "t": 883,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward to join the boss fight, ready to attack."
+    },
+    {
+     "t": 883,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Closing in now, watch for boss."
+    },
+    {
+     "t": 884,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Ready to attack boss."
+    },
+    {
+     "t": 884,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am attacking the boss now, watch for its moves."
+    },
+    {
+     "t": 884,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning to scan for the boss, watch for signs of movement."
+    },
+    {
+     "t": 885,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is slightly left, turning right to center for attack"
+    },
+    {
+     "t": 885,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving forward to engage boss, watch for center target."
+    },
+    {
+     "t": 885,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving to join the fight near you. Let me know if you need me to focus on a specific angle."
+    },
+    {
+     "t": 886,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Boss is centered, I am starting attack now."
+    },
+    {
+     "t": 886,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is here, I'm turning to find him/her."
+    },
+    {
+     "t": 886,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is centered, ready to hit!"
+    },
+    {
+     "t": 887,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward to join boss fight"
+    },
+    {
+     "t": 887,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss centered, ready to hit!"
+    },
+    {
+     "t": 887,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Boss is visible, moving to join attack"
+    },
+    {
+     "t": 888,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right to face the boss; Agent 2, ready for me to join the attack."
+    },
+    {
+     "t": 888,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is centered, I'm moving in to join!"
+    },
+    {
+     "t": 888,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to join the fight."
+    },
+    {
+     "t": 889,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Still turning right to align with the boss path."
+    },
+    {
+     "t": 889,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is centered, I'm engaging now!"
+    },
+    {
+     "t": 889,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to get into attack range for the boss."
+    },
+    {
+     "t": 890,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Continuing rotation to align for boss attack"
+    },
+    {
+     "t": 890,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm moving forward now to find the boss."
+    },
+    {
+     "t": 890,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Boss is visible, moving in now"
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/tour_ch5_all.mp4",
+   "poster_all": "assets/videos/tour_ch5_all.jpg",
+   "bytes": 1687234,
+   "bytes_all": 1208401
+  }
+ ],
+ "scenes": [
+  {
+   "name": "qwen9b_base_anvil",
+   "run": "qwen9b_base",
+   "arm": "Qwen3.5-9B (no social layer)",
+   "seed": 789,
+   "episode": 2,
+   "agents": [
+    1,
+    2
+   ],
+   "steps": [
+    198,
+    222
+   ],
+   "seconds": 4.17,
+   "fps": 6,
+   "video": "assets/videos/qwen9b_base_anvil.mp4",
+   "poster": "assets/videos/qwen9b_base_anvil.jpg",
+   "source": "runs\\rq1_social_plasticity\\medium_runs\\exp02_llm_9b\\seed_789\\gifs\\exp02_llm_9b\\seed_789_agent_1_ep2.mp4",
+   "title": "Anvil broken by agreement",
+   "caption": "a2 states the rule — two agents, same anvil, same step — a1 names the right-hand anvil, and both dig it together. The anvil breaks.",
+   "outcome": "success",
+   "messages": [
+    {
+     "t": 195,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am starting to dig the front anvil. Agent_1, please dig the same anvil to break it cooperatively."
+    },
+    {
+     "t": 195,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am digging a stone block here to help with the Ch1 milestone. Keep an eye on the area for drops."
+    },
+    {
+     "t": 195,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning to find the open door to Chamber 2, keep working on the anvil."
+    },
+    {
+     "t": 196,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am Digging the anvil now, please continue Digging the same anvil with me to break it."
+    },
+    {
+     "t": 196,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm digging stone here. I'll collect the drop and need to find the tree trunk you mentioned."
+    },
+    {
+     "t": 196,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning to find the stone block for the Ch1 milestone. I'll let you know once I'm ready to dig."
+    },
+    {
+     "t": 197,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing the front anvil and Digging. Agent_1, please start Digging this anvil with me so we can break it together."
+    },
+    {
+     "t": 197,
+     "sender": 1,
+     "receiver": 2,
+     "text": "agent_2, I am digging stone to reach the Ch1 milestone. Keep digging the tree trunk when you are ready."
+    },
+    {
+     "t": 197,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to find the stone block for the milestone. I will collect the drop once broken."
+    },
+    {
+     "t": 198,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm Digging the anvil you are on (Row B). Please Dig it too so we can break it together."
+    },
+    {
+     "t": 198,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm digging the stone block here for the milestone, will collect the drop."
+    },
+    {
+     "t": 198,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see a wall blocking my view, need to find the open door to exit to Ch2. I'll look for it now."
+    },
+    {
+     "t": 199,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm digging the front anvil now, need another agent to dig it too to break it."
+    },
+    {
+     "t": 199,
+     "sender": 1,
+     "receiver": 2,
+     "text": "agent_2, I'm turning to find the tree trunk. I'll Dig it once I center it."
+    },
+    {
+     "t": 199,
+     "sender": 2,
+     "receiver": 1,
+     "text": "agent_1, I see you are in ch1 digging a stone block. I am turning to find a stone block to dig for the milestone."
+    },
+    {
+     "t": 200,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am breaking the wall blocking my path. I will move forward once it is clear."
+    },
+    {
+     "t": 200,
+     "sender": 1,
+     "receiver": 0,
+     "text": "agent_0, I am turning right to face the anvils now."
+    },
+    {
+     "t": 200,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to the anvil to help break it with you."
+    },
+    {
+     "t": 201,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving backward to clear the wall ahead. I will turn and approach the anvils now."
+    },
+    {
+     "t": 201,
+     "sender": 1,
+     "receiver": 0,
+     "text": "agent_0, I am turning to find the anvil to help you break it."
+    },
+    {
+     "t": 201,
+     "sender": 2,
+     "receiver": 0,
+     "text": "agent_0, I'm centering on the anvil now, ready to Dig together."
+    },
+    {
+     "t": 202,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to find the anvils; please locate them too and prepare to dig cooperatively."
+    },
+    {
+     "t": 202,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving to assist with the front anvil. Please hold your position so we can break it together."
+    },
+    {
+     "t": 202,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to face the center room to locate the anvils for cooperative breaking."
+    },
+    {
+     "t": 203,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am centering on the front anvil to start the cooperative break with you."
+    },
+    {
+     "t": 203,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm centering the front anvil to start our cooperative dig."
+    },
+    {
+     "t": 203,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am breaking a stone block here. I will move forward once it is clear."
+    },
+    {
+     "t": 204,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm facing a wall, need to turn left to find the door."
+    },
+    {
+     "t": 204,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am in Ch5 facing a wall; turning to find the boss."
+    },
+    {
+     "t": 204,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm finding the grey stone block in Ch2 and digging it now."
+    },
+    {
+     "t": 205,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am starting to dig the front anvil (sword anvil). Please dig it too so we can break it together."
+    },
+    {
+     "t": 205,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see an anvil centered here, but the task is to find a tree trunk. I need to turn around and scan the room for the brown tree. Who is in this chamber with me?"
+    },
+    {
+     "t": 205,
+     "sender": 2,
+     "receiver": 0,
+     "text": "agent_0, I am Digging the stone block ahead as per the Critique."
+    },
+    {
+     "t": 206,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the anvil centered. Let's dig it together to break it."
+    },
+    {
+     "t": 206,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the anvil on the left now, turning to center it for the cooperative dig."
+    },
+    {
+     "t": 206,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see the anvil on the right. I will turn to center it and start punching it to break it."
+    },
+    {
+     "t": 207,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the red door ahead, slightly right. I will center it and MoveForward to check if it's the exit or if I need to dig something else first."
+    },
+    {
+     "t": 207,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am centering on the front anvil to dig it with you. Let's start punching it together."
+    },
+    {
+     "t": 207,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm here near the anvils. Remember, we need TWO agents Digging the same anvil simultaneously to break it. Let's coordinate."
+    },
+    {
+     "t": 208,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning left to avoid the wall and moving forward. I will check for the red door ahead."
+    },
+    {
+     "t": 208,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm centering the anvil now. Ready to start the cooperative dig with you."
+    },
+    {
+     "t": 208,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I see the anvils. I'll position myself to break the right one with you."
+    },
+    {
+     "t": 209,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning to face the open area to locate the anvils. I will then move forward to join agent_1 at the front anvil."
+    },
+    {
+     "t": 209,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am digging the right anvil. Please ensure you are also Digging it simultaneously to break it."
+    },
+    {
+     "t": 209,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am digging the anvil now, please dig the same one with me to break it cooperatively."
+    },
+    {
+     "t": 210,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to find the open area with the anvils. I will move forward once I see the path."
+    },
+    {
+     "t": 210,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the red door centered. Turning to face the open area to locate the anvils for cooperative breaking."
+    },
+    {
+     "t": 210,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning right to face the anvil. Ready to dig with you."
+    },
+    {
+     "t": 211,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning to find the anvils. Let's coordinate to break them together."
+    },
+    {
+     "t": 211,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I don't see a tree here, turning left to scan the area."
+    },
+    {
+     "t": 211,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning left to find the stone block. Please focus on the anvil."
+    },
+    {
+     "t": 212,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am in a dark corridor. I need to find the open area with the anvils. I will turn right to locate the exit or the room center."
+    },
+    {
+     "t": 212,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the red door and will attempt to break it. Agent_0, please assist if possible."
+    },
+    {
+     "t": 212,
+     "sender": 2,
+     "receiver": 1,
+     "text": "agent_1, I am turning to face the anvil to start the cooperative dig with you."
+    },
+    {
+     "t": 213,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing a wall, turning left to find the anvils. I will move forward once I see the open area."
+    },
+    {
+     "t": 213,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am turning right to find the anvils so we can break them and open the door."
+    },
+    {
+     "t": 213,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am digging the right anvil now to help break it."
+    },
+    {
+     "t": 214,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing a bedrock wall and cannot move. Turning to find the open area with the anvils. I need to locate them to break cooperatively with you."
+    },
+    {
+     "t": 214,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning right to find the tree trunk in Ch1. Once found, I will dig it."
+    },
+    {
+     "t": 214,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm on the anvil now, dig with me!"
+    },
+    {
+     "t": 215,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see a door ahead, but need to turn to find a clear path. I will turn right to check the door or find the open area."
+    },
+    {
+     "t": 215,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm digging the anvil now, keep digging with me!"
+    },
+    {
+     "t": 215,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am facing the anvil and Digging. Keep Digging with me to break it."
+    },
+    {
+     "t": 216,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning left to face the open area where you and agent_2 are. I will move forward to join you at the anvils."
+    },
+    {
+     "t": 216,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am Digging the anvil. Keep Digging to break it."
+    },
+    {
+     "t": 216,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning to face the anvil, ready to dig with you."
+    },
+    {
+     "t": 217,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to clear the stone block. Please assist with breaking anvils when you reach them."
+    },
+    {
+     "t": 217,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm digging the anvil now, keep it up."
+    },
+    {
+     "t": 217,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am Digging the anvil with you, keep digging!"
+    },
+    {
+     "t": 218,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning left to find a clear path forward. The wall ahead is blocking me, so I need to change direction."
+    },
+    {
+     "t": 218,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the anvil to my right, turning to face it for cooperative breaking."
+    },
+    {
+     "t": 218,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Digging the anvil now to break it with you!"
+    },
+    {
+     "t": 219,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am digging the stone block ahead to move forward towards the anvils."
+    },
+    {
+     "t": 219,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Digging the anvil with you, let's keep it up to break it faster!"
+    },
+    {
+     "t": 219,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am Digging the stone block. Keep Digging the anvil."
+    },
+    {
+     "t": 220,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing a wall, turning right to face the open area and locate the anvils for cooperative breaking."
+    },
+    {
+     "t": 220,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am turning right to find the tree trunk. Keep digging the anvil."
+    },
+    {
+     "t": 220,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm facing a wall here, trying to find the anvil you mentioned."
+    },
+    {
+     "t": 221,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing a wall and turning left to find the anvils. Please check your position and let me know if you see the anvil in front of you."
+    },
+    {
+     "t": 221,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I see the red door centered. I'm moving forward to check its status. If it's locked, we need to break the anvils first."
+    },
+    {
+     "t": 221,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I see stone in the center, not the anvil. Turning right to find it."
+    },
+    {
+     "t": 222,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to avoid the wall and find the anvils in the center."
+    },
+    {
+     "t": 222,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the door is centered. I am turning around to face the anvils as per the room facts. Please check your orientation too."
+    },
+    {
+     "t": 222,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I see a wall centered, need to find the grey stone block. You keep digging the anvil."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/qwen9b_base_anvil_all.mp4",
+   "poster_all": "assets/videos/qwen9b_base_anvil_all.jpg",
+   "bytes": 813210,
+   "bytes_all": 491730
+  },
+  {
+   "name": "qwen9b_base_combat",
+   "run": "qwen9b_base",
+   "arm": "Qwen3.5-9B (no social layer)",
+   "seed": 789,
+   "episode": 1,
+   "agents": [
+    0,
+    1
+   ],
+   "steps": [
+    618,
+    640
+   ],
+   "seconds": 3.83,
+   "fps": 6,
+   "video": "assets/videos/qwen9b_base_combat.mp4",
+   "poster": "assets/videos/qwen9b_base_combat.jpg",
+   "source": "runs\\rq1_social_plasticity\\medium_runs\\exp02_llm_9b\\seed_789\\gifs\\exp02_llm_9b\\seed_789_agent_0_ep1.mp4",
+   "title": "Combat split by agreement",
+   "caption": "“Keep attacking the other one.” The two zombies are divided in one exchange, and each agent stays on the one it claimed.",
+   "outcome": "success",
+   "messages": [
+    {
+     "t": 615,
+     "sender": 0,
+     "receiver": 1,
+     "text": "agent_1, I am engaging the zombie in Ch4. Keep the door open."
+    },
+    {
+     "t": 615,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm hitting the zombie at the door, keep the door open."
+    },
+    {
+     "t": 615,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Ch4 has no trees. I see you (agent_1) here. We need to find the zombies to open the door."
+    },
+    {
+     "t": 616,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm attacking the zombie, keep moving forward to locate the others."
+    },
+    {
+     "t": 616,
+     "sender": 1,
+     "receiver": 2,
+     "text": "agent_2, I see a wall ahead, checking the left side for the opening."
+    },
+    {
+     "t": 616,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning left to find the tree trunk. Keep attacking the zombie in Ch1."
+    },
+    {
+     "t": 617,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am engaging the zombie at the door."
+    },
+    {
+     "t": 617,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see you, agent_0. Let's move forward into the communal room to find the anvils."
+    },
+    {
+     "t": 617,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning left looking for the tree trunk, keep searching."
+    },
+    {
+     "t": 618,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Zombie is right in front of me, I'm attacking it with the sword."
+    },
+    {
+     "t": 618,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I see the zombie is right here. I'm turning to center it for an attack."
+    },
+    {
+     "t": 618,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning left to find the tree trunk. I will dig it once I locate it."
+    },
+    {
+     "t": 619,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking the zombie here, keep your focus on the other zombies."
+    },
+    {
+     "t": 619,
+     "sender": 1,
+     "receiver": 0,
+     "text": "agent_0, I am scanning the area in Ch1, looking for an open door or target."
+    },
+    {
+     "t": 619,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I see a red wall ahead, turning left to find the tree."
+    },
+    {
+     "t": 620,
+     "sender": 0,
+     "receiver": 1,
+     "text": "agent_1, keep attacking your zombie so we can open the door to Ch5."
+    },
+    {
+     "t": 620,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see you at the door, heading forward to check the path."
+    },
+    {
+     "t": 620,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am still looking for the opening in this room. I see a solid wall ahead."
+    },
+    {
+     "t": 621,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking the zombie in front of me. We need to kill all 3 to open the door."
+    },
+    {
+     "t": 621,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to find the exit. Keep your door open."
+    },
+    {
+     "t": 621,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I see the red locked door ahead, turning left to find the tree trunk as per the task."
+    },
+    {
+     "t": 622,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am engaging the zombie in front of me. Keep looking for the other zombies to help us clear the room faster."
+    },
+    {
+     "t": 622,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a wall ahead, turning left to find a zombie. I'll attack it once I spot it."
+    },
+    {
+     "t": 622,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning right to find the opening. Keep your door open."
+    },
+    {
+     "t": 623,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking the zombie in front of me. Keep working on yours."
+    },
+    {
+     "t": 623,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Agent_2, I am engaging the zombie at the door. Please focus on the other zombies to help us clear the room faster."
+    },
+    {
+     "t": 623,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to find the tree trunk. Keep your door open."
+    },
+    {
+     "t": 624,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am attacking a zombie with agent_2 nearby. Keep looking for other zombies."
+    },
+    {
+     "t": 624,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am engaging the zombie on the left. Focus on yours."
+    },
+    {
+     "t": 624,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am looking for a tree trunk to dig. Do you see one?"
+    },
+    {
+     "t": 625,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm hitting the zombie now, help me out!"
+    },
+    {
+     "t": 625,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward in the corridor. Keep your door open."
+    },
+    {
+     "t": 625,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to find the tree trunk in Chamber 1. Keep the door open if you are there."
+    },
+    {
+     "t": 626,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking a zombie, let's focus on killing it quickly."
+    },
+    {
+     "t": 626,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning right to move past the wall blocking my path."
+    },
+    {
+     "t": 626,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning left looking for the tree trunk in Ch1. Keep looking for the exit or other objectives."
+    },
+    {
+     "t": 627,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking a zombie in front of me. Agent_1 is also here, we should focus on killing the remaining zombies quickly to open the door."
+    },
+    {
+     "t": 627,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving in to help clear the zombies."
+    },
+    {
+     "t": 627,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning towards the tree trunk now."
+    },
+    {
+     "t": 628,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to find a zombie to attack."
+    },
+    {
+     "t": 628,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am looking for a zombie to attack."
+    },
+    {
+     "t": 628,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to locate the tree trunk. I will dig it once found."
+    },
+    {
+     "t": 629,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see you agent_1, we need to find the zombies to open the door to Ch5."
+    },
+    {
+     "t": 629,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to join the fight. I will attack a zombie once I reach them."
+    },
+    {
+     "t": 629,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning right to find the doorway in Ch1. Please focus on zombies in Ch4."
+    },
+    {
+     "t": 630,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning left to face the zombies. I will start attacking them once they are centered."
+    },
+    {
+     "t": 630,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am attacking the zombie you see. Keep attacking the other one."
+    },
+    {
+     "t": 630,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am scanning the room for the tree trunk. Please focus on the zombies at the door."
+    },
+    {
+     "t": 631,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am turning right to find an open space. I will attack a zombie once I locate one."
+    },
+    {
+     "t": 631,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning right to scan for the zombies. Keep attacking yours."
+    },
+    {
+     "t": 631,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am facing the red door. Turning left now to locate the tree trunk you mentioned."
+    },
+    {
+     "t": 632,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking the right zombie. Keep on yours."
+    },
+    {
+     "t": 632,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am clearing a stone block to move forward. Agent_0, please continue focusing on the zombies."
+    },
+    {
+     "t": 632,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to locate the tree trunk."
+    },
+    {
+     "t": 633,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking a zombie. agent_1, please attack the other zombie to help clear the room faster."
+    },
+    {
+     "t": 633,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the door is locked; I'm turning right to find the zombies you mentioned."
+    },
+    {
+     "t": 633,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning right to locate the tree trunk."
+    },
+    {
+     "t": 634,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Zombie is dead or dying, keep attacking it."
+    },
+    {
+     "t": 634,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am hitting the left zombie. Keep attacking yours."
+    },
+    {
+     "t": 634,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to search for the brown tree trunk. I will keep you updated once I find it."
+    },
+    {
+     "t": 635,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am engaging the zombie at the center. Keep attacking yours."
+    },
+    {
+     "t": 635,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am attacking the zombie, keep the door open for us to clear the room."
+    },
+    {
+     "t": 635,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning to find the tree trunk, will report back once located."
+    },
+    {
+     "t": 636,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm attacking the zombie in front of me. Keep hitting yours."
+    },
+    {
+     "t": 636,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am centering my zombie to attack. Keep yours!"
+    },
+    {
+     "t": 636,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to find the tree trunk. Keep looking for zombies if you see any."
+    },
+    {
+     "t": 637,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking the zombie, keep the door open for us to clear the room."
+    },
+    {
+     "t": 637,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a wall in front, turning to the door. I'm heading to the communal room to find the zombies."
+    },
+    {
+     "t": 637,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning to find the tree trunk; please keep engaging the zombie at the door."
+    },
+    {
+     "t": 638,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm centering on a zombie, ready to attack. Keep yours!"
+    },
+    {
+     "t": 638,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a wall in front of me, need to turn left to find the zombie. I'll attack it once located."
+    },
+    {
+     "t": 638,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am looking for the tree trunk, agent_1. I see you at the door, please hold the position."
+    },
+    {
+     "t": 639,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning left to face the open room. I'll look for the zombies and start attacking them. Let me know if you see any zombies!"
+    },
+    {
+     "t": 639,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning to find the opening to the communal room. I will hold the door once I find it."
+    },
+    {
+     "t": 639,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am activating the Cell Switch in Ch3. Team, check your positions and let's move forward to the next door."
+    },
+    {
+     "t": 640,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am attacking a zombie now."
+    },
+    {
+     "t": 640,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm scanning left for the exit gap. Hold your ground."
+    },
+    {
+     "t": 640,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see a red switch ahead; turning left to find a tree trunk for M4. Need help with mobs later."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/qwen9b_base_combat_all.mp4",
+   "poster_all": "assets/videos/qwen9b_base_combat_all.jpg",
+   "bytes": 580084,
+   "bytes_all": 326896
+  },
+  {
+   "name": "gemma_3f_switch",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    0,
+    1
+   ],
+   "steps": [
+    433,
+    452
+   ],
+   "seconds": 3.33,
+   "fps": 6,
+   "video": "assets/videos/gemma_3f_switch.mp4",
+   "poster": "assets/videos/gemma_3f_switch.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_0_ep1.mp4",
+   "title": "Switch pressed on request",
+   "caption": "a0 reports it is stuck and asks a1 to watch the door; a0's own press opens a1's door. The release is one-way — a0 stays locked in.",
+   "outcome": "success",
+   "messages": [
+    {
+     "t": 430,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still locked here"
+    },
+    {
+     "t": 430,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Scanning south wall now, let me know if you see the blue switch"
+    },
+    {
+     "t": 430,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right now to face south wall; check if you see the switch from your angle."
+    },
+    {
+     "t": 431,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to get a better view of the area where you are scanning the south wall."
+    },
+    {
+     "t": 431,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'll move forward to scan the cell walls for the switch location."
+    },
+    {
+     "t": 431,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward now; check if you see the switch from your angle."
+    },
+    {
+     "t": 432,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning to face the south wall where the switch is; check if you see it from your angle."
+    },
+    {
+     "t": 432,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Scanning south wall for switch"
+    },
+    {
+     "t": 432,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to check the cell layout for the switch location."
+    },
+    {
+     "t": 433,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning to sweep the cell walls, looking for the blue switch on the south wall."
+    },
+    {
+     "t": 433,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to try and locate the switch or the main area."
+    },
+    {
+     "t": 433,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning south wall for switch cues."
+    },
+    {
+     "t": 434,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to check the corridor ahead."
+    },
+    {
+     "t": 434,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Agent 0, I'm turning left to scan the walls, let me know if you see the switch."
+    },
+    {
+     "t": 434,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to try and get a better look at the south wall for the switch cue."
+    },
+    {
+     "t": 435,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to scan the corridor walls, let me know if you see any switch cues on your end."
+    },
+    {
+     "t": 435,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to check the wall area, looking for the switch."
+    },
+    {
+     "t": 435,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to check the south wall area for the switch cues you mentioned."
+    },
+    {
+     "t": 436,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now, watching for the switch or a doorway."
+    },
+    {
+     "t": 436,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Agent 0, I am turning left to scan the cell walls for the switch."
+    },
+    {
+     "t": 436,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning to face the south wall now, looking for the blue switch cue you mentioned."
+    },
+    {
+     "t": 437,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am waiting for the switch press. Let me know when you see it."
+    },
+    {
+     "t": 437,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still in cell, looking for the south wall switch."
+    },
+    {
+     "t": 437,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to get a better look at the south wall for the switch."
+    },
+    {
+     "t": 438,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to sweep the corridor; let me know if you see any change in the wall structure on your side."
+    },
+    {
+     "t": 438,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm scanning the walls here, looking for the blue switch or door state change."
+    },
+    {
+     "t": 438,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward, check if you spot the switch on the south wall from here."
+    },
+    {
+     "t": 439,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still stuck in cell. Check door state if you see any change."
+    },
+    {
+     "t": 439,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to find the anvils; let me know if you see the switch status change."
+    },
+    {
+     "t": 439,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm still scanning the walls for any switch cues on my end."
+    },
+    {
+     "t": 440,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to check the cell walls for the switch location."
+    },
+    {
+     "t": 440,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning to find the south wall switch, let me know if you see any door changes."
+    },
+    {
+     "t": 440,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls for any switch cues on my end."
+    },
+    {
+     "t": 441,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Blue cube is right; I'm turning to face it now."
+    },
+    {
+     "t": 441,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to see the south wall for the switch."
+    },
+    {
+     "t": 441,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning my side for any wall changes near the switch location."
+    },
+    {
+     "t": 442,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Blue switch is centered. I will press it now."
+    },
+    {
+     "t": 442,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to face the blue cube; let me know if you see any door change."
+    },
+    {
+     "t": 442,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls, no blue switch visible from my side yet."
+    },
+    {
+     "t": 443,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am digging the blue cube now; check if your door state changed."
+    },
+    {
+     "t": 443,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now"
+    },
+    {
+     "t": 443,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still scanning walls for switch cues here."
+    },
+    {
+     "t": 444,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, need door open for me"
+    },
+    {
+     "t": 444,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state update?"
+    },
+    {
+     "t": 444,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Maintaining position, ready to scan for switch cues on my side."
+    },
+    {
+     "t": 445,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch now. Need Agent 2 to press theirs to open my door."
+    },
+    {
+     "t": 445,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state check needed"
+    },
+    {
+     "t": 445,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to scan the wall structure here, let me know if you see any change on your end."
+    },
+    {
+     "t": 446,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Digging switch now. Check door state."
+    },
+    {
+     "t": 446,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door should open soon"
+    },
+    {
+     "t": 446,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward too. Keep scanning walls for switch cues."
+    },
+    {
+     "t": 447,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Switch is centered, I am pressing it now."
+    },
+    {
+     "t": 447,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving out now."
+    },
+    {
+     "t": 447,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I see the wall ahead is solid; I'm turning to find my switch on the south wall."
+    },
+    {
+     "t": 448,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, hoping it frees my cell."
+    },
+    {
+     "t": 448,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state still locked?"
+    },
+    {
+     "t": 448,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'll turn to find my switch cube."
+    },
+    {
+     "t": 449,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Digging switch now, hope door opens soon."
+    },
+    {
+     "t": 449,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 449,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward now, look for my switch to press."
+    },
+    {
+     "t": 450,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am pressing the switch cube now, hoping to open my cell door."
+    },
+    {
+     "t": 450,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving out now."
+    },
+    {
+     "t": 450,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to find my switch. Let me know when you press yours."
+    },
+    {
+     "t": 451,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing the switch now. Check your door state."
+    },
+    {
+     "t": 451,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 451,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Ready to press my switch when you are."
+    },
+    {
+     "t": 452,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Switch is centered, pressing now."
+    },
+    {
+     "t": 452,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 452,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Switch is centered, I'm pressing it now."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/gemma_3f_switch_all.mp4",
+   "poster_all": "assets/videos/gemma_3f_switch_all.jpg",
+   "bytes": 224682,
+   "bytes_all": 181239
+  },
+  {
+   "name": "gemma_3f_kill",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 1,
+   "agents": [
+    1,
+    0
+   ],
+   "steps": [
+    706,
+    730
+   ],
+   "seconds": 4.17,
+   "fps": 6,
+   "video": "assets/videos/gemma_3f_kill.mp4",
+   "poster": "assets/videos/gemma_3f_kill.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_1_ep1.mp4",
+   "title": "Announced, not joined",
+   "caption": "a1 calls the fight and keeps calling it. a0 reorients toward the combat zone for twenty steps and never arrives; a1 kills alone.",
+   "outcome": "partial",
+   "messages": [
+    {
+     "t": 703,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now, watch for any change in the corridor structure."
+    },
+    {
+     "t": 703,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the zombie centered; starting combat now."
+    },
+    {
+     "t": 703,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to support focus fire; where is the zombie?"
+    },
+    {
+     "t": 704,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to meet the 90 degree turn requirement."
+    },
+    {
+     "t": 704,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is centered, starting focus fire."
+    },
+    {
+     "t": 704,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward fight, I'll join focus fire."
+    },
+    {
+     "t": 705,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to align with the combat area, let me know if you see the door."
+    },
+    {
+     "t": 705,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss is centered, joining focus fire now."
+    },
+    {
+     "t": 705,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the fight, join in!"
+    },
+    {
+     "t": 706,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Agent 2, I am turning right to orient for combat support."
+    },
+    {
+     "t": 706,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm joining the focus fire on the boss now."
+    },
+    {
+     "t": 706,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving closer to join the fight."
+    },
+    {
+     "t": 707,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right as requested to orient towards the combat zone in Ch4."
+    },
+    {
+     "t": 707,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Engaging boss now, join fire!"
+    },
+    {
+     "t": 707,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward to find the zombies for focus fire."
+    },
+    {
+     "t": 708,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to meet orientation task."
+    },
+    {
+     "t": 708,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Boss centered, I'm attacking now."
+    },
+    {
+     "t": 708,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the door; where are the zombies?"
+    },
+    {
+     "t": 709,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Ready to join combat, focus on zombies."
+    },
+    {
+     "t": 709,
+     "sender": 1,
+     "receiver": 2,
+     "text": "See mob, heading towards it to assist combat."
+    },
+    {
+     "t": 709,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Still looking for the fight"
+    },
+    {
+     "t": 710,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to align with the objective, Agent 2, let me know if you see anything new from your side."
+    },
+    {
+     "t": 710,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie here, starting combat."
+    },
+    {
+     "t": 710,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to find the fight"
+    },
+    {
+     "t": 711,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Still turning right to align with the objective."
+    },
+    {
+     "t": 711,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to find Door 1."
+    },
+    {
+     "t": 711,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to sweep the area for the zombies. Let me know if you see the fight."
+    },
+    {
+     "t": 712,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to align with the task goal. Let me know if you see the combat zone clearly from your angle."
+    },
+    {
+     "t": 712,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Still moving toward the door in Ch1"
+    },
+    {
+     "t": 712,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still moving forward to find the zombies."
+    },
+    {
+     "t": 713,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Confirming turn right, I am aiming for the combat zone."
+    },
+    {
+     "t": 713,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Moving toward Door 1 now."
+    },
+    {
+     "t": 713,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still moving forward to find the combat zone."
+    },
+    {
+     "t": 714,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to reorient towards the combat zone."
+    },
+    {
+     "t": 714,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm turning left to scan the area; looking for Door 1 or an exit."
+    },
+    {
+     "t": 714,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to find the combat zone, Agent 0"
+    },
+    {
+     "t": 715,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right to align with the combat zone."
+    },
+    {
+     "t": 715,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Agent2 is here, ready to fight. I'm engaging now."
+    },
+    {
+     "t": 715,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to find the fight."
+    },
+    {
+     "t": 716,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to meet the 90 degree goal, Agent 2, let me know when you spot the zombies."
+    },
+    {
+     "t": 716,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Zombie sighted in Ch4. Focusing fire now."
+    },
+    {
+     "t": 716,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Scanning right for fight/zombies"
+    },
+    {
+     "t": 717,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to check orientation."
+    },
+    {
+     "t": 717,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie here, focusing fire now."
+    },
+    {
+     "t": 717,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to join the fight with you both."
+    },
+    {
+     "t": 718,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Orientation should be right now; ready to engage zombies."
+    },
+    {
+     "t": 718,
+     "sender": 1,
+     "receiver": 2,
+     "text": "Agent 2, moving right to bypass you and continue toward the exit."
+    },
+    {
+     "t": 718,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving toward the fight now, Agent 0. Let me know if you see any clear targets for focus fire."
+    },
+    {
+     "t": 719,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to reorient for combat focus fire."
+    },
+    {
+     "t": 719,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is centered, I'm attacking now."
+    },
+    {
+     "t": 719,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombies are visible right; I'll join the fight."
+    },
+    {
+     "t": 720,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Facing right now, watch for the zombies."
+    },
+    {
+     "t": 720,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Boss is centered; I am attacking it now."
+    },
+    {
+     "t": 720,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the fight; I see agent0 turning right."
+    },
+    {
+     "t": 721,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right now to face the zombies for focus fire."
+    },
+    {
+     "t": 721,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am joining the fight now. Focus on the boss."
+    },
+    {
+     "t": 721,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to find the fight, Agent 0."
+    },
+    {
+     "t": 722,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right to orient toward the fight, Agent 2."
+    },
+    {
+     "t": 722,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the boss centered. I'm attacking now to help the fight."
+    },
+    {
+     "t": 722,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to try and find the combat zone, agent_0"
+    },
+    {
+     "t": 723,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Turning right now to get oriented for the zombie fight."
+    },
+    {
+     "t": 723,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the red door ahead; I'm moving toward it to get to Ch2."
+    },
+    {
+     "t": 723,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to find the fight, check if you see the zombies."
+    },
+    {
+     "t": 724,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right as directed; let me know if you spot the zombies from your angle."
+    },
+    {
+     "t": 724,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Looking for zombies now; I'll focus fire on them once I see one."
+    },
+    {
+     "t": 724,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Still no mobs visible, moving forward to join the fight."
+    },
+    {
+     "t": 725,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to get oriented before we move into the fight."
+    },
+    {
+     "t": 725,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward to search for zombies in Ch4. Let me know if you spot them."
+    },
+    {
+     "t": 725,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning right to try and locate the zombies or join the fight."
+    },
+    {
+     "t": 726,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm turning right to face the fight; let me know if you spot a clear target."
+    },
+    {
+     "t": 726,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still can't see zombies, moving forward to find the fight."
+    },
+    {
+     "t": 726,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the fight; let me know if you spot the zombies from your angle."
+    },
+    {
+     "t": 727,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to align with the wall; check if you see any open areas from your angle."
+    },
+    {
+     "t": 727,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'll move forward to help spot mobs in Ch4."
+    },
+    {
+     "t": 727,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to try and spot the zombies or the fight."
+    },
+    {
+     "t": 728,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to try and get oriented towards the fight, let me know if you see the zombies from your side."
+    },
+    {
+     "t": 728,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm turning right to try and spot the zombies for focus fire."
+    },
+    {
+     "t": 728,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward now to close distance to the fight."
+    },
+    {
+     "t": 729,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward to confirm my new orientation after the turn."
+    },
+    {
+     "t": 729,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to find the zombies or the door."
+    },
+    {
+     "t": 729,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still looking for mobs; turning right to sweep the area."
+    },
+    {
+     "t": 730,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now as instructed; let me know if you see the door from your angle."
+    },
+    {
+     "t": 730,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Agent 0, I'm turning right to scan for the zombies you mentioned. Let me know if you see them from your angle."
+    },
+    {
+     "t": 730,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the fight"
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/gemma_3f_kill_all.mp4",
+   "poster_all": "assets/videos/gemma_3f_kill_all.jpg",
+   "bytes": 500102,
+   "bytes_all": 434357
+  },
+  {
+   "name": "gemma_3f_anvil",
+   "run": "gemma_3f",
+   "arm": "Gemma-E4B + Hebbian (three-factor)",
+   "seed": 123,
+   "episode": 3,
+   "agents": [
+    1,
+    0
+   ],
+   "steps": [
+    95,
+    128
+   ],
+   "seconds": 5.67,
+   "fps": 6,
+   "video": "assets/videos/gemma_3f_anvil.mp4",
+   "poster": "assets/videos/gemma_3f_anvil.jpg",
+   "source": "runs\\rq1_social_plasticity\\new_exp_0_gemma\\new_exp_0_gemma_hebbian3f\\seed_123\\seed_123_agent_1_ep3.mp4",
+   "title": "Permanently ready, permanently approaching",
+   "caption": "Every message is a correct statement of intent: ready to punch, moving to the centre, ready to coordinate. The anvil is never struck.",
+   "outcome": "failure",
+   "messages": [
+    {
+     "t": 92,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to get oriented towards the anvils area."
+    },
+    {
+     "t": 92,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning around now to find the anvils, Agent 0."
+    },
+    {
+     "t": 92,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm turning left to check the area near the anvils."
+    },
+    {
+     "t": 93,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now to search for the anvils in Ch2."
+    },
+    {
+     "t": 93,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning back to find the anvils."
+    },
+    {
+     "t": 93,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to get into range of the anvils."
+    },
+    {
+     "t": 94,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving towards the center to help find the anvils."
+    },
+    {
+     "t": 94,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to help find anvils."
+    },
+    {
+     "t": 94,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to sweep the passage; let me know if you see the anvils from this angle."
+    },
+    {
+     "t": 95,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to survey the space for the anvils."
+    },
+    {
+     "t": 95,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Turning to face back, look for anvils."
+    },
+    {
+     "t": 95,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now to meet up with agent_1 at the anvils."
+    },
+    {
+     "t": 96,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to help survey the area for the anvils."
+    },
+    {
+     "t": 96,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to find the anvils."
+    },
+    {
+     "t": 96,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward toward the anvils. Let me know when you're ready to start punching."
+    },
+    {
+     "t": 97,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to help locate the anvils in Ch2."
+    },
+    {
+     "t": 97,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the anvil on the right. I'll turn to center it for coordination."
+    },
+    {
+     "t": 97,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am still moving forward through the passage towards the next area."
+    },
+    {
+     "t": 98,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to help coordinate the anvil breaking. Let me know if you need me to approach a specific anvil."
+    },
+    {
+     "t": 98,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see a purple block centered; I'm moving towards it now."
+    },
+    {
+     "t": 98,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am turning left to scan the area for the anvils."
+    },
+    {
+     "t": 99,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to meet up near the anvils; I'll keep searching the area."
+    },
+    {
+     "t": 99,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see both anvils. I will approach the left one now."
+    },
+    {
+     "t": 99,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center now, ready to help with anvil."
+    },
+    {
+     "t": 100,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to meet up in Ch2. Let me know when you are near the anvils."
+    },
+    {
+     "t": 100,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm centered on the left anvil; ready to punch with Agent 0."
+    },
+    {
+     "t": 100,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now to reach the anvils for the sword anvil."
+    },
+    {
+     "t": 101,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to meet you at the anvils. Ready to punch the left one when you are."
+    },
+    {
+     "t": 101,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see the anvils; I'm turning toward the left one now to start punching."
+    },
+    {
+     "t": 101,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the center now; I'll look for the anvils."
+    },
+    {
+     "t": 102,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving towards the center now; let me know when you are ready to coordinate on the anvils."
+    },
+    {
+     "t": 102,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward to get closer to the anvils; ready to start punching the left one with agent_0."
+    },
+    {
+     "t": 102,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center now to help with anvils."
+    },
+    {
+     "t": 103,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center now to meet you at the anvils."
+    },
+    {
+     "t": 103,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning left to find the left anvil for coordination."
+    },
+    {
+     "t": 103,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center, ready to assist on anvil."
+    },
+    {
+     "t": 104,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving towards the center area now to meet up with you at the anvils."
+    },
+    {
+     "t": 104,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving to the center now; let's coordinate on the left anvil."
+    },
+    {
+     "t": 104,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center, look for anvils"
+    },
+    {
+     "t": 105,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Heading center now, ready to help on the left anvil."
+    },
+    {
+     "t": 105,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward towards the center, let me know when you see the anvils."
+    },
+    {
+     "t": 105,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the anvils now, ready to coordinate the digging."
+    },
+    {
+     "t": 106,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving center now, ready to punch anvil."
+    },
+    {
+     "t": 106,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving center now, ready for the left anvil."
+    },
+    {
+     "t": 106,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the center to help with the anvils."
+    },
+    {
+     "t": 107,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to meet up at the center."
+    },
+    {
+     "t": 107,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward center now, ready to assist with the anvils."
+    },
+    {
+     "t": 107,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving forward now to get closer to the anvils."
+    },
+    {
+     "t": 108,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Heading center now to assist with anvils."
+    },
+    {
+     "t": 108,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward now to find the anvils, let me know if you see them."
+    },
+    {
+     "t": 108,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center, ready for anvil assist."
+    },
+    {
+     "t": 109,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center now to help break the anvils. Let me know when you're ready to coordinate."
+    },
+    {
+     "t": 109,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward center now, ready to assist on the left anvil."
+    },
+    {
+     "t": 109,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center now to assist on the sword anvil."
+    },
+    {
+     "t": 110,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center now. Let me know when you're ready for the left anvil."
+    },
+    {
+     "t": 110,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving to center now, ready to assist on the sword anvil."
+    },
+    {
+     "t": 110,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving towards center now. Ready to assist on anvil."
+    },
+    {
+     "t": 111,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward toward the center area now. Let me know when you are ready to coordinate on the anvils."
+    },
+    {
+     "t": 111,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now, let me know when you're ready for the left anvil."
+    },
+    {
+     "t": 111,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am moving toward the center, look out for the anvils."
+    },
+    {
+     "t": 112,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving towards the center of Ch2 now, ready to assist with the anvils."
+    },
+    {
+     "t": 112,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward now, aiming for the center where the anvils are."
+    },
+    {
+     "t": 112,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now, aiming for the center anvils."
+    },
+    {
+     "t": 113,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center now, ready to help with the anvils when you are."
+    },
+    {
+     "t": 113,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now, ready to dig the left anvil with you."
+    },
+    {
+     "t": 113,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward anvils now"
+    },
+    {
+     "t": 114,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving toward the center area now, let me know when you see the anvils."
+    },
+    {
+     "t": 114,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now, let's coordinate on the left anvil."
+    },
+    {
+     "t": 114,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the center, ready to help with the sword anvil."
+    },
+    {
+     "t": 115,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving towards the center area now to meet you in Ch2. Let me know when you are ready to coordinate on the anvils."
+    },
+    {
+     "t": 115,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving closer, look for the anvils!"
+    },
+    {
+     "t": 115,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now, ready to help on the sword anvil."
+    },
+    {
+     "t": 116,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Scanning area for transition point to Ch2."
+    },
+    {
+     "t": 116,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to reach the anvils, let me know when you are in position."
+    },
+    {
+     "t": 116,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the center, looking for the anvils."
+    },
+    {
+     "t": 117,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Found wood here, let's dig it for the milestone."
+    },
+    {
+     "t": 117,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Turning left now to find the left anvil."
+    },
+    {
+     "t": 117,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving to center to help with anvils."
+    },
+    {
+     "t": 118,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward toward the center area now. Let me know when you are ready to regroup."
+    },
+    {
+     "t": 118,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to reach the anvils."
+    },
+    {
+     "t": 118,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward now to reach the center area for the anvils."
+    },
+    {
+     "t": 119,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still exploring Ch1 area, looking for door or wood for m4."
+    },
+    {
+     "t": 119,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to try and line up the anvils now."
+    },
+    {
+     "t": 119,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I am moving forward towards the anvils now."
+    },
+    {
+     "t": 120,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Continuing forward to find transition point."
+    },
+    {
+     "t": 120,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I am moving forward to meet you at the anvils."
+    },
+    {
+     "t": 120,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward the center now, ready to help on the sword anvil."
+    },
+    {
+     "t": 121,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving closer to the anvils; let me know which one you are targeting."
+    },
+    {
+     "t": 121,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am still moving forward toward the center area."
+    },
+    {
+     "t": 121,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving to the center now, ready to help on the sword anvil."
+    },
+    {
+     "t": 122,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving toward the center area to meet up with the anvil team."
+    },
+    {
+     "t": 122,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning right to sweep for the center area. I will head to the sword anvil next."
+    },
+    {
+     "t": 122,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the anvils now."
+    },
+    {
+     "t": 123,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to survey the room for the anvils. Let me know if you see them."
+    },
+    {
+     "t": 123,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now. Let's coordinate on the left anvil."
+    },
+    {
+     "t": 123,
+     "sender": 2,
+     "receiver": 1,
+     "text": "I'm moving toward the center to help on the anvils."
+    },
+    {
+     "t": 124,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving toward the center now. Ready to coordinate on an anvil when I get closer."
+    },
+    {
+     "t": 124,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving forward to join you both near the center anvils."
+    },
+    {
+     "t": 124,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center anvils."
+    },
+    {
+     "t": 125,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to join the anvil coordination in the center."
+    },
+    {
+     "t": 125,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm moving toward the center now, keeping an eye out for the anvils."
+    },
+    {
+     "t": 125,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Continuing forward to reach the anvils."
+    },
+    {
+     "t": 126,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to the center anvils."
+    },
+    {
+     "t": 126,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward towards the center area."
+    },
+    {
+     "t": 126,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving forward to meet you at the anvils. I'll start coordinating hits."
+    },
+    {
+     "t": 127,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to get into range of the anvils now. Let's coordinate on the sword anvil."
+    },
+    {
+     "t": 127,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Continuing forward to meet you at the anvils."
+    },
+    {
+     "t": 127,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving toward center for anvils"
+    },
+    {
+     "t": 128,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to the center area to help with the anvils."
+    },
+    {
+     "t": 128,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward anvils now. Ready to coordinate hits."
+    },
+    {
+     "t": 128,
+     "sender": 2,
+     "receiver": 1,
+     "text": "Moving to center anvils."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/gemma_3f_anvil_all.mp4",
+   "poster_all": "assets/videos/gemma_3f_anvil_all.jpg",
+   "bytes": 606840,
+   "bytes_all": 384098
+  },
+  {
+   "name": "orch_kill",
+   "run": "orch",
+   "arm": "Gemma-E4B + centralised orchestrator",
+   "seed": 789,
+   "episode": 1,
+   "agents": [
+    2,
+    1
+   ],
+   "steps": [
+    682,
+    698
+   ],
+   "seconds": 2.83,
+   "fps": 6,
+   "video": "assets/videos/orch_kill.mp4",
+   "poster": "assets/videos/orch_kill.jpg",
+   "source": "runs\\rq1_social_plasticity\\orchestrator\\new_exp_0_gemma_orch_villager_advisory\\seed_789\\gifs\\new_exp_0_gemma_orch_villager_advisory\\seed_789_agent_2_ep1.mp4",
+   "title": "Kill routed through the orchestrator",
+   "caption": "a2 engages with a1 alongside. The coordination is real, and it travels through a0, the orchestrator, rather than between them.",
+   "outcome": "success",
+   "messages": [
+    {
+     "t": 679,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Advancing now to engage mobs. Keep scanning for targets."
+    },
+    {
+     "t": 679,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Ready to engage zombies, I'm looking for targets now."
+    },
+    {
+     "t": 679,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to join the zombie fight in Ch4. Let me know when you have a clear target."
+    },
+    {
+     "t": 680,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to locate the zombies. Let me know when you spot one."
+    },
+    {
+     "t": 680,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Turning right now, I'm looking for the zombies Agent 0 sees."
+    },
+    {
+     "t": 680,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm scanning for the zombies now; let me know if you spot a clear target."
+    },
+    {
+     "t": 681,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage the zombies now."
+    },
+    {
+     "t": 681,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to engage mobs. Keep scanning."
+    },
+    {
+     "t": 681,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward into the chamber area to find the zombies. Focus fire on one target."
+    },
+    {
+     "t": 682,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still moving forward, looking for zombies. Keep scanning right."
+    },
+    {
+     "t": 682,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right to scan for zombies. Let me know when you spot a clear target."
+    },
+    {
+     "t": 682,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am in Ch4 but cannot see the zombies yet. I'm moving forward to find them."
+    },
+    {
+     "t": 683,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still advancing forward, looking for targets for focus fire."
+    },
+    {
+     "t": 683,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered now, ready to engage."
+    },
+    {
+     "t": 683,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door ahead is red and locked; I'm attempting to open it now."
+    },
+    {
+     "t": 684,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to find the zombies or the door. Let me know if you see them."
+    },
+    {
+     "t": 684,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Scanning right now for zombies to engage, focus fire!"
+    },
+    {
+     "t": 684,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to sweep for a path to Ch4; Agent 0 is in Ch4."
+    },
+    {
+     "t": 685,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning to locate the zombies; let me know if you see anything clear on your end."
+    },
+    {
+     "t": 685,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Advancing forward now, looking for the zombies."
+    },
+    {
+     "t": 685,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am still in Ch1, moving forward to find the door to Ch4."
+    },
+    {
+     "t": 686,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to join the combat; let me know if you need me to focus on a specific target."
+    },
+    {
+     "t": 686,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am turning right now, looking for the zombies as instructed."
+    },
+    {
+     "t": 686,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to reach Ch4 objective. Watch for target."
+    },
+    {
+     "t": 687,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to engage the zombies. Keep up!"
+    },
+    {
+     "t": 687,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I am moving forward now to join the fight; keep tracking targets."
+    },
+    {
+     "t": 687,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am still in Ch1; I will start moving towards Ch4 now. Look out for a passage."
+    },
+    {
+     "t": 688,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to join the fight, tracking targets."
+    },
+    {
+     "t": 688,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are visible; I'm turning right to orient for combat."
+    },
+    {
+     "t": 688,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, ready to attack now."
+    },
+    {
+     "t": 689,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join combat in Ch4. Let me know when you are ready for focus fire."
+    },
+    {
+     "t": 689,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie spotted right, turning to engage."
+    },
+    {
+     "t": 689,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie is centered, ready to strike. Focus fire on this target."
+    },
+    {
+     "t": 690,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Still in dark area, turning right to find combat zone."
+    },
+    {
+     "t": 690,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie is right, I'm turning to engage."
+    },
+    {
+     "t": 690,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie is centered, continuing assault."
+    },
+    {
+     "t": 691,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to find the combat area. Where are the zombies?"
+    },
+    {
+     "t": 691,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie is visible on the left, centering on it now to start combat."
+    },
+    {
+     "t": 691,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Focusing fire on agent0, ready for next hit."
+    },
+    {
+     "t": 692,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Zombies are visible to the right, I am turning to center one for combat."
+    },
+    {
+     "t": 692,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, attacking now. Focus fire!"
+    },
+    {
+     "t": 692,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, continuing attack."
+    },
+    {
+     "t": 693,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join the fight. Focus on the zombies!"
+    },
+    {
+     "t": 693,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, attacking now."
+    },
+    {
+     "t": 693,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, I'm attacking to join the fight in Ch4."
+    },
+    {
+     "t": 694,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Zombies are here, I'm turning to engage."
+    },
+    {
+     "t": 694,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, continuing to attack. Focus fire!"
+    },
+    {
+     "t": 694,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, continuing assault."
+    },
+    {
+     "t": 695,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join the fight, keep focusing on the zombies!"
+    },
+    {
+     "t": 695,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are centered, I'm attacking. Focus fire!"
+    },
+    {
+     "t": 695,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Focusing on the zombie here; let's coordinate on targets."
+    },
+    {
+     "t": 696,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving closer to the fight; watch for the zombies."
+    },
+    {
+     "t": 696,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies here, focusing fire on center target."
+    },
+    {
+     "t": 696,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, attacking now."
+    },
+    {
+     "t": 697,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to get closer to the zombies."
+    },
+    {
+     "t": 697,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Attacking zombie now. Keep focus fire on the mobs!"
+    },
+    {
+     "t": 697,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Zombie centered, keep attacking it."
+    },
+    {
+     "t": 698,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to meet the mobs; keep focus fire on the zombies."
+    },
+    {
+     "t": 698,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombie centered, I'm attacking now."
+    },
+    {
+     "t": 698,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am attacking the zombie here; watch for damage confirmation."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/orch_kill_all.mp4",
+   "poster_all": "assets/videos/orch_kill_all.jpg",
+   "bytes": 352387,
+   "bytes_all": 250092
+  },
+  {
+   "name": "orch_switch",
+   "run": "orch",
+   "arm": "Gemma-E4B + centralised orchestrator",
+   "seed": 789,
+   "episode": 3,
+   "agents": [
+    0,
+    1
+   ],
+   "steps": [
+    399,
+    412
+   ],
+   "seconds": 2.33,
+   "fps": 6,
+   "video": "assets/videos/orch_switch.mp4",
+   "poster": "assets/videos/orch_switch.jpg",
+   "source": "runs\\rq1_social_plasticity\\orchestrator\\new_exp_0_gemma_orch_villager_advisory\\seed_789\\gifs\\new_exp_0_gemma_orch_villager_advisory\\seed_789_agent_0_ep3.mp4",
+   "title": "Wait, press, exit",
+   "caption": "An explicit wait-and-press exchange: a1 holds at its door, a0 finds and digs the switch, the door opens.",
+   "outcome": "success",
+   "messages": [
+    {
+     "t": 396,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward now, heading towards Anvil A. Ready to coordinate the hit."
+    },
+    {
+     "t": 396,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward now to meet you at Anvil A."
+    },
+    {
+     "t": 396,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to find the center path; let me know when you see the anvils."
+    },
+    {
+     "t": 397,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to meet agent_1 at Anvil A."
+    },
+    {
+     "t": 397,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still moving towards center, look for anvils."
+    },
+    {
+     "t": 397,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward now to meet you near Anvil A."
+    },
+    {
+     "t": 398,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Approaching center to assist on Anvil A."
+    },
+    {
+     "t": 398,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to meet you at Anvil A. Ready to coordinate the hit."
+    },
+    {
+     "t": 398,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Turning right to find the path to the anvils, meeting you near Anvil A."
+    },
+    {
+     "t": 399,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward now; I expect to reach the center path soon to meet Agent 1 at Anvil A."
+    },
+    {
+     "t": 399,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving toward center path now."
+    },
+    {
+     "t": 399,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward now to reach the anvils. Let me know if you see them first."
+    },
+    {
+     "t": 400,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning right now to survey the corridor as requested."
+    },
+    {
+     "t": 400,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door still locked. Waiting for switch press."
+    },
+    {
+     "t": 400,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Scanning for center path now."
+    },
+    {
+     "t": 401,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I'm moving forward now. Keep scanning for the center path."
+    },
+    {
+     "t": 401,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is locked, waiting for switch press."
+    },
+    {
+     "t": 401,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still looking for the pathway north."
+    },
+    {
+     "t": 402,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am turning right now; please let me know if you see any immediate path north from your position."
+    },
+    {
+     "t": 402,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is still locked, waiting for you to press switch."
+    },
+    {
+     "t": 402,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Waiting for switch signal."
+    },
+    {
+     "t": 403,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the blue switch now. I will attempt to dig it to open the door."
+    },
+    {
+     "t": 403,
+     "sender": 1,
+     "receiver": 0,
+     "text": "My door is still locked. Please press your switch when you are ready."
+    },
+    {
+     "t": 403,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Cell door still locked, need agent_0 to press switch A."
+    },
+    {
+     "t": 404,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I see the blue switch cube on the left wall. I will turn to face it now to press it."
+    },
+    {
+     "t": 404,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Ready to move north once door opens. Keep me posted on the switch."
+    },
+    {
+     "t": 404,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Door is locked. Need switch pressed to open."
+    },
+    {
+     "t": 405,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Switch is centered, I am pressing it now to try and open my door."
+    },
+    {
+     "t": 405,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Waiting for door to open, ready to move north."
+    },
+    {
+     "t": 405,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm facing the cell walls; I need to orient south to press my switch."
+    },
+    {
+     "t": 406,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am facing the blue switch. I am digging it now to try and open the door."
+    },
+    {
+     "t": 406,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door state changing?"
+    },
+    {
+     "t": 406,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am in cell C. I need agent_0 or agent_1 to press their switch to open my door."
+    },
+    {
+     "t": 407,
+     "sender": 0,
+     "receiver": 2,
+     "text": "I am pressing my switch now. Check if your door state changes."
+    },
+    {
+     "t": 407,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, I am moving north now to meet you."
+    },
+    {
+     "t": 407,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward now, checking for the cell door or passage opening."
+    },
+    {
+     "t": 408,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am pressing the switch now; let me know if the door state changes for you."
+    },
+    {
+     "t": 408,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 408,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to find the south wall switch; I need to face it to press it."
+    },
+    {
+     "t": 409,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am pressing the switch now. If my door opens, I will move north."
+    },
+    {
+     "t": 409,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving out now."
+    },
+    {
+     "t": 409,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Switch is slightly right, turning left to center it."
+    },
+    {
+     "t": 410,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Pressing my switch now to try and open the door."
+    },
+    {
+     "t": 410,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving north now."
+    },
+    {
+     "t": 410,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to face the south wall to press the switch. Check if your door state changes."
+    },
+    {
+     "t": 411,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am pressing the switch now. Check if your door state changes."
+    },
+    {
+     "t": 411,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving North now."
+    },
+    {
+     "t": 411,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Switch is visible on the right, turning to center it now."
+    },
+    {
+     "t": 412,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am aiming at the blue switch now. I expect a system broadcast confirming the switch press."
+    },
+    {
+     "t": 412,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Door is open, moving North now to the communal area."
+    },
+    {
+     "t": 412,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Agent 0, I see the blue switch on my left. I will try to press it now."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/orch_switch_all.mp4",
+   "poster_all": "assets/videos/orch_switch_all.jpg",
+   "bytes": 196596,
+   "bytes_all": 162205
+  },
+  {
+   "name": "orch_solokill",
+   "run": "orch",
+   "arm": "Gemma-E4B + centralised orchestrator",
+   "seed": 789,
+   "episode": 3,
+   "agents": [
+    1,
+    0
+   ],
+   "steps": [
+    702,
+    718
+   ],
+   "seconds": 2.83,
+   "fps": 6,
+   "video": "assets/videos/orch_solokill.mp4",
+   "poster": "assets/videos/orch_solokill.jpg",
+   "source": "runs\\rq1_social_plasticity\\orchestrator\\new_exp_0_gemma_orch_villager_advisory\\seed_789\\gifs\\new_exp_0_gemma_orch_villager_advisory\\seed_789_agent_1_ep3.mp4",
+   "title": "Everyone reports support; nobody arrives",
+   "caption": "a1 takes two zombies point-blank while a0 walks into a villager and a2 announces it is moving up. a1 fights alone and takes the damage.",
+   "outcome": "failure",
+   "messages": [
+    {
+     "t": 699,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage zombies; I'll focus on the next target."
+    },
+    {
+     "t": 699,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still waiting on visual confirmation of the second zombie target."
+    },
+    {
+     "t": 699,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am turning to reorient for zombie engagement."
+    },
+    {
+     "t": 700,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to join the fight. Ready to engage the next zombie."
+    },
+    {
+     "t": 700,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm attacking the target ahead; confirm the boss is still there."
+    },
+    {
+     "t": 700,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning around to assess the combat area; let me know where the zombies are."
+    },
+    {
+     "t": 701,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I am moving forward to support the fight; let me know which zombie you are targeting."
+    },
+    {
+     "t": 701,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Still can't see targets, turning right to sweep for zombies."
+    },
+    {
+     "t": 701,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning around to scout the main combat area. Ready to engage."
+    },
+    {
+     "t": 702,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning left to sweep the area; let me know if you spot the zombies while I'm looking around."
+    },
+    {
+     "t": 702,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Moving forward to find the target zombie."
+    },
+    {
+     "t": 702,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the zombie fight. Ready to engage."
+    },
+    {
+     "t": 703,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage the zombies now that teammates are in position."
+    },
+    {
+     "t": 703,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm turning right now to sweep the area, look out for zombies."
+    },
+    {
+     "t": 703,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm turning right to scan for zombies, let me know if you spot one."
+    },
+    {
+     "t": 704,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward, let me know if you see the zombies on your side."
+    },
+    {
+     "t": 704,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Targeting zombie now, ready to hit. Let me know if you see the other two."
+    },
+    {
+     "t": 704,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to engage zombies; let me know if you see the door."
+    },
+    {
+     "t": 705,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to find the zombies. Let me know when you spot one clearly."
+    },
+    {
+     "t": 705,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Targeting agent0 now; focus fire on the right zombie to clear this room."
+    },
+    {
+     "t": 705,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to engage the zombies near Agent 0."
+    },
+    {
+     "t": 706,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage. Focus on the right zombie as Agent 1 requested."
+    },
+    {
+     "t": 706,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I see two zombies centered. Equipping sword now to start attacking."
+    },
+    {
+     "t": 706,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to join the zombie fight."
+    },
+    {
+     "t": 707,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Turning left to align with the fight zone; I'll move forward next."
+    },
+    {
+     "t": 707,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm targeting the right zombie now; let me know when you focus on the left one."
+    },
+    {
+     "t": 707,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm still moving forward to reach the fight area."
+    },
+    {
+     "t": 708,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to join the fight; I'll target the left zombie if it's available."
+    },
+    {
+     "t": 708,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Right zombie is visible; I'm turning to focus fire on it, matching Agent 0's focus."
+    },
+    {
+     "t": 708,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to support the fight, keep searching for targets."
+    },
+    {
+     "t": 709,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm moving forward to join the fight; keep focusing on the zombies."
+    },
+    {
+     "t": 709,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Equipping sword now; I will focus on the nearest zombie next."
+    },
+    {
+     "t": 709,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to support the fight, keep scanning for targets."
+    },
+    {
+     "t": 710,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage. Keep targeting the nearest mob."
+    },
+    {
+     "t": 710,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Focusing on this center zombie; let's coordinate fire on the next one."
+    },
+    {
+     "t": 710,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to try and locate the fight area, look out for zombies."
+    },
+    {
+     "t": 711,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to find the zombies; let me know if you see them centered."
+    },
+    {
+     "t": 711,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Focusing on the central target now."
+    },
+    {
+     "t": 711,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward now to meet up with Agent 0 and engage the zombies."
+    },
+    {
+     "t": 712,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to meet up with the team in the combat zone."
+    },
+    {
+     "t": 712,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies are visible ahead; I'm equipping my sword to attack."
+    },
+    {
+     "t": 712,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to support the fight near Agent 0."
+    },
+    {
+     "t": 713,
+     "sender": 0,
+     "receiver": 1,
+     "text": "I'm turning right to find the zombies; where are they relative to your current view?"
+    },
+    {
+     "t": 713,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm engaging the nearest zombie now; let me know if you see damage on the second target."
+    },
+    {
+     "t": 713,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I'm moving forward to support the fight; keep me updated on zombie locations."
+    },
+    {
+     "t": 714,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward now to support the fight; I'm ready to engage."
+    },
+    {
+     "t": 714,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Equipping sword now, ready to attack the boss when centered."
+    },
+    {
+     "t": 714,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to engage zombies. Keep scanning for targets."
+    },
+    {
+     "t": 715,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to engage the second zombie. Watch out for flanking."
+    },
+    {
+     "t": 715,
+     "sender": 1,
+     "receiver": 0,
+     "text": "Zombies visible now; equipping sword to attack."
+    },
+    {
+     "t": 715,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Still moving forward to locate the zombies for the attack."
+    },
+    {
+     "t": 716,
+     "sender": 0,
+     "receiver": 1,
+     "text": "Moving forward to meet the fight, ready to engage the next zombie."
+    },
+    {
+     "t": 716,
+     "sender": 1,
+     "receiver": 2,
+     "text": "I'm centered on the nearest zombie; I'm starting the attack now."
+    },
+    {
+     "t": 716,
+     "sender": 2,
+     "receiver": 0,
+     "text": "I am moving forward to find the zombies. Agent 0, let me know if you spot them."
+    },
+    {
+     "t": 717,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward now to locate the zombies as instructed."
+    },
+    {
+     "t": 717,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm attacking agent0 now. Keep pushing on the other zombies."
+    },
+    {
+     "t": 717,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to engage the second zombie."
+    },
+    {
+     "t": 718,
+     "sender": 0,
+     "receiver": 2,
+     "text": "Moving forward to engage the other zombies. Ready to attack."
+    },
+    {
+     "t": 718,
+     "sender": 1,
+     "receiver": 0,
+     "text": "I'm attacking the target in front of me to help clear the mobs."
+    },
+    {
+     "t": 718,
+     "sender": 2,
+     "receiver": 0,
+     "text": "Moving forward to support the zombie fight."
+    }
+   ],
+   "agents_all": [
+    0,
+    1,
+    2
+   ],
+   "layout_all": [
+    3,
+    1
+   ],
+   "video_all": "assets/videos/orch_solokill_all.mp4",
+   "poster_all": "assets/videos/orch_solokill_all.jpg",
+   "bytes": 345881,
+   "bytes_all": 243025
+  }
+ ],
+ "arms": {
+  "gemma_3f": "Gemma-E4B + Hebbian (three-factor)",
+  "orch": "Gemma-E4B + centralised orchestrator",
+  "qwen9b_base": "Qwen3.5-9B (no social layer)",
+  "gemma_base": "Gemma-E4B (no social layer)",
+  "qwen2b_mappo": "Qwen3.5-2B MAPPO",
+  "qwen2b_ippo": "Qwen3.5-2B IPPO",
+  "qwen2b_mappo_trace": "Qwen3.5-2B MAPPO +trace",
+  "qwen2b_ippo_trace": "Qwen3.5-2B IPPO +trace",
+  "gemma_mappo": "Gemma-E4B MAPPO",
+  "gemma_ippo": "Gemma-E4B IPPO",
+  "gemma_ippo_trace": "Gemma-E4B IPPO +trace",
+  "orch_n6": "Gemma-E4B +Central Orch., six agents"
+ }
+}
