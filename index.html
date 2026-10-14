@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="assets/css/style.css?v=20261014a">
+<link rel="stylesheet" href="assets/css/style.css?v=20261014b">
 </head>
 <body>
 
@@ -30,6 +30,8 @@
     <h1>Wired Together</h1>
     <p class="sub">Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
     <p class="byline">Ana Cristiana Marcu · Anuj Singh · Chirag Raman</p>
+    <p class="affil">Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    <p class="logos"><img src="assets/figures/logo_tapri.png" alt="Tapri Lab" height="40"><img src="assets/figures/logo_tudelft.png" alt="TU Delft" height="34"></p>
     <ul class="actions">
       <li><a class="button" href="#data">Paper</a></li>
       <li><a class="button" href="#moments">Videos</a></li>
@@ -64,7 +66,7 @@
   <div class="content">
     <div class="container" style="max-width: 860px;">
       <p style="text-align: justify;">Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship. We model a multi-agent system as an adaptive social network whose directed bonds evolve online through reward-modulated social plasticity: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph feeds back into learning, through reward diffusion and bond-gated experience sharing, and into inference, through social deliberation.</p>
-      <p style="text-align: justify;">In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational coupling improves cooperative completion in three of four RL fine-tuning configurations, and at inference time outperforms both a soft and a hard centralised orchestrator, the latter at a third of its compute. Communication builds the strongest bonds, while observation and imitation yield the highest cooperative completion, and retaining only bonds after team recomposition balances exploiting past partners with exploring new ones. Where adding LLM agents often brings diminishing returns, scaling teams at test time from 3 to 15 agents raises team cooperative progress from 10% to 19%, and organisation emerges that nobody assigns: small conversational circles, a focal hub, and coordination beyond immediate neighbours. Social plasticity raises cooperative progress further, most of all when communication is scarce. Learned relationships thus offer a decentralised, inspectable complement to orchestration.</p>
+      <p style="text-align: justify;">In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational coupling improves cooperative completion in three of four RL fine-tuning configurations, and at inference time outperforms both a soft and a hard centralised orchestrator, the latter at a third of its compute. Communication builds the strongest bonds, while observation and imitation yield the highest cooperative completion, and retaining only bonds after team recomposition balances exploiting past partners with exploring new ones. Scaling teams from 3 to 15 agents raises budget-averaged team cooperative completion from 9.6% to 18.3%, and to 19.6% with social plasticity, and structured communication develops without assigned roles: small conversational groups, a focal agent, and coordination beyond immediate neighbours. Social plasticity raises cooperative progress further, especially under limited communication budgets. Learned relationships thus offer a decentralised, inspectable complement to orchestration.</p>
     </div>
   </div>
 </section>
@@ -81,7 +83,7 @@
     <div class="container">
       <figure class="figure-block">
         <span class="image fit"><img src="assets/figures/wire.png" alt="The five WIRE chambers in sequence: solo skill acquisition, cooperative anvils, switch puzzle under partial observability, team combat, cooperative boss fight." loading="lazy"></span>
-        <figcaption><strong>WIRE.</strong> Five sequential chambers increase coordination demand from individual skill acquisition to cooperative resource use, partial-observability communication, team combat, and a boss encounter.</figcaption>
+        <figcaption><strong>WIRE.</strong> Five sequential chambers increase inter-agent dependence from individual skill acquisition (Ch1), to cooperative resource acquisition (Ch2), communication under partial observability (Ch3), team combat (Ch4), and a cooperative boss encounter (Ch5).</figcaption>
       </figure>
 
       <p class="lede" style="margin-top: 2.4em;">One episode, chamber by chamber, all three agents side by side so their views can be compared in parallel. Every clip on this page is a real recording of first-person views: one rendered frame per environment step, replayed at six steps per second. The button on each clip narrows it to the agent contributing to the action.</p>
@@ -146,7 +148,7 @@
 
       <figure class="figure-block">
         <span class="image fit framed"><img src="assets/figures/first_person.png" alt="First-person agent observations, one per chamber." loading="lazy"></span>
-        <figcaption><strong>What an agent sees.</strong> First-person observations, one per chamber — 320×180 pixels, partner name tags, and nothing else.</figcaption>
+        <figcaption><strong>Agent observations across WIRE.</strong> Representative first-person observations from Chambers 1–5: individual skill acquisition, cooperative resource use, communication under partial observability, team combat, and the boss encounter.</figcaption>
       </figure>
     </div>
   </div>
@@ -164,7 +166,7 @@
     <div class="container">
       <figure class="figure-block">
         <span class="image fit"><img src="assets/figures/graph_formation.png" alt="Graph formation: co-firing from social acts and engaged co-location creates eligibility traces; reward consolidates bonds; failures decay them." loading="lazy"></span>
-        <figcaption><strong>Formation.</strong> Explicit social acts — targeted communication, deliberate observation of a teammate, imitation of a requested action — plus engaged co-location define pairwise co-firing. Co-firing accumulates into an eligibility trace; reward acting on the trace consolidates the bond.</figcaption>
+        <figcaption><strong>Learning and using persistent social relationships.</strong> Social interactions induce directed co-firing <span class="m">c<sub>ij</sub>(t)</span>, which accumulates evidence for updating the bond <span class="m">W<sub>ij</sub>(t)</span> through reward-modulated plasticity; the resulting graph <span class="m">W(t)</span> then shapes inference or learning through social deliberation, reward diffusion and experience sharing.</figcaption>
       </figure>
 
       <div class="eqbox">
@@ -189,7 +191,7 @@
 
       <figure class="figure-block">
         <span class="image fit"><img src="assets/figures/couplings.png" alt="Using relational state: reward diffusion and bond-gated experience sharing for RL agents; bond-conditioned deliberation for zero-shot VLM agents." loading="lazy"></span>
-        <figcaption><strong>Use.</strong> For RL-fine-tuned agents, <span class="m">W(t)</span> enters learning through reward diffusion and bond-gated experience sharing; for zero-shot VLM agents it conditions inference-time social deliberation.</figcaption>
+        <figcaption><strong>Using relational state during RL fine-tuning.</strong> Reward diffusion uses the current co-firing <span class="m">c<sub>ij</sub>(t)</span> and the normalised bond <span class="m">W̄<sub>ij</sub></span> to turn the environment reward <span class="m">r<sub>i</sub></span> into <span class="m">r′<sub>i</sub></span>, while bond-gated experience sharing mixes agent <span class="m">i</span>'s rollout buffer with teammates' experience. PPO then updates only agent <span class="m">i</span>'s LoRA parameters; MAPPO uses a shared critic over the joint state, IPPO a local critic. For zero-shot VLM agents, <span class="m">W(t)</span> instead conditions inference-time social deliberation.</figcaption>
       </figure>
 
       <div class="eqbox">
@@ -230,22 +232,22 @@
 
       <div class="findings">
         <div class="finding">
-          <span class="rq">RQ1 · learning-time coupling</span>
+          <span class="rq">RQ1 · most reliable when coupled into learning</span>
           <span class="num">0.8 → 3.5%</span>
-          <p>The clearest gains appear where the graph shapes <em>learning</em>. On Qwen3.5-2B, social plasticity raises cooperative completion under IPPO (2.9→3.3%) and MAPPO (1.5→2.9%); with Gemma-E4B IPPO it more than quadruples (0.8→3.5%). Gemma-E4B MAPPO is the exception (2.2→0.4%).</p>
+          <p>The clearest gains arise when relational state shapes learning. On Qwen3.5-2B, social plasticity improves task return and cooperative completion under IPPO (425→467; 2.9→3.3%) and MAPPO (390→453; 1.5→2.9%); with Gemma-E4B IPPO cooperative completion more than quadruples (0.8→3.5%). Gemma-E4B MAPPO is the exception (2.2→0.4%).</p>
         </div>
         <div class="finding">
-          <span class="rq">RQ1 · decentralised orchestration</span>
+          <span class="rq">RQ1 · key for harder cooperative tasks</span>
           <span class="num">548 vs 505 / 477</span>
           <p>On Gemma-E4B, social plasticity reaches a higher task return than both a soft (VillagerAgent-style) and a hard (HMAS-2) central orchestrator, and higher cooperative completion (4.8% vs 4.7% and 3.9%), at the soft orchestrator's compute and a third of the hard one's. The orchestrators assign <em>what</em> each agent works on; the graph biases <em>with whom</em>.</p>
         </div>
         <div class="finding">
-          <span class="rq">RQ2 · interaction regimes</span>
+          <span class="rq">RQ2 · bond strength ≠ coordination value</span>
           <span class="num">W = 0.34, coop 2.6%</span>
-          <p>Communication is chosen most often (82.7% of social acts) and builds the strongest bonds, yet gives the lowest cooperative completion of any single cue. Observation and imitation stay close to spatial engagement alone (4.8% and 4.6% against 5.7%). With several cues enabled, communication crowds the others out.</p>
+          <p>Communication is selected most often (82.7% of social acts) and produces the strongest bonds, yet the lowest cooperative completion of any single cue: its bonds say who talks, not who cooperates. Observation and imitation stay close to spatial engagement alone (4.8% and 4.6% against 5.7%). With several cues available, communication crowds the others out.</p>
         </div>
         <div class="finding">
-          <span class="rq">RQ3 · exploit or explore</span>
+          <span class="rq">RQ3 · bonds distil social experience</span>
           <span class="num">0.55 vs 0.14</span>
           <p>After team recomposition, agents that keep both memory and bonds exploit the previous partnership: over half their messages still go to the old partner. With bonds alone they balance exploitation and exploration, rewiring toward the collaborators the new task requires, with the highest task return and cooperative completion of the four transfer conditions (8.3% against 6.9%).</p>
         </div>
@@ -295,31 +297,35 @@
 
       <div class="callout">Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it outperforms the baseline and both orchestrators, with the highest task return, Solo % and Coop. %, whereas the gains do not transfer to the Qwen backbones.</div>
 
-      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Relational plasticity acts as decentralised orchestration</h3>
-      <p class="lede" style="margin-left: 0;">A six-agent Chamber 4 kill with Gemma-E4B, the same milestone under both mechanisms. Top: learned bonds and orchestrator assignments; the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
-      <div class="row">
+      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">On a hard cooperative task, coordination emerges under social plasticity but not under central orchestration</h3>
+      <p class="lede" style="margin-left: 0;">A six-agent Chamber 4 kill with Gemma-E4B, the same milestone in all three runs. Top: learned bonds (a), orchestrator assignments (b), and the planner's assignments with each agent's objections (c); the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
+      <div class="row three">
         <figure>
-          <span class="image fit framed"><img src="assets/figures/counterfactual_plasticity.png" alt="Relational plasticity over a matched interval: bond strengths, interaction frames and messages." loading="lazy"></span>
-          <figcaption><strong>Relational plasticity.</strong> a0 and a5 converge on the same fight and jointly contribute to the successful kill as their bond strengthens (W: 0.32→0.47).</figcaption>
+          <span class="image fit framed"><img src="assets/figures/cf6_plasticity.png" alt="Social plasticity: bond strengths over the interval, first-person frames and messages; two agents converge on one zombie and kill it together." loading="lazy"></span>
+          <figcaption><strong>(a) Social plasticity.</strong> Agents 0 and 5 converge on the same zombie and kill it together as their bond strengthens (<span class="m">W̄</span>: 0.32 → 0.47).</figcaption>
         </figure>
         <figure>
-          <span class="image fit framed"><img src="assets/figures/counterfactual_orchestration.png" alt="Central orchestration over the same interval: task assignments, interaction frames and messages." loading="lazy"></span>
-          <figcaption><strong>Central orchestration.</strong> Agents express an intention to collaborate, but without learned relational state this does not translate into joint execution: a0 does not join the fight and a5 secures the kill alone before reassignment.</figcaption>
+          <span class="image fit framed"><img src="assets/figures/cf6_soft.png" alt="Soft central orchestration: task assignments, frames and messages; agents say they will help, but one never joins." loading="lazy"></span>
+          <figcaption><strong>(b) Soft central orchestration.</strong> The agents say they will help each other, but agent 0 never joins and agent 5 kills alone.</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/cf6_hard.png" alt="Hard central orchestration: the planner's assignments with objections, frames and messages; agent 1 refuses to coordinate and agent 0 kills alone." loading="lazy"></span>
+          <figcaption><strong>(c) Hard central orchestration.</strong> The planner keeps telling agent 1 to coordinate with agents 0 and 2; agent 1 refuses and pursues its own task, and agent 0 kills alone.</figcaption>
         </figure>
       </div>
 
-      <div class="row" style="margin-top: 2.4em;">
+      <div class="row three" style="margin-top: 2.4em;">
         <figure>
-          <span class="image fit framed"><img src="assets/figures/frontier_milestone.png" alt="Milestone completion against social-module compute across deliberation intervals." loading="lazy"></span>
-          <figcaption>Deliberation interval against social-module compute (Gemma-E4B). Every interval from 2 to 100 steps completes more milestones than no social module; at 100 steps it needs roughly 12× less compute than the default of 8. All differences lie within one standard deviation.</figcaption>
+          <span class="image fit framed"><img src="assets/figures/frontier.png" alt="Milestone completion against social-module compute across deliberation intervals." loading="lazy"></span>
+          <figcaption><strong>Deliberation interval against social-module compute</strong> (Gemma-E4B, +Social plasticity). Without a social module agents complete 9.7% of milestones; every interval from 2 to 100 steps lies above this (10.3–11.9%), and an interval of 100 (11.0%) still beats the default of 8 (10.3%) at roughly 12× less compute. Only at 500 does completion fall back to the no-module level.</figcaption>
         </figure>
         <figure>
-          <span class="image fit framed"><img src="assets/figures/rq2_tradeoff.png" alt="Cooperative completion against mean bond strength for each co-firing cue." loading="lazy"></span>
-          <figcaption>Bond strength does not buy cooperation: every explicit cue adds bond mass without adding cooperative completion over spatial engagement alone.</figcaption>
+          <span class="image fit framed"><img src="assets/figures/rq2_pareto_coop.png" alt="Cooperative completion against mean bond strength for each co-firing cue." loading="lazy"></span>
+          <figcaption><strong>RQ2: bond strength does not buy cooperation.</strong> Spatial engagement alone ("None") is the only non-dominated condition: every explicit cue adds bond mass without adding completion, and the cue sets that include communication reach the largest <span class="m">W̄</span> and the lowest cooperative completion.</figcaption>
         </figure>
         <figure>
           <span class="image fit framed"><img src="assets/figures/partner_accuracy.png" alt="Zero-shot milestone completion against partner-location accuracy across five backbones." loading="lazy"></span>
-          <figcaption>Zero-shot milestone completion against partner-location accuracy across five backbones, with and without social plasticity.</figcaption>
+          <figcaption><strong>Zero-shot performance against partner-location accuracy</strong> across five backbones, without (Base) and with social plasticity: whether an agent's claims about teammates match their true chamber.</figcaption>
         </figure>
       </div>
 
@@ -355,7 +361,7 @@
   <header>
     <div class="container">
       <h2>Test-time scaling: self-organised structure as teams grow</h2>
-      <p class="lede">All agents receive the same prompt apart from their name, and every message is addressed to exactly one teammate. Yet as the team grows, structure appears in who talks to whom that nobody assigns. We scale zero-shot Gemma-E4B teams from 3 to 15 agents, with and without social plasticity, and give each agent 600, 2,600 or 10,400 tokens to spend on messages per episode.</p>
+      <p class="lede">Adding agents does not necessarily improve a team: returns diminish as coordination overhead grows, and communication can become a bottleneck. We ask whether persistent relational state supports cooperation as teams grow, and what coordination structures emerge without explicit assignment. We scale zero-shot Gemma-E4B teams from 3 to 15 agents at inference time, with 600, 2,600 or 10,400 message tokens per agent per episode. All agents receive the same prompt apart from their name, and every message is addressed to exactly one teammate.</p>
     </div>
   </header>
   <div class="content">
@@ -364,93 +370,111 @@
       <div class="findings">
         <div class="finding">
           <span class="rq">Cooperation scales with team size</span>
-          <span class="num">9.6% → 18.5%</span>
-          <p>Team cooperative progress rises with team size under every communication budget. Averaged over the budgets, baseline MindForge agents go from 9.6% with 3 agents to 18.5% with 15, about 93% more.</p>
+          <span class="num">9.6% → 18.3%</span>
+          <p>Cooperative progress increases from three to fifteen agents under every communication budget, though not monotonically. Averaged across budgets, the MindForge baseline improves from 9.6% to 18.3% completion.</p>
         </div>
         <div class="finding">
-          <span class="rq">Fewer agents, less compute</span>
-          <span class="num">10 of 10</span>
-          <p>Social plasticity reaches more cooperative milestones than the baseline in every team size and budget up to ten agents that is not tied (sign test p&nbsp;=&nbsp;0.002), with gains of up to 5.9 points. Five agents with it exceed seven baseline agents (14.4% vs 13.9%).</p>
+          <span class="rq">Fewer agents, same cooperation</span>
+          <span class="num">5 agents &gt; 7</span>
+          <p>Social plasticity improves completion at every team size except N&nbsp;=&nbsp;10, where the arms tie, by 1.3–3.5 points, reaching 21.6%. Smaller social-plasticity teams beat larger baseline teams: three vs five agents (13.1% vs 11.3%), five vs seven (14.4% vs 13.9%).</p>
         </div>
         <div class="finding">
           <span class="rq">Scarce communication</span>
-          <span class="num">600 tokens</span>
-          <p>The gains are largest at the tightest budget: 9.2% → 15.0% with three agents, 13.7% → 17.0% with five and with seven. With 600 tokens, social-plasticity teams of up to ten agents beat baseline teams given a 17× larger budget (17.0% vs 9.8% with five agents).</p>
+          <span class="num">17× less budget</span>
+          <p>The gain is largest with only 600 tokens per agent (+2.9 points). With 600 tokens, social-plasticity teams outperform baseline teams given 10,400 tokens at every team size, from N&nbsp;=&nbsp;3 (15.0% vs 8.5%) to N&nbsp;=&nbsp;15 (20.3% vs 19.6%).</p>
         </div>
         <div class="finding">
-          <span class="rq">A hub and tight circles</span>
-          <span class="num">9–11 partners</span>
-          <p>At N&nbsp;=&nbsp;15 the focal teammate ends the episode with 9–11 distinct partners, the other agents with 2.5–2.9. Social-plasticity teams answer 6–14 points more of the messages they receive and split into tighter groups at every team size.</p>
+          <span class="rq">Structure without assignment</span>
+          <span class="num">a hub and small groups</span>
+          <p>At N&nbsp;=&nbsp;15 the focal agent talks with about ten distinct partners, the others with about three. Social plasticity forms tighter conversational groups at every team size: +0.10 vs −0.02 above chance at N&nbsp;=&nbsp;5, +0.22 vs +0.13 at N&nbsp;=&nbsp;15.</p>
         </div>
       </div>
-      <p class="note" style="margin: -1.2em auto 2.4em; text-align: center;">Team cooperative milestone completion: share of the 17 cooperative milestones (Chambers 2–5) reached by at least one agent of the team by the end of the episode, averaged over a run's episodes; mean ± SE over seeds. It counts the team, unlike the per-agent Coop. % in the RQ1 table, so the two are not comparable.</p>
+      <p class="note" style="margin: -1.2em auto 2.4em; text-align: center;">Team cooperative completion: the share of the seventeen Chamber 2–5 cooperative milestones the team completes per episode, each counted once however many agents are credited, so the denominator does not depend on N. It differs from the per-agent Coop. % of the RQ1 table.</p>
 
-      <div class="controls">
-        <div class="chips" role="group" aria-label="Teams shown in the figures">
-          <span class="lbl">Teams</span>
-          <button class="chip active" data-swap="#scaling-pareto,#scaling-progress" data-src="assets/figures/scaling_pareto.png,assets/figures/scaling_progress.png">Talking (as in the paper)</button>
-          <button class="chip" data-swap="#scaling-pareto,#scaling-progress" data-src="assets/figures/scaling_pareto_silent.png,assets/figures/scaling_progress_silent.png">With silent teams</button>
-        </div>
-      </div>
-      <figure class="figure-block" style="margin-top: 0;">
-        <span class="image fit framed"><img id="scaling-pareto" src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
-        <figcaption><strong>(a) Inference compute against cooperation.</strong> Each point is one arm, team size and communication budget (marker fill), with team cooperative milestone completion at the end of the episode. Step lines are each arm's Pareto front; the orange region is where the social-plasticity front exceeds the baseline front. Compute is 2 × 4.5·10<sup>9</sup> × (prompt + generated tokens) per episode. It is measured from token logs for 12 of the 30 cells (17 of 40 with silent teams) and estimated for the rest from the tokens per agent-episode of the same arm and budget. <strong>(b) Self-organised groups.</strong> Weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph; 0 means no more grouping than each agent's number of partners implies. The second view adds silent teams (messaging switched off), which the paper does not report.</figcaption>
+      <h3 style="font-weight: 300; font-size: 1.3em;">Social plasticity improves cooperation and compute efficiency as teams grow</h3>
+      <p class="lede" style="margin-left: 0;">The tie at ten agents reflects a ceiling rather than a lack of coordination. WIRE's cooperative milestones are, by design, the same at every team size: by ten agents both arms reliably complete the switch-ring and first-kill milestones, and further milestones, such as breaking the Chamber 2 anvils, are reached more often only with fifteen agents, where social plasticity leads again. The social-plasticity Pareto front lies above the baseline's over most of the inference-compute range.</p>
+      <figure class="figure-block" style="margin-top: 1em;">
+        <span class="image fit framed"><img src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
+        <figcaption><strong>Social plasticity reaches more cooperation for the same compute and forms tighter groups than the baseline at every team size.</strong> (a) Inference compute against cooperation: each point is one team size and communication budget (marker fill; low, medium and high are 600, 2,600 and 10,400 tokens per agent), with team cooperative milestone completion at the end of the episode (mean ± SE over seeds). Step lines show each arm's Pareto front; the orange region marks where the social-plasticity front exceeds the baseline's. Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Three seeds per cell, two for social plasticity at N&nbsp;=&nbsp;15 and at N&nbsp;=&nbsp;5 with 10,400 tokens. (b) Self-organised groups: weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph (mean of per-run means ± SE). Zero means no grouping beyond what each agent's number of partners implies; positive values mean tighter groups than chance, negative values messages spread across groups more evenly than chance.</figcaption>
       </figure>
 
-      <figure class="figure-block" style="max-width: 920px; margin-left: auto; margin-right: auto;">
-        <span class="image fit framed"><img id="scaling-progress" src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, in a grid of budgets by five team sizes." loading="lazy"></span>
-        <figcaption><strong>Cooperative progress over the episode as teams grow.</strong> Team cooperative milestone completion over environment steps for each team size, with one row per budget: (a) 10,400, (b) 2,600 and (c) 600 tokens per agent per episode; the second view adds silent teams as row (d). Shading is ±1 SE over seeds, and dotted lines mark the chamber transitions.</figcaption>
+      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Social plasticity helps under constrained communication budgets</h3>
+      <p class="lede" style="margin-left: 0;">The largest average gain comes with only 600 tokens per agent (+2.9 points), against +2.6 at 10,400 tokens and +0.7 at 2,600. Under the tightest budget, social plasticity raises cooperative completion from 9.2% to 15.0% with three agents, from 13.7% to 17.0% with five and likewise with seven, and from 18.3% to 20.3% with fifteen. Which budget a team gets matters less than whether it has social plasticity: with it, the tightest budget gives the best result at three, five and ten agents, and at seven and fifteen it trails the largest budget by at most 1.3 points, within seed noise.</p>
+      <figure class="figure-block" style="max-width: 920px; margin: 1em auto 0;">
+        <span class="image fit framed"><img src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, three budgets by five team sizes." loading="lazy"></span>
+        <figcaption><strong>Social plasticity helps most under constrained communication budgets:</strong> the gap between the arms is widest at 600 tokens (c), where social-plasticity teams beat baseline teams given 17× the budget (a). Team cooperative milestone completion over environment steps for each team size, one row per budget: (a) 10,400, (b) 2,600 and (c) 600 tokens per agent per episode. Shading is ±1 SE over seeds; dotted lines mark the chamber transitions.</figcaption>
       </figure>
 
-      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">New forms of coordination as the team grows</h3>
-      <p class="lede" style="margin-left: 0;">Messages are addressed, so the logs are a complete record of the team's conversation. The network analyses use the Chamber 2 message graph.</p>
-      <div class="row" style="margin-top: 1.2em;">
-        <figure>
-          <span class="image fit framed"><img src="assets/figures/collab_chambers.png" alt="Message networks in Chambers 2, 3 and 4 for teams of 3, 5, 7, 10, 15 and 20 agents with social plasticity, with message communities shaded and milestones completed together in green." loading="lazy"></span>
-          <figcaption><strong>Who talks to whom, by team size and chamber</strong> (social plasticity, 2,600-token budget; one typical episode per team size). Edge width follows the messages exchanged; solid edges carry messages both ways, dashed edges one way. Grey bands are Louvain communities of the message graph, and green edges with a diamond join agents credited for the same milestone. Agent 0 is filled, and agents silent in that chamber sit underneath. In Chamber 3 the ring is set by the task: agent <span class="m">i</span>'s switch opens agent <span class="m">i</span>+1's door.</figcaption>
-        </figure>
-        <div class="cols" style="grid-template-columns: 1fr; gap: 18px; margin-top: 0; align-content: start;">
-          <div>
-            <h3>3 agents: direct requests</h3>
-            <p>All three agents talk to each other, and cooperation runs through requests to the teammate who can help. In the switch ring, an agent asked the teammate whose switch opens its door to press it, and the teammate pressed six steps later.</p>
-          </div>
-          <div>
-            <h3>5 agents: a focal teammate emerges</h3>
-            <p>About three in four agents open the episode by messaging agent 0, against one in four by chance. Complete request–act–acknowledge loops appear: an agent asked its neighbour to press, the neighbour pressed and reported it, and the freed agent thanked it and moved on.</p>
-          </div>
-          <div>
-            <h3>7 agents: side groups and ring-wide reasoning</h3>
-            <p>In 61% of episodes, two or three agents form a group beside the conversation around agent 0. Agents begin to reason about the ring beyond a single partner: one told its predecessor that it was pressing its switch to free its successor.</p>
-          </div>
-          <div>
-            <h3>10 agents: requests route through a hub</h3>
-            <p>Side groups form in 93% of episodes, and agents route requests through the focal teammate. An agent locked in its cell asked agent 0 to have a third agent press the switch that frees it.</p>
-          </div>
-          <div>
-            <h3>15 agents: many circles, one hub</h3>
-            <p>The team splits into about 3.5 groups around a single hub, and agents coordinate several teammates in one message, announcing a switch press meant to free two of them at once.</p>
-          </div>
-        </div>
+      <figure class="figure-block" style="max-width: 1000px; margin: 2.4em auto 0;">
+        <span class="image fit framed"><img src="assets/figures/budget_consumption.png" alt="Share of the 600-token budget spent over the episode for the hub and the other agents by team size; agents out of budget before Chamber 3; side-group members against agents writing mostly to agent 0 at N = 15; messages that arrive after the recipient ran out." loading="lazy"></span>
+        <figcaption><strong>When agents run out of messages</strong> (600 tokens per agent). (a) Share of each agent's budget spent by environment step; solid lines are agent 0, dashed lines the other agents, light to dark N&nbsp;=&nbsp;3 to 15. (b) Agents out of budget before Chamber 3, and the median step the budget runs out (mean ± SE over runs). (c) At N&nbsp;=&nbsp;15, the step the budget runs out for members of side groups against agents writing mostly to agent 0, and the share of received messages that arrive after the recipient's own budget ran out, for the hub (solid) and the other agents (dashed).</figcaption>
+      </figure>
+      <div class="cols" style="margin-top: 1.6em;">
+      <div>
+        <h3>Talk is front-loaded</h3>
+        <p>Spending is concentrated in Chambers 1–2 in both arms, and social-plasticity agents use up their messages sooner: 46–59% run out before Chamber 3, against 31–52% of baseline agents. Most of their communication therefore happens in the first two chambers.</p>
+      </div>
+      <div>
+        <h3>The hub runs dry first</h3>
+        <p>As teams grow, the hub runs out sooner and more of the messages sent to it arrive after it can no longer reply; for the other agents this share stays flat. Under the tightest budget, the hub of a fifteen-agent team runs out at a median step of 108, against 268 in teams of three.</p>
+      </div>
       </div>
 
-      <figure class="figure-block">
+      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Larger teams develop structured communication without central assignment</h3>
+      <p class="lede" style="margin-left: 0;">As the team grows, communication does not expand uniformly across all pairs. Two complementary structures emerge: a focal agent that talks with much of the team, and smaller groups of agents that interact more often with one another. At N&nbsp;=&nbsp;15 the focal agent communicates with about ten distinct partners, against about three for the others, resembling the centralised communication networks studied in human groups. Each agent keeps a small number of frequent partners, so larger teams form more conversational groups rather than proportionally larger ones.</p>
+      <figure class="figure-block" style="margin-top: 1.2em;">
         <span class="image fit framed"><img src="assets/figures/team_formation_n15.png" alt="Whole-episode interaction networks of a fifteen-agent baseline team and a social-plasticity team, both centred on agent 0, and the learned bonds of the social-plasticity team." loading="lazy"></span>
-        <figcaption><strong>A focal hub in a fifteen-agent team</strong> (2,600-token budget; one typical episode per arm). (a, b) Every interaction of the episode for the baseline and social plasticity: an edge joins two agents who exchanged at least one message, and agent 0's edges are dark. (c) The learned bonds <span class="m">W</span> of the social-plasticity team in (b), with width proportional to bond strength. Layouts are force-directed, so distance on the page is not distance in the world.</figcaption>
+        <figcaption><strong>A focal agent in a fifteen-agent team</strong> (2,600-token budget; one typical episode per arm). (a, b) Every interaction of the episode for the baseline and social plasticity: an edge joins two agents who exchanged at least one message, and agent 0's edges are dark. (c) The learned bonds <span class="m">W</span> of the social-plasticity team in (b), with width proportional to bond strength. Bonds also form without messages, because working near a teammate counts as co-firing too: agents 6 and 7 never message each other but share the episode's seventh-strongest bond (0.151, against a team mean of 0.099), and agents 1 and 2, who spawn 0.8 blocks apart, share its strongest (0.176) without exchanging a single message. Layouts are force-directed, so distance on the page is not distance in the world.</figcaption>
       </figure>
 
       <div class="row" style="margin-top: 2.4em; align-items: start;">
         <figure>
           <span class="image fit framed"><img src="assets/figures/team_formation_n15_time.png" alt="Distinct partners over the episode for agent 0 and the mean of the other agents, baseline and social plasticity, fifteen agents." loading="lazy"></span>
-          <figcaption><strong>The hub accumulates partners early.</strong> Distinct interaction partners over the two episodes above: agent 0 (solid) against the mean of the other agents (dashed). Chamber 2 is shaded; × marks the end of the episode, when the team is wiped out.</figcaption>
+          <figcaption><strong>The hub accumulates partners early.</strong> Agent 0 gains most of its partners in Chambers 1–2, while the other agents stay below three. Distinct interaction partners over the two episodes above: agent 0 (solid) against the mean of the other agents (dashed); × marks the end of the episode.</figcaption>
         </figure>
         <div class="cols" style="grid-template-columns: 1fr; gap: 18px; margin-top: 0;">
           <div>
-            <h3>Teams self-organise around a hub and tight circles</h3>
-            <p>The focal teammate becomes the team's hub, a wheel that classic studies of human groups found fastest for simple coordination tasks. Around it, each agent keeps one or two conversation partners, so larger teams form more groups rather than bigger ones, and agents talk inside these groups more than chance predicts. In the baseline, modularity exceeds the degree-preserving null by 0.12–0.15 from N&nbsp;=&nbsp;10, and the excess grows with team size (ρ&nbsp;=&nbsp;+0.59, p&nbsp;=&nbsp;0.0002).</p>
+            <h3>Groups tighter than chance</h3>
+            <p>Weighted Louvain modularity captures how strongly agents talk within groups rather than across them; comparing it with rewired networks that keep each agent's number of partners tells whether the groups are more structured than chance. Negative values, as for baseline teams of five, mean messages spread across groups more evenly than chance, as when one hub talks to everyone. In the baseline, modularity exceeds the rewired reference by 0.12–0.13 from N&nbsp;=&nbsp;10, and grouping grows with team size (Spearman ρ&nbsp;=&nbsp;+0.53, p&nbsp;&lt;&nbsp;0.001).</p>
           </div>
           <div>
-            <h3>Learned bonds tighten the conversation</h3>
-            <p>Social-plasticity agents answer 6–14 points more of the messages they receive, and they split into tighter talking groups than baseline teams at every team size: +0.10 vs −0.02 above the null at N&nbsp;=&nbsp;5, +0.22 vs +0.15 at N&nbsp;=&nbsp;15, higher in 20 of 27 matched runs (Wilcoxon p&nbsp;&lt;&nbsp;0.001). With five agents they already reach the grouping that baseline teams show only with ten. The bonds follow the conversation (Spearman ρ&nbsp;=&nbsp;+0.53 between Chamber 2 messages and bonds at N&nbsp;=&nbsp;3): remembered relationships let each message count for more.</p>
+            <h3>Social plasticity strengthens the structure</h3>
+            <p>Social plasticity produces stronger conversational groups than the baseline at every team size, raising modularity above the reference from −0.02 to +0.10 at N&nbsp;=&nbsp;5 and from +0.13 to +0.22 at N&nbsp;=&nbsp;15. Agents other than the hub reply to 6–18 points more of their messages, significantly at N&nbsp;=&nbsp;10 and 15, and learned bonds track message frequency (Spearman ρ&nbsp;=&nbsp;+0.53 at N&nbsp;=&nbsp;3, +0.24 at N&nbsp;=&nbsp;15). It reinforces emerging communication structure without assigning partners or imposing a topology.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">New forms of coordination emerge as the team grows</h3>
+      <p class="lede" style="margin-left: 0;">One conversation at three agents, a soft focal point at five, side groups at seven, a hub that mediates coordination at ten, and decentralised groups at fifteen.</p>
+      <figure class="figure-block" style="margin-top: 1.2em;">
+        <span class="image fit framed"><img src="assets/figures/ladder_snapshots.png" alt="Chamber 2 message graphs of one social-plasticity episode at 3, 5, 7, 10 and 15 agents, with Louvain communities coloured and a path through agent 0 highlighted at ten agents." loading="lazy"></span>
+        <figcaption><strong>New forms of coordination emerge as the team grows.</strong> Chamber 2 message graph of one social-plasticity episode per team size. Louvain communities in colour (agent 0's in light blue), agent 0 filled black, edge width proportional to messages on one scale. In (d), agents 2 and 8 never message each other but coordinate on the same anvil through agent 0 (black path).</figcaption>
+      </figure>
+      <div class="row" style="margin-top: 2.4em;">
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/collab_chambers.png" alt="Message networks in Chambers 2, 3 and 4 for teams of 3, 5, 7, 10, 15 and 20 agents with social plasticity, with message communities coloured and milestones completed together in green." loading="lazy"></span>
+          <figcaption><strong>Who talks to whom, by team size and chamber</strong> (social plasticity, 2,600-token budget; one typical episode per team size, N&nbsp;=&nbsp;3 to 20). Columns are Chamber 2 (anvils), Chamber 3 (switch ring) and Chamber 4 (combat). Edge width follows the messages exchanged; solid edges carry messages both ways, dashed edges one way. Coloured bands are Louvain communities (agent 0's in light blue), green edges with a diamond join agents credited for the same milestone, agent 0 is filled, and agents silent in that chamber sit underneath. In Chamber 3 the ring is set by the task: agent <span class="m">i</span>'s switch opens agent <span class="m">i</span>+1's door.</figcaption>
+        </figure>
+        <div class="cols" style="grid-template-columns: 1fr; gap: 18px; margin-top: 0; align-content: start;">
+          <div>
+            <h3>3 agents: one conversation</h3>
+            <p>The three agents form a single conversation, usually a path through agent 0, and cooperation runs through direct requests to the teammate who can act. In the switch ring, an agent asks the teammate controlling its door to press the switch, and the teammate presses six steps later.</p>
+          </div>
+          <div>
+            <h3>5 agents: a soft focal point</h3>
+            <p>The team still forms one conversation, but agent 0 becomes its default point of contact: about three in four agents send it their first message. Agents still coordinate directly, now in complete request–action–acknowledgement loops: an agent asks for a switch, the teammate presses and confirms, and the freed agent thanks it and moves on.</p>
+          </div>
+          <div>
+            <h3>7 agents: side groups split off</h3>
+            <p>Groups of two or three agents coordinate among themselves beside the conversation around agent 0, in 61% of episodes. Reasoning extends beyond a single partner: agent 5 tells its predecessor, agent 4, that it is pressing its switch to free its successor, agent 6.</p>
+          </div>
+          <div>
+            <h3>10 agents: the hub mediates coordination</h3>
+            <p>Agent 0 now connects agents who never talk to each other directly. Side groups appear in 93% of episodes. In one episode agent 2 tells agent 0 it is ready to work on an anvil "with you and Agent 8"; three steps later agent 0 tells agent 8 it is coming to help "as requested". Agents 2 and 8 never message each other, yet coordinate on the same anvil through agent 0.</p>
+          </div>
+          <div>
+            <h3>15 agents: coordination decentralises</h3>
+            <p>The hub saturates and coordination moves into the groups. The focal agent receives 26–28% of Chamber 2 messages but replies to fewer than one in four, and under the tightest budget 56–66% of the messages sent to it arrive after it has run out. The team instead coordinates through 3.4–3.9 smaller groups per episode, where social plasticity raises reply rates of agents other than the hub (58% vs 40%, p&nbsp;&lt;&nbsp;0.001).</p>
           </div>
         </div>
       </div>
@@ -796,6 +820,6 @@
 </footer>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="assets/js/main.js?v=20261014a"></script>
+<script defer src="assets/js/main.js?v=20261014b"></script>
 </body>
 </html>
