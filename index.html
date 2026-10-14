@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="assets/css/style.css?v=20261012a">
+<link rel="stylesheet" href="assets/css/style.css?v=20261014a">
 </head>
 <body>
 
@@ -63,8 +63,8 @@
   </header>
   <div class="content">
     <div class="container" style="max-width: 860px;">
-      <p style="text-align: justify;">Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship. We model multi-agent systems as an adaptive social network whose directed bonds evolve online through reward-modulated social plasticity: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph feeds back into learning, through reward diffusion and bond-gated experience sharing, and into inference, through social deliberation.</p>
-      <p style="text-align: justify;">In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational state helps most when it shapes learning. With RL fine-tuning, relational coupling improves cooperative completion in three of four tested configurations, while inference-time effects are backbone-dependent, achieving similar cooperative completion to a centralised orchestrator. Different social interaction regimes shape relationships differently: communication builds the strongest bonds, whereas observation or imitation leads to the highest cooperative completion. When studying long-term cooperation, we find that retaining both episodic memory and bonds across different phases of learning favours exploitation of previously successful partners, whereas retaining only bonds balances exploitation and exploration. In this way, the bond graph acts as a compact distillation of social experience while remaining plastic enough to rewire toward new collaborators. Learned relationships thus offer a decentralised complement to orchestration and provide an explicit, inspectable record of which inter-agent relationships have been reinforced through interaction.</p>
+      <p style="text-align: justify;">Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship. We model a multi-agent system as an adaptive social network whose directed bonds evolve online through reward-modulated social plasticity: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph feeds back into learning, through reward diffusion and bond-gated experience sharing, and into inference, through social deliberation.</p>
+      <p style="text-align: justify;">In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational coupling improves cooperative completion in three of four RL fine-tuning configurations, and at inference time outperforms both a soft and a hard centralised orchestrator, the latter at a third of its compute. Communication builds the strongest bonds, while observation and imitation yield the highest cooperative completion, and retaining only bonds after team recomposition balances exploiting past partners with exploring new ones. Where adding LLM agents often brings diminishing returns, scaling teams at test time from 3 to 15 agents raises team cooperative progress from 10% to 19%, and organisation emerges that nobody assigns: small conversational circles, a focal hub, and coordination beyond immediate neighbours. Social plasticity raises cooperative progress further, most of all when communication is scarce. Learned relationships thus offer a decentralised, inspectable complement to orchestration.</p>
     </div>
   </div>
 </section>
@@ -236,8 +236,8 @@
         </div>
         <div class="finding">
           <span class="rq">RQ1 · decentralised orchestration</span>
-          <span class="num">4.8% vs 4.7%</span>
-          <p>Against a compute-matched centralised orchestrator on Gemma-E4B, social plasticity reaches a higher task return (548 vs 505) with similar cooperative completion, without global state or task decomposition. The orchestrator assigns <em>what</em> each agent works on; the graph biases <em>with whom</em>.</p>
+          <span class="num">548 vs 505 / 477</span>
+          <p>On Gemma-E4B, social plasticity reaches a higher task return than both a soft (VillagerAgent-style) and a hard (HMAS-2) central orchestrator, and higher cooperative completion (4.8% vs 4.7% and 3.9%), at the soft orchestrator's compute and a third of the hard one's. The orchestrators assign <em>what</em> each agent works on; the graph biases <em>with whom</em>.</p>
         </div>
         <div class="finding">
           <span class="rq">RQ2 · interaction regimes</span>
@@ -266,7 +266,8 @@
               <tr class="sep"><td>Qwen3.5-9B</td><td class="best">622 ± 88</td><td class="best">40.9 ± 4.2</td><td class="best">10.2 ± 3.1</td></tr>
               <tr><td class="sub">+Social plasticity</td><td>599 ± 107</td><td>40.2 ± 2.8</td><td>9.0 ± 3.5</td></tr>
               <tr class="sep"><td>Gemma-E4B</td><td>521 ± 84</td><td>22.2 ± 2.3</td><td>4.4 ± 2.0</td></tr>
-              <tr><td class="sub">+Central orch.</td><td>505 ± 89</td><td>25.5 ± 4.1</td><td>4.7 ± 1.8</td></tr>
+              <tr><td class="sub">+Soft central orch.</td><td>505 ± 89</td><td>25.5 ± 4.1</td><td>4.7 ± 1.8</td></tr>
+              <tr><td class="sub">+Hard central orch. (HMAS-2)</td><td>477 ± 61</td><td>23.7 ± 0.9</td><td>3.9 ± 2.3</td></tr>
               <tr><td class="sub">+Social plasticity</td><td class="best">548 ± 86</td><td class="best">26.5 ± 4.6</td><td class="best">4.8 ± 1.9</td></tr>
             </tbody>
           </table>
@@ -292,7 +293,7 @@
         </div>
       </div>
 
-      <div class="callout">Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it matches the baseline and the orchestrator in cooperation with the highest task return and Solo %, whereas it lowers performance on both Qwen backbones.</div>
+      <div class="callout">Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it outperforms the baseline and both orchestrators, with the highest task return, Solo % and Coop. %, whereas the gains do not transfer to the Qwen backbones.</div>
 
       <h3 style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Relational plasticity acts as decentralised orchestration</h3>
       <p class="lede" style="margin-left: 0;">A six-agent Chamber 4 kill with Gemma-E4B, the same milestone under both mechanisms. Top: learned bonds and orchestrator assignments; the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
@@ -771,7 +772,7 @@
           <tr class="code-row">
             <td><strong>Code + WIRE</strong></td>
             <td>The environment (Craftium/Luanti mods), the agents, the plasticity rule and both couplings, the orchestrator baselines, the team-size and communication-budget sweep, and the full analysis pipeline.</td>
-            <td><a class="dl" href="#" data-needs-url>Repository</a></td>
+            <td><a class="dl" href="https://github.com/tapri-lab/wired-together" data-needs-url>Repository</a></td>
           </tr>
         </tbody>
       </table>
@@ -795,6 +796,6 @@
 </footer>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="assets/js/main.js?v=20261012a"></script>
+<script defer src="assets/js/main.js?v=20261014a"></script>
 </body>
 </html>
