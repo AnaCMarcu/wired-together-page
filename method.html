@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- layout:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method — Wired Together</title>
+<meta name="description" content="How co-firing and reward form directed bonds between agents, and how the learned graph shapes learning and inference.">
+<meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta property="og:description" content="How co-firing and reward form directed bonds between agents, and how the learned graph shapes learning and inference.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#151617">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕸️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="assets/css/style.css?v=20261015a">
+<!-- /layout:head -->
+</head>
+<body class="subpage">
+<!-- layout:nav -->
+<a class="skip" href="#main">Skip to content</a>
+<nav id="navbar" aria-label="Main">
+  <div class="bar">
+    <a class="brand" href="index.html">Wired Together</a>
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="environment.html">Environment</a></li>
+      <li><a href="method.html" aria-current="page">Method</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="scaling.html">Scaling</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+  </div>
+</nav>
+<!-- /layout:nav -->
+
+<main id="main">
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow">Method</p>
+    <h1>Forming the graph, then using it</h1>
+    <p class="lede">A multi-agent system is modelled as an adaptive social network: agents are nodes, directed pairwise relationships <span class="m">W<sub>ij</sub>(t) ∈ [0,1]</span> are the edges, and reward is the modulatory signal. Social co-activity decides which relationships are <em>eligible</em> to change; later outcomes decide <em>how much</em>. The graph is learned independently of how it is used.</p>
+  </div>
+</header>
+
+<section class="main" id="forming" aria-labelledby="forming-h">
+  <header>
+    <div class="container">
+      <h2 id="forming-h">Forming the graph</h2>
+      <p class="lede">Interaction decides which relationships are eligible to change; reward decides how much.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+
+      <figure class="figure-block">
+        <span class="image fit"><img src="assets/figures/graph_formation.png" alt="Graph formation: co-firing from social acts and engaged co-location creates eligibility traces; reward consolidates bonds; failures decay them." loading="lazy"></span>
+        <figcaption><strong>Learning and using persistent social relationships.</strong> Social interactions induce directed co-firing <span class="m">c<sub>ij</sub>(t)</span>, which accumulates evidence for updating the bond <span class="m">W<sub>ij</sub>(t)</span> through reward-modulated plasticity; the resulting graph <span class="m">W(t)</span> then shapes inference or learning through social deliberation, reward diffusion and experience sharing.</figcaption>
+      </figure>
+
+      <div class="eqbox">
+        <span class="eq-label">Co-firing</span>
+        <div class="eq" data-tex="c_{ij}(t)=\operatorname{clip}\!\left(c^{\mathrm{spat}}_{ij}(t)+\sum_{k\in\mathcal{K}}c^{(k)}_{ij}(t),\,0,\,1\right),\qquad \mathcal{K}\subseteq\{\mathrm{comm},\,\mathrm{obs},\,\mathrm{imit}\}"></div>
+        <span class="eq-label" style="margin-top: 1em;">Delayed consolidation</span>
+        <div class="eq" data-tex="e_{ij}(t)=\rho_e\,e_{ij}(t-1)+c_{ij}(t)"></div>
+        <div class="eq" data-tex="\Delta W_{ij}(t)=\underbrace{\eta_0\,c_{ij}(t)\,(1-W_{ij}(t))}_{\text{association floor}}+\underbrace{\eta_+\frac{|r^{\mathrm{bond}}_i(t)|}{R}\,e_{ij}(t)\,(1-W_{ij}(t))}_{\text{reward-gated consolidation}}-\underbrace{\eta_-^{\mathrm d}\frac{\tilde r^{\mathrm{death}}_i(t)}{R}\,e_{ij}(t)\,W_{ij}(t)}_{\text{failure-gated decay}}-\underbrace{\lambda\,W_{ij}(t)}_{\text{homeostatic decay}}"></div>
+        <div class="eq" data-tex="W_{ij}(t+1)=\operatorname{clip}\!\left(W_{ij}(t)+\Delta W_{ij}(t),\,0,\,1\right)"></div>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h3>Co-firing decides eligibility</h3>
+          <p>Meaningful interaction, not proximity alone, couples two agents. Proximity is gated by engagement and combined with explicit social acts; the observed or imitated teammate is told that the interaction happened. Which acts count is an experimental variable (RQ2), and it changes what the graph learns. Agents perform at most one social act per step.</p>
+        </div>
+        <div>
+          <h3>Reward decides magnitude — later</h3>
+          <p>Cooperative rewards are sparse, so an interaction often precedes the outcome it enabled. Each pair keeps an eligibility trace (<span class="m">ρ<sub>e</sub> = 0.9</span>); a milestone credits recent interaction, and a pair with no recent co-activity receives nothing. Death and would-die penalties produce signed decay through the same trace. An association floor still lets repeated co-firing build a weak bond without reward.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="main alt" id="using" aria-labelledby="using-h">
+  <header>
+    <div class="container">
+      <h2 id="using-h">Using the graph</h2>
+      <p class="lede">The same graph shapes learning for RL fine-tuned agents and deliberation for zero-shot agents.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <figure class="figure-block">
+        <span class="image fit"><img src="assets/figures/couplings.png" alt="Using relational state: reward diffusion and bond-gated experience sharing for RL agents; bond-conditioned deliberation for zero-shot VLM agents." loading="lazy"></span>
+        <figcaption><strong>Using relational state during RL fine-tuning.</strong> Reward diffusion uses the current co-firing <span class="m">c<sub>ij</sub>(t)</span> and the normalised bond <span class="m">W̄<sub>ij</sub></span> to turn the environment reward <span class="m">r<sub>i</sub></span> into <span class="m">r′<sub>i</sub></span>, while bond-gated experience sharing mixes agent <span class="m">i</span>'s rollout buffer with teammates' experience. PPO then updates only agent <span class="m">i</span>'s LoRA parameters; MAPPO uses a shared critic over the joint state, IPPO a local critic. For zero-shot VLM agents, <span class="m">W(t)</span> instead conditions inference-time social deliberation.</figcaption>
+      </figure>
+
+      <div class="eqbox">
+        <span class="eq-label">Reward diffusion</span>
+        <div class="eq" data-tex="r_i'(t)=(1-\gamma_d)\,r_i(t)+\gamma_d\sum_{j\neq i}\overline{W}_{ij}(t)\,c_{ij}(t)\,r_j(t)"></div>
+        <span class="eq-label" style="margin-top: 1em;">Bond-gated experience sharing</span>
+        <div class="eq" data-tex="(o,a,r,o')\sim(1-\rho)\,\mathcal{D}_i+\rho\sum_{j\neq i}\overline{W}_{ij}(t)\,\mathcal{D}_j"></div>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h3>Reward diffusion</h3>
+          <p>A bonded partner's reward is mixed into an agent's own, in proportion to the row-normalised bond and gated by current co-firing, so credit flows along active relationships rather than across the whole team.</p>
+        </div>
+        <div>
+          <h3>Bond-gated experience sharing</h3>
+          <p>A fraction <span class="m">ρ</span> of an agent's PPO batch is sampled from bonded partners' buffers, weighted by bond. Agents below the sparsity threshold contribute nothing.</p>
+        </div>
+        <div>
+          <h3>Bond-conditioned deliberation</h3>
+          <p>Zero-shot VLM agents receive their bond row at inference time: whom to address, whom to trust, whom to ask for help. No gradient, no coordinator, no global state.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- layout:footer -->
+<footer id="footer">
+  <div class="container">
+    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+  </div>
+</footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="assets/js/main.js?v=20261015a"></script>
+<!-- /layout:footer -->
+</body>
+</html>

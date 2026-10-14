@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- layout:head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results — Wired Together</title>
+<meta name="description" content="RQ1–RQ3: social plasticity against baselines and central orchestration, interaction regimes, and memory and bonds after team recomposition.">
+<meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta property="og:description" content="RQ1–RQ3: social plasticity against baselines and central orchestration, interaction regimes, and memory and bonds after team recomposition.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#151617">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕸️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261015a">
+<!-- /layout:head -->
+</head>
+<body class="subpage">
+<!-- layout:nav -->
+<a class="skip" href="#main">Skip to content</a>
+<nav id="navbar" aria-label="Main">
+  <div class="bar">
+    <a class="brand" href="index.html">Wired Together</a>
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="environment.html">Environment</a></li>
+      <li><a href="method.html">Method</a></li>
+      <li><a href="results.html" aria-current="page">Results</a></li>
+      <li><a href="scaling.html">Scaling</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+  </div>
+</nav>
+<!-- /layout:nav -->
+
+<main id="main">
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow">Results</p>
+    <h1>What we found</h1>
+    <p class="lede">Three questions: does the learned graph improve cooperation (RQ1), which interactions construct useful bonds (RQ2), and how memory and learned relational state carry social experience into long-term cooperation (RQ3)? Three agents, 1,000-step episodes, mean ± SD across seeds, each seed averaging its three episodes. <em>Solo</em> and <em>Coop. %</em> are agent-level completion rates over the eight Chamber 1 and the seventeen Chamber 2–5 milestones.</p>
+      <nav aria-label="On this page"><ul class="toc"><li><a href="#rq1">RQ1 · performance</a></li><li><a href="#orchestration">Central orchestration</a></li><li><a href="#rq2">RQ2 · interaction regimes</a></li><li><a href="#rq3">RQ3 · team recomposition</a></li><li><a href="#more">Compute and perception</a></li><li><a href="#timelines">Full timelines</a></li></ul></nav>
+  </div>
+</header>
+
+<section class="main" id="rq1" aria-labelledby="rq1-h">
+  <header>
+    <div class="container">
+      <h2 id="rq1-h">RQ1 — Does social plasticity improve cooperative performance?</h2>
+      <p class="lede">We compare social plasticity with matched no-graph baselines across three zero-shot VLM backbones (Qwen3.5-2B, Qwen3.5-9B and Gemma-E4B) and four RL fine-tuning configurations (IPPO and MAPPO with Qwen3.5-2B and Gemma-E4B), and on Gemma-E4B against a soft (VillagerAgent-style) and a hard (HMAS-2) central orchestrator.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <h3 style="font-weight: 300; font-size: 1.2em; margin: 0;">Table 1 — Effect of social plasticity on cooperative task performance</h3>
+      <p class="note">Mean ± SD across seeds. † marks conditions below the six-seed target. Task return includes the communication stream. Bold: best within a backbone block.</p>
+
+      <div class="tables">
+        <div>
+          <h4>(a) Zero-shot VLM agents</h4>
+          <div class="tablewrap">
+          <table>
+            <thead><tr><th>Condition</th><th>Task return ↑</th><th>Solo % ↑</th><th>Coop. % ↑</th></tr></thead>
+            <tbody>
+              <tr><td>Qwen3.5-2B</td><td>358 ± 122</td><td class="best">32.1 ± 5.0</td><td class="best">4.6 ± 2.3</td></tr>
+              <tr><td class="sub">+Social plasticity</td><td class="best">390 ± 109</td><td>30.3 ± 8.0</td><td>3.7 ± 1.7</td></tr>
+              <tr class="sep"><td>Qwen3.5-9B</td><td class="best">622 ± 88</td><td class="best">40.9 ± 4.2</td><td class="best">10.2 ± 3.1</td></tr>
+              <tr><td class="sub">+Social plasticity</td><td>599 ± 107</td><td>40.2 ± 2.8</td><td>9.0 ± 3.5</td></tr>
+              <tr class="sep"><td>Gemma-E4B</td><td>521 ± 84</td><td>22.2 ± 2.3</td><td>4.4 ± 2.0</td></tr>
+              <tr><td class="sub">+Soft central orch.</td><td>505 ± 89</td><td>25.5 ± 4.1</td><td>4.7 ± 1.8</td></tr>
+              <tr><td class="sub">+Hard central orch. (HMAS-2)</td><td>477 ± 61</td><td>23.7 ± 0.9</td><td>3.9 ± 2.3</td></tr>
+              <tr><td class="sub">+Social plasticity</td><td class="best">548 ± 86</td><td class="best">26.5 ± 4.6</td><td class="best">4.8 ± 1.9</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div>
+          <h4>(b) RL fine-tuned agents</h4>
+          <div class="tablewrap">
+          <table>
+            <thead><tr><th>Condition</th><th>Task return ↑</th><th>Solo % ↑</th><th>Coop. % ↑</th></tr></thead>
+            <tbody>
+              <tr><td>Qwen3.5-2B IPPO †</td><td>425 ± 36</td><td>30.3 ± 3.3</td><td>2.9 ± 1.3</td></tr>
+              <tr><td class="sub">+Social plasticity †</td><td class="best">467 ± 63</td><td class="best">31.4 ± 4.0</td><td class="best">3.3 ± 1.7</td></tr>
+              <tr class="sep"><td>Qwen3.5-2B MAPPO</td><td>390 ± 56</td><td>31.1 ± 3.9</td><td>1.5 ± 1.3</td></tr>
+              <tr><td class="sub">+Social plasticity †</td><td class="best">453 ± 92</td><td class="best">31.8 ± 5.4</td><td class="best">2.9 ± 2.5</td></tr>
+              <tr class="sep"><td>Gemma-E4B IPPO</td><td>430 ± 70</td><td>21.5 ± 4.7</td><td>0.8 ± 0.6</td></tr>
+              <tr><td class="sub">+Social plasticity †</td><td class="best">493 ± 159</td><td class="best">22.2 ± 3.8</td><td class="best">3.5 ± 2.0</td></tr>
+              <tr class="sep"><td>Gemma-E4B MAPPO</td><td class="best">380 ± 62</td><td>22.0 ± 5.2</td><td class="best">2.2 ± 1.4</td></tr>
+              <tr><td class="sub">+Social plasticity †</td><td>334 ± 70</td><td class="best">22.7 ± 5.2</td><td>0.4 ± 0.8</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it outperforms the baseline and both orchestrators, with the highest task return, Solo % and Coop. %, whereas the gains do not transfer to the Qwen backbones.</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="main alt" id="orchestration" aria-labelledby="orchestration-h">
+  <header>
+    <div class="container">
+      <h2 id="orchestration-h">On a hard cooperative task, coordination emerges under social plasticity but not under central orchestration</h2>
+      <p class="lede">Social plasticity attains a higher task return than both central orchestrators (548 vs 505 soft and 477 hard) and higher cooperative completion (4.8% vs 4.7% and 3.9%), at the inference compute of the soft orchestrator and a third of the hard orchestrator's, which spends 72.5% of its tokens in orchestrator calls, mostly plan checks and revisions. A six-agent Chamber 4 kill with Gemma-E4B, the same milestone in all three runs. Top: learned bonds (a), orchestrator assignments (b), and the planner's assignments with each agent's objections (c); the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="row three">
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/cf6_plasticity.png" alt="Social plasticity: bond strengths over the interval, first-person frames and messages; two agents converge on one zombie and kill it together." loading="lazy"></span>
+          <figcaption><strong>(a) Social plasticity.</strong> Agents 0 and 5 converge on the same zombie and kill it together as their bond strengthens (<span class="m">W̄</span>: 0.32 → 0.47).</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/cf6_soft.png" alt="Soft central orchestration: task assignments, frames and messages; agents say they will help, but one never joins." loading="lazy"></span>
+          <figcaption><strong>(b) Soft central orchestration.</strong> The agents say they will help each other, but agent 0 never joins and agent 5 kills alone.</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/cf6_hard.png" alt="Hard central orchestration: the planner's assignments with objections, frames and messages; agent 1 refuses to coordinate and agent 0 kills alone." loading="lazy"></span>
+          <figcaption><strong>(c) Hard central orchestration.</strong> The planner keeps telling agent 1 to coordinate with agents 0 and 2; agent 1 refuses and pursues its own task, and agent 0 kills alone.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="main" id="rq2" aria-labelledby="rq2-h">
+  <header>
+    <div class="container">
+      <h2 id="rq2-h">RQ2 — How do social interaction regimes shape learned bonds?</h2>
+      <p class="lede">Bond strength reflects interaction frequency, not necessarily coordination value. Communication is selected most often and produces the strongest bonds, yet the lowest cooperative completion of any single cue: its bonds are informative about who talks, not who cooperates. Observation and imitation, used far less often, keep cooperative completion close to spatial engagement alone, and no explicit cue improves on it.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="tablewrap">
+      <table>
+        <caption>RQ2: how social interaction regimes shape learned bonds. Rows vary the cues that define co-firing; <em>Spatial engagement</em> forms bonds from engaged co-location alone. Task return excludes all social-act rewards. Per cue: share of social acts, share of positive bond change attributed to it (ΔW), and Spearman ρ between pairwise bond and use of that act; <span class="m">W̄</span> is the mean end-of-episode bond.</caption>
+        <thead><tr><th scope="col">Co-firing cues</th><th scope="col">Task return ↑</th><th scope="col">Solo % ↑</th><th scope="col">Coop. % ↑</th><th scope="col">Mean W</th><th scope="col">Cue</th><th scope="col">Act use %</th><th scope="col">Attributed ΔW %</th><th scope="col">ρ</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Spatial engagement</th><td class="best">299 ± 29</td><td class="best">27.3 ± 5.5</td><td class="best">5.7 ± 0.4</td><td>0.11</td><td class="cue">—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr class="sep"><th scope="row">comm</th><td>236 ± 65</td><td>23.7 ± 1.7</td><td>2.6 ± 1.3</td><td>0.34</td><td class="cue">comm</td><td class="best">82.7 ± 1.0</td><td class="best">75.9 ± 1.0</td><td>0.65 ± 0.08</td></tr>
+          <tr><th scope="row">obs</th><td>298 ± 37</td><td>26.8 ± 1.7</td><td>4.8 ± 2.9</td><td>0.25</td><td class="cue">obs</td><td>21.6 ± 1.1</td><td>46.0 ± 5.0</td><td>0.57 ± 0.21</td></tr>
+          <tr><th scope="row">imit</th><td>284 ± 33</td><td>24.7 ± 2.3</td><td>4.6 ± 0.0</td><td>0.15</td><td class="cue">imit</td><td>5.3 ± 3.4</td><td>13.4 ± 5.7</td><td>0.35 ± 0.11</td></tr>
+          <tr class="sep"><th scope="row" rowspan="2">comm + obs</th><td rowspan="2">212 ± 82</td><td rowspan="2">21.2 ± 5.5</td><td rowspan="2">2.4 ± 3.0</td><td rowspan="2" class="best">0.38</td><td class="cue">comm</td><td>73.5 ± 2.9</td><td>61.7 ± 3.1</td><td class="best">0.72 ± 0.07</td></tr>
+          <tr><td class="cue">obs</td><td>3.9 ± 1.1</td><td>9.7 ± 2.1</td><td>0.53 ± 0.05</td></tr>
+          <tr class="sep"><th scope="row" rowspan="3">comm + obs + imit</th><td rowspan="3">214 ± 54</td><td rowspan="3">26.3 ± 2.3</td><td rowspan="3">1.5 ± 0.4</td><td rowspan="3">0.37</td><td class="cue">comm</td><td>75.7 ± 2.7</td><td>65.9 ± 2.6</td><td>0.71 ± 0.16</td></tr>
+          <tr><td class="cue">obs</td><td>3.4 ± 0.4</td><td>6.8 ± 1.0</td><td>0.31 ± 0.13</td></tr>
+          <tr><td class="cue">imit</td><td>0.0 ± 0.0</td><td>0.0 ± 0.0</td><td>0.21 ± 0.00</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="row" style="margin-top: 2em;">
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/rq2_pareto_coop.png" alt="Cooperative completion against mean bond strength for each co-firing cue." loading="lazy"></span>
+          <figcaption><strong>RQ2: bond strength does not buy cooperation.</strong> Spatial engagement alone ("None") is the only non-dominated condition: every explicit cue adds bond mass without adding completion, and the cue sets that include communication reach the largest <span class="m">W̄</span> and the lowest cooperative completion.</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/rq2_pareto_solo.png" alt="Solo completion against mean bond strength for each co-firing cue." loading="lazy"></span>
+          <figcaption>The same comparison for solo completion: again spatial engagement alone is the only non-dominated condition. Agent-level completion against the mean bond strength each cue condition produces; bars are ±1 SD across seeds.</figcaption>
+        </figure>
+      </div>
+      <div class="callout"><strong>More social signals can reduce relational quality through action competition.</strong> When several cues compete for a single social-action slot, communication takes 75.7% of social actions in the full comm + obs + imit condition, observation falls to 3.4% and imitation is almost never selected, and the combined-cue conditions reach the lowest cooperative completion (2.4% and 1.5%).</div>
+    </div>
+  </div>
+</section>
+
+<section class="main alt" id="rq3" aria-labelledby="rq3-h">
+  <header>
+    <div class="container">
+      <h2 id="rq3-h">RQ3 — How do memory and bonds carry social experience into a new team?</h2>
+      <p class="lede">Pairs trained together in Chambers 1–2 are merged into a six-agent team that restarts at Chamber 3, where each agent's switch opens the door of an agent from a different pair. We vary what the agents keep from their first team; everything keeps updating afterwards. Partner preference is the share of an agent's messages sent to its former partner (chance 0.20); bond-implied is the same share read off the bond table at each episode start.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="tables">
+        <div>
+          <div class="tablewrap">
+          <table>
+            <thead><tr><th>Condition</th><th>Memory</th><th>Bonds</th><th>Task return ↑</th><th>Coop. % ↑</th><th>Partner pref.</th><th>Bond-implied</th></tr></thead>
+            <tbody>
+              <tr><td>Full transfer</td><td>kept</td><td>kept</td><td>237 ± 115</td><td>6.9 ± 2.3</td><td>0.55 ± 0.12</td><td>0.40</td></tr>
+              <tr><td>Memory only</td><td>kept</td><td>reset</td><td>128 ± 76</td><td>4.2 ± 1.1</td><td>0.18 ± 0.23</td><td>0.27</td></tr>
+              <tr><td>Bonds only</td><td>reset</td><td>kept</td><td class="best">369 ± 63</td><td class="best">8.3 ± 1.1</td><td>0.14 ± 0.14</td><td>0.31</td></tr>
+              <tr><td>Fresh start</td><td>reset</td><td>reset</td><td>271 ± 14</td><td>7.9 ± 0.7</td><td>0.34 ± 0.26</td><td>0.28</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="note">Gemma-E4B with social plasticity; one seed, mean ± SD over three episodes. Coop. % counts the twelve Chamber 3–5 milestones reachable from a Chamber 3 start; task return excludes message pay.</p>
+        </div>
+      </div>
+      <figure style="margin-top: 1.6em;">
+        <span class="image fit framed"><img src="assets/figures/rq3_case.png" alt="Full transfer in Chamber 3: three former pairs in a switch ring; former partners exchange 657 to 661 messages, the task-linked cross-pair links only 0 to 4, with four verbatim messages." loading="lazy"></span>
+        <figcaption><strong>Retaining both memory and social bonds favours exploitation of previously successful partners.</strong> Full-transfer condition in Chamber 3. Grey arrows connect former Phase-A partners, while black arrows indicate cross-pair dependencies introduced by the switch task. Former partners exchange 657–661 messages, whereas task-relevant cross-pair links carry only 0–4, illustrating continued exploitation of established partnerships after team recomposition.</figcaption>
+      </figure>
+      <div class="callout">Retaining both episodic memory and bonds favours exploitation of previously successful partners, whereas retaining only bonds balances exploitation and exploration. The bond graph acts as a compact distillation of social experience while remaining plastic enough to rewire toward new collaborators.</div>
+    </div>
+  </div>
+</section>
+
+<section class="main" id="more" aria-labelledby="more-h">
+  <header>
+    <div class="container">
+      <h2 id="more-h">Compute and perception</h2>
+      <p class="lede">Two supporting analyses: how often to run the social module, and how backbone perception relates to zero-shot performance.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="row three">
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/frontier.png" alt="Milestone completion against social-module compute across deliberation intervals." loading="lazy"></span>
+          <figcaption><strong>Deliberation interval against social-module compute</strong> (Gemma-E4B, +Social plasticity). Without a social module agents complete 9.7% of milestones; every interval from 2 to 100 steps lies above this (10.3–11.9%), and an interval of 100 (11.0%) still beats the default of 8 (10.3%) at roughly 12× less compute. Only at 500 does completion fall back to the no-module level.</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/perception.png" alt="Zero-shot milestone completion against perception grounding across five backbones." loading="lazy"></span>
+          <figcaption><strong>Zero-shot performance against perception grounding</strong> across five backbones, without (Base) and with social plasticity: whether free-text observations identify objects consistent with the current chamber.</figcaption>
+        </figure>
+        <figure>
+          <span class="image fit framed"><img src="assets/figures/partner_accuracy.png" alt="Zero-shot milestone completion against partner-location accuracy across five backbones." loading="lazy"></span>
+          <figcaption><strong>Zero-shot performance against partner-location accuracy</strong> across five backbones, without (Base) and with social plasticity: whether an agent's claims about teammates match their true chamber.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="main alt" id="timelines" aria-labelledby="timelines-h">
+  <header>
+    <div class="container">
+      <h2 id="timelines-h">Coordination over full episodes</h2>
+      <p class="lede">The paper's appendix timelines: message activity, bonds or orchestrator assignments, and first-person vignettes over whole runs. Open each to view it.</p>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <details class="more">
+        <summary>Qualitative coordination dynamics for Gemma-E4B +Social plasticity</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/timeline_gemma.png" alt="Qualitative coordination dynamics for Gemma-E4B +Social plasticity: message activity, bonds or assignments, and first-person vignettes." loading="lazy"></span>
+            <figcaption>Mutual pairwise messages and bond strengths over three episodes, with representative interaction windows expanded below. Under the trace rule, consolidation events coincide with milestone rewards rather than with the co-active steps themselves, and the resulting bond ordering is stable across episodes: the same top pair persists while communication remains distributed across the team.</figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="more">
+        <summary>Full timeline under social plasticity at six agents (seed 456, three episodes)</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/timeline_plast_n6.png" alt="Full timeline under social plasticity at six agents (seed 456, three episodes): message activity, bonds or assignments, and first-person vignettes." loading="lazy"></span>
+            <figcaption>Top: mutual message activity for the five pairs drawn below. Middle: bond strengths for the pairs that lead at some point in the run; stars mark mob kills, shaded bands the vignette intervals. Bottom: message excerpts with first-person frames, including the three-agent fight of Figure 4(a).</figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="more">
+        <summary>Full timeline under centralised orchestration at six agents (seed 42, three episodes)</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/timeline_orch_n6.png" alt="Full timeline under centralised orchestration at six agents (seed 42, three episodes): message activity, bonds or assignments, and first-person vignettes." loading="lazy"></span>
+            <figcaption>Top: mutual message activity for the three most active pairs. Middle: per-agent orchestrator assignments, shaded by team size; circles mark joint milestones, stars mob kills. The vignettes show the Chamber 4 split into six solo kill tasks (the interval of Figure 4(b)), a focus-fire call nobody reaches, and the run's only jointly credited milestone, an anvil broken by a pair the plan never assigned together.</figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="more">
+        <summary>Full-episode timeline under social plasticity (three agents)</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/timeline_plast.png" alt="Full-episode timeline under social plasticity (three agents): message activity, bonds or assignments, and first-person vignettes." loading="lazy"></span>
+            <figcaption>Top: mutual pairwise message activity. Middle: pairwise bond strengths; circles mark joint milestones, stars mob kills, shaded bands the vignette intervals. Bottom: message excerpts with first-person frames showing joint task execution, a partner help request, and partner-specific support.</figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="more">
+        <summary>Full-episode timeline under centralised orchestration (three agents)</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/timeline_orch.png" alt="Full-episode timeline under centralised orchestration (three agents): message activity, bonds or assignments, and first-person vignettes." loading="lazy"></span>
+            <figcaption>Top: mutual pairwise message activity. Middle: per-agent orchestrator assignments (independent, paired, full team); circles mark joint milestones, stars mob kills. Bottom: message excerpts with first-person frames showing coordinator-directed combat, an assigned joint subtask, and task reassignment after failure.</figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="more">
+        <summary>Central orchestration and social plasticity retain different coordination state</summary>
+        <div class="inner">
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/team_tenure_a.png" alt="Orchestrator assignments over a run: discrete teams recomposed as the plan changes." loading="lazy"></span>
+          </figure>
+          <figure>
+            <span class="image fit framed"><img src="assets/figures/team_tenure_b.png" alt="Pairwise bonds over the same chambers under social plasticity, updated continuously." loading="lazy"></span>
+            <figcaption>Top: orchestrator assignments are discrete and are recomposed as the task plan changes. Bottom: social plasticity updates pairwise bonds continuously across the same sequence of WIRE chambers. Circles denote joint milestones and stars mob kills.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- layout:footer -->
+<footer id="footer">
+  <div class="container">
+    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+  </div>
+</footer>
+<script defer src="assets/js/main.js?v=20261015a"></script>
+<!-- /layout:footer -->
+</body>
+</html>

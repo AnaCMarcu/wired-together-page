@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- layout:head -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wired Together — Moments</title>
-<meta name="robots" content="index">
+<title>Gallery — Wired Together</title>
+<meta name="description" content="Every mined success and failure, filterable by agent family, outcome and kind of moment.">
+<meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta property="og:description" content="Every mined success and failure, filterable by agent family, outcome and kind of moment.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#151617">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕸️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20260923b">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261015a">
+<!-- /layout:head -->
 </head>
 <body class="subpage">
+<!-- layout:nav -->
+<a class="skip" href="#main">Skip to content</a>
+<nav id="navbar" aria-label="Main">
+  <div class="bar">
+    <a class="brand" href="index.html">Wired Together</a>
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="environment.html">Environment</a></li>
+      <li><a href="method.html">Method</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="scaling.html">Scaling</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+    </ul>
+    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+  </div>
+</nav>
+<!-- /layout:nav -->
 
-<nav id="navbar"><ul class="nav-buttons">
-  <li><a href="index.html">← Project page</a></li>
-  <li><a href="index.html#wire">WIRE</a></li>
-  <li><a href="index.html#method">Method</a></li>
-  <li><a href="index.html#results">Results</a></li>
-  <li><a href="index.html#moments">Moments</a></li>
-  <li><a href="#moments" class="active">All moments</a></li>
-  <li><a href="index.html#data">Data</a></li>
-</ul></nav>
+<main id="main">
+<header class="page-head">
+  <div class="container">
+    <p class="eyebrow">Gallery</p>
+    <h1>Every moment, both ways</h1>
+    <p class="lede">75 clips across the zero-shot, RL fine-tuned and six-agent arms — 34 where cooperation visibly worked and 41 where it visibly did not — mined from the milestone and message logs of every episode, then cut to the step window around the event. Every clip opens with all agents' first-person views side by side; the button on it narrows to the agents contributing to the action, the first named being the one the event credits. Recordings replay at six environment steps per second.</p>
+  </div>
+</header>
 
-<section class="main" id="moments">
-  <header>
-    <div class="container">
-      <h2>Every moment, both ways</h2>
-      <p class="lede">75 clips across the zero-shot, RL fine-tuned and six-agent arms — 34 where cooperation visibly worked and 41 where it visibly did not — mined from the milestone and message logs of every episode, then cut to the step window around the event. Every clip opens with all agents' first-person views side by side; the button on it narrows to the agents contributing to the action, the first named being the one the event credits. Recordings replay at six environment steps per second.</p>
-    </div>
-  </header>
+<section class="main" id="moments" aria-label="All moments">
   <div class="content">
     <div class="container">
       <div class="controls">
@@ -777,10 +797,16 @@
   </div>
 </section>
 
-<footer id="footer"><div class="container">
-  <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>.</p>
-</div></footer>
+</main>
 
-<script defer src="assets/js/main.js?v=20260923b"></script>
+<!-- layout:footer -->
+<footer id="footer">
+  <div class="container">
+    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+  </div>
+</footer>
+<script defer src="assets/js/main.js?v=20261015a"></script>
+<!-- /layout:footer -->
 </body>
 </html>
