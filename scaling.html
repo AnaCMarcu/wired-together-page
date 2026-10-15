@@ -11,11 +11,11 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/figures/graph_formation.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#151617">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕸️</text></svg>">
+<meta name="theme-color" content="#1e2f5c">
+<link rel="icon" type="image/png" href="assets/figures/logo_tapri.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261015a">
+<link rel="stylesheet" href="assets/css/style.css?v=20261015b">
 <!-- /layout:head -->
 </head>
 <body class="subpage">
@@ -81,7 +81,7 @@
       <p class="lede" style="margin-left: 0;">The tie at ten agents reflects a ceiling rather than a lack of coordination. WIRE's cooperative milestones are, by design, the same at every team size: by ten agents both arms reliably complete the switch-ring and first-kill milestones, and further milestones, such as breaking the Chamber 2 anvils, are reached more often only with fifteen agents, where social plasticity leads again. The social-plasticity Pareto front lies above the baseline's over most of the inference-compute range.</p>
       <figure class="figure-block" style="margin-top: 1em;">
         <span class="image fit framed"><img src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
-        <figcaption><strong>Social plasticity reaches more cooperation for the same compute and forms tighter groups than the baseline at every team size.</strong> (a) Inference compute against cooperation: each point is one team size and communication budget (marker fill; low, medium and high are 600, 2,600 and 10,400 tokens per agent), with team cooperative milestone completion at the end of the episode (mean ± SE over seeds). Step lines show each arm's Pareto front; the orange region marks where the social-plasticity front exceeds the baseline's. Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Three seeds per cell, two for social plasticity at N&nbsp;=&nbsp;15 and at N&nbsp;=&nbsp;5 with 10,400 tokens. (b) Self-organised groups: weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph (mean of per-run means ± SE). Zero means no grouping beyond what each agent's number of partners implies; positive values mean tighter groups than chance, negative values messages spread across groups more evenly than chance.</figcaption>
+        <figcaption><strong>Social plasticity reaches more cooperation for the same compute and forms tighter groups than the baseline at every team size.</strong> (a) Inference compute against cooperation: each point is one team size and communication budget (marker fill; low, medium and high are 600, 2,600 and 10,400 tokens per agent), with team cooperative milestone completion at the end of the episode (mean ± SE over seeds). Step lines show each arm's Pareto front; the pink region marks where the social-plasticity front exceeds the baseline's. Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Three seeds per cell, two for social plasticity at N&nbsp;=&nbsp;15 and at N&nbsp;=&nbsp;5 with 10,400 tokens. (b) Self-organised groups: weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph (mean of per-run means ± SE). Zero means no grouping beyond what each agent's number of partners implies; positive values mean tighter groups than chance, negative values messages spread across groups more evenly than chance.</figcaption>
       </figure>
 
       <h2 class="sub" id="budgets" style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Social plasticity helps under constrained communication budgets</h2>
@@ -214,7 +214,7 @@
     <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
   </div>
 </footer>
-<script defer src="assets/js/main.js?v=20261015a"></script>
+<script defer src="assets/js/main.js?v=20261015b"></script>
 <!-- /layout:footer -->
 </body>
 </html>
