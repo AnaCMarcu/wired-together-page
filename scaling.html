@@ -6,16 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Test-time scaling — Wired Together</title>
 <meta name="description" content="Teams of 3 to 15 agents under message budgets: cooperation, a focal hub, small conversational groups, and the effect of social plasticity.">
+<link rel="canonical" href="https://anacmarcu.github.io/wired-together-page/scaling.html">
 <meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
 <meta property="og:description" content="Teams of 3 to 15 agents under message budgets: cooperation, a focal hub, small conversational groups, and the effect of social plasticity.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta property="og:url" content="https://anacmarcu.github.io/wired-together-page/scaling.html">
+<meta property="og:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="895">
+<meta property="og:image:alt" content="Learning and using persistent social relationships: social signals define co-firing, reward-modulated plasticity updates directed bonds, and the social graph shapes behaviour.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta name="twitter:description" content="Teams of 3 to 15 agents under message budgets: cooperation, a focal hub, small conversational groups, and the effect of social plasticity.">
+<meta name="twitter:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
 <meta name="theme-color" content="#1e2f5c">
 <link rel="icon" type="image/png" href="assets/figures/logo_tapri.png">
+<script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261015b">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261016a">
 <!-- /layout:head -->
 </head>
 <body class="subpage">
@@ -24,16 +34,24 @@
 <nav id="navbar" aria-label="Main">
   <div class="bar">
     <a class="brand" href="index.html">Wired Together</a>
-    <ul>
-      <li><a href="index.html">Overview</a></li>
-      <li><a href="environment.html">Environment</a></li>
-      <li><a href="method.html">Method</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="scaling.html" aria-current="page">Scaling</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" hidden><span class="burger" aria-hidden="true"></span>Menu</button>
+    <div class="menu" id="nav-menu">
+      <ul class="pages">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a href="environment.html">Environment</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="scaling.html" aria-current="page">Scaling</a></li>
+        <li class="group">
+          <a class="group-link" href="videos.html">Demos<span class="caret" aria-hidden="true"></span></a>
+          <ul class="sub" aria-label="Demos">
+            <li><a href="videos.html">Videos<span class="blurb">Curated moments, condition by condition</span></a></li>
+            <li><a href="gallery.html">Gallery<span class="blurb">Every mined success and failure</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    </div>
   </div>
 </nav>
 <!-- /layout:nav -->
@@ -44,14 +62,51 @@
     <p class="eyebrow">Test-time scaling</p>
     <h1>Self-organised structure as teams grow</h1>
     <p class="lede">Adding agents does not necessarily improve a team: returns diminish as coordination overhead grows, and communication can become a bottleneck. We ask whether persistent relational state supports cooperation as teams grow, and what coordination structures emerge without explicit assignment. We scale zero-shot Gemma-E4B teams from 3 to 15 agents at inference time, with 600, 2,600 or 10,400 message tokens per agent per episode. All agents receive the same prompt apart from their name, and every message is addressed to exactly one teammate.</p>
-      <nav aria-label="On this page"><ul class="toc"><li><a href="#cooperation">Cooperation</a></li><li><a href="#budgets">Message budgets</a></li><li><a href="#structure">Structure</a></li><li><a href="#forms">Coordination forms</a></li><li><a href="#watch">Videos</a></li></ul></nav>
   </div>
 </header>
+<nav class="subnav" aria-label="On this page"><ul><li><a href="#effects">Three effects</a></li><li><a href="#cooperation">Compute vs cooperation</a></li><li><a href="#key-numbers">Key numbers</a></li><li><a href="#structure">Structure</a></li><li><a href="#watch">Videos</a></li><li><a href="#forms">Coordination forms</a></li><li><a href="#budgets">Message budgets</a></li></ul></nav>
 
-<section class="main" aria-label="Test-time scaling results">
+<section class="main" aria-label="Effects and compute against cooperation">
   <div class="content">
     <div class="container">
+      <h2 class="sub" id="effects">Three effects, kept apart</h2>
+      <p class="lede">Team size, message budget and social plasticity change different things. The comparisons below hold the other two fixed.</p>
+      <div class="effects" role="list" aria-label="Three effects, kept apart">
+        <div role="listitem">
+          <span class="kind">Team size</span>
+          <h3>3 → 15 agents</h3>
+          <span class="varies">Same seventeen cooperative milestones at every size</span>
+          <p>Without any social graph, budget-averaged team completion rises from 9.6% to 18.3% (+8.7 points). This rise comes with team size, not with plasticity.</p>
+        </div>
+        <div role="listitem">
+          <span class="kind">Message budget</span>
+          <h3>600 · 2,600 · 10,400 tokens</h3>
+          <span class="varies">Per agent per episode</span>
+          <p>Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Which budget a team gets matters less than whether it has social plasticity.</p>
+        </div>
+        <div role="listitem">
+          <span class="kind">Social plasticity</span>
+          <h3>Baseline → +social plasticity</h3>
+          <span class="varies">Same team size and budget</span>
+          <p>+1.3 to +3.5 points at every team size except N&nbsp;=&nbsp;10, where the arms tie. The largest average gain is at 600 tokens (+2.9 points), against +2.6 at 10,400 and +0.7 at 2,600.</p>
+        </div>
+      </div>
 
+      <h2 class="sub" id="cooperation">Social plasticity improves cooperation and compute efficiency as teams grow</h2>
+      <p class="lede">The tie at ten agents reflects a ceiling rather than a lack of coordination. WIRE's cooperative milestones are, by design, the same at every team size: by ten agents both arms reliably complete the switch-ring and first-kill milestones, and further milestones, such as breaking the Chamber 2 anvils, are reached more often only with fifteen agents, where social plasticity leads again. The social-plasticity Pareto front lies above the baseline's over most of the inference-compute range.</p>
+      <figure class="figure-block" style="margin-top: 1em;">
+        <span class="image fit framed"><img src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
+        <figcaption><strong>Social plasticity reaches more cooperation for the same compute and forms tighter groups than the baseline at every team size.</strong> (a) Inference compute against cooperation: each point is one team size and communication budget (marker fill; low, medium and high are 600, 2,600 and 10,400 tokens per agent), with team cooperative milestone completion at the end of the episode (mean ± SE over seeds). Step lines show each arm's Pareto front; the pink region marks where the social-plasticity front exceeds the baseline's. Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Three seeds per cell, two for social plasticity at N&nbsp;=&nbsp;15 and at N&nbsp;=&nbsp;5 with 10,400 tokens. (b) Self-organised groups: weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph (mean of per-run means ± SE). Zero means no grouping beyond what each agent's number of partners implies; positive values mean tighter groups than chance, negative values messages spread across groups more evenly than chance.</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section class="main alt" aria-label="Key numbers">
+  <div class="content">
+    <div class="container">
+      <h2 class="sub" id="key-numbers">Key numbers</h2>
 
       <div class="findings">
         <div class="finding">
@@ -75,41 +130,18 @@
           <p>At N&nbsp;=&nbsp;15 the focal agent talks with about ten distinct partners, the others with about three. Social plasticity forms tighter conversational groups at every team size: +0.10 vs −0.02 above chance at N&nbsp;=&nbsp;5, +0.22 vs +0.13 at N&nbsp;=&nbsp;15.</p>
         </div>
       </div>
-      <p class="note" style="margin: -1.2em auto 2.4em; text-align: center;">Team cooperative completion: the share of the seventeen Chamber 2–5 cooperative milestones the team completes per episode, each counted once however many agents are credited, so the denominator does not depend on N. It differs from the per-agent Coop. % of the RQ1 table.</p>
+      <p class="note">Team cooperative completion: the share of the seventeen Chamber 2–5 cooperative milestones the team completes per episode, each counted once however many agents are credited, so the denominator does not depend on N. It differs from the per-agent Coop. % of the RQ1 table.</p>
+    </div>
+  </div>
+</section>
 
-      <h2 class="sub" id="cooperation" style="font-weight: 300; font-size: 1.3em;">Social plasticity improves cooperation and compute efficiency as teams grow</h2>
-      <p class="lede" style="margin-left: 0;">The tie at ten agents reflects a ceiling rather than a lack of coordination. WIRE's cooperative milestones are, by design, the same at every team size: by ten agents both arms reliably complete the switch-ring and first-kill milestones, and further milestones, such as breaking the Chamber 2 anvils, are reached more often only with fifteen agents, where social plasticity leads again. The social-plasticity Pareto front lies above the baseline's over most of the inference-compute range.</p>
-      <figure class="figure-block" style="margin-top: 1em;">
-        <span class="image fit framed"><img src="assets/figures/scaling_pareto.png" alt="(a) Inference compute per episode against team cooperative milestone completion for baseline and social-plasticity teams of 3 to 15 agents at three message budgets, with each arm's Pareto front. (b) Weighted modularity of the Chamber 2 message graph above a degree-preserving null against team size." loading="lazy"></span>
-        <figcaption><strong>Social plasticity reaches more cooperation for the same compute and forms tighter groups than the baseline at every team size.</strong> (a) Inference compute against cooperation: each point is one team size and communication budget (marker fill; low, medium and high are 600, 2,600 and 10,400 tokens per agent), with team cooperative milestone completion at the end of the episode (mean ± SE over seeds). Step lines show each arm's Pareto front; the pink region marks where the social-plasticity front exceeds the baseline's. Within an arm, no difference between budgets is significant (Mann–Whitney p&nbsp;≥&nbsp;0.20). Three seeds per cell, two for social plasticity at N&nbsp;=&nbsp;15 and at N&nbsp;=&nbsp;5 with 10,400 tokens. (b) Self-organised groups: weighted Louvain modularity of the Chamber 2 message graph minus that of degree-preserving rewired versions of the same graph (mean of per-run means ± SE). Zero means no grouping beyond what each agent's number of partners implies; positive values mean tighter groups than chance, negative values messages spread across groups more evenly than chance.</figcaption>
-      </figure>
-
-      <h2 class="sub" id="budgets" style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Social plasticity helps under constrained communication budgets</h2>
-      <p class="lede" style="margin-left: 0;">The largest average gain comes with only 600 tokens per agent (+2.9 points), against +2.6 at 10,400 tokens and +0.7 at 2,600. Under the tightest budget, social plasticity raises cooperative completion from 9.2% to 15.0% with three agents, from 13.7% to 17.0% with five and likewise with seven, and from 18.3% to 20.3% with fifteen. Which budget a team gets matters less than whether it has social plasticity: with it, the tightest budget gives the best result at three, five and ten agents, and at seven and fifteen it trails the largest budget by at most 1.3 points, within seed noise.</p>
-      <figure class="figure-block" style="max-width: 920px; margin: 1em auto 0;">
-        <span class="image fit framed"><img src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, three budgets by five team sizes." loading="lazy"></span>
-        <figcaption><strong>Social plasticity helps most under constrained communication budgets:</strong> the gap between the arms is widest at 600 tokens (c), where social-plasticity teams beat baseline teams given 17× the budget (a). Team cooperative milestone completion over environment steps for each team size, one row per budget: (a) 10,400, (b) 2,600 and (c) 600 tokens per agent per episode. Shading is ±1 SE over seeds; dotted lines mark the chamber transitions.</figcaption>
-      </figure>
-
-      <figure class="figure-block" style="max-width: 1000px; margin: 2.4em auto 0;">
-        <span class="image fit framed"><img src="assets/figures/budget_consumption.png" alt="Share of the 600-token budget spent over the episode for the hub and the other agents by team size; agents out of budget before Chamber 3; side-group members against agents writing mostly to agent 0 at N = 15; messages that arrive after the recipient ran out." loading="lazy"></span>
-        <figcaption><strong>When agents run out of messages</strong> (600 tokens per agent). (a) Share of each agent's budget spent by environment step; solid lines are agent 0, dashed lines the other agents, light to dark N&nbsp;=&nbsp;3 to 15. (b) Agents out of budget before Chamber 3, and the median step the budget runs out (mean ± SE over runs). (c) At N&nbsp;=&nbsp;15, the step the budget runs out for members of side groups against agents writing mostly to agent 0, and the share of received messages that arrive after the recipient's own budget ran out, for the hub (solid) and the other agents (dashed).</figcaption>
-      </figure>
-      <div class="cols" style="margin-top: 1.6em;">
-      <div>
-        <h3>Talk is front-loaded</h3>
-        <p>Spending is concentrated in Chambers 1–2 in both arms, and social-plasticity agents use up their messages sooner: 46–59% run out before Chamber 3, against 31–52% of baseline agents. Most of their communication therefore happens in the first two chambers.</p>
-      </div>
-      <div>
-        <h3>The hub runs dry first</h3>
-        <p>As teams grow, the hub runs out sooner and more of the messages sent to it arrive after it can no longer reply; for the other agents this share stays flat. Under the tightest budget, the hub of a fifteen-agent team runs out at a median step of 108, against 268 in teams of three.</p>
-      </div>
-      </div>
-
-      <h2 class="sub" id="structure" style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Larger teams develop structured communication without central assignment</h2>
-      <p class="lede" style="margin-left: 0;">As the team grows, communication does not expand uniformly across all pairs. Two complementary structures emerge: a focal agent that talks with much of the team, and smaller groups of agents that interact more often with one another. At N&nbsp;=&nbsp;15 the focal agent communicates with about ten distinct partners, against about three for the others, resembling the centralised communication networks studied in human groups. Each agent keeps a small number of frequent partners, so larger teams form more conversational groups rather than proportionally larger ones.</p>
+<section class="main" aria-label="Emergent structure">
+  <div class="content">
+    <div class="container">
+      <h2 class="sub" id="structure">Larger teams develop structured communication without central assignment</h2>
+      <p class="lede">As the team grows, communication does not expand uniformly across all pairs. Two complementary structures emerge: a focal agent that talks with much of the team, and smaller groups of agents that interact more often with one another. At N&nbsp;=&nbsp;15 the focal agent communicates with about ten distinct partners, against about three for the others, resembling the centralised communication networks studied in human groups. Each agent keeps a small number of frequent partners, so larger teams form more conversational groups rather than proportionally larger ones.</p>
       <figure class="figure-block" style="margin-top: 1.2em;">
-        <span class="image fit framed"><img src="assets/figures/team_formation_n15.png" alt="Whole-episode interaction networks of a fifteen-agent baseline team and a social-plasticity team, both centred on agent 0, and the learned bonds of the social-plasticity team." loading="lazy"></span>
+        <div class="pan"><span class="image fit framed"><img src="assets/figures/team_formation_n15.png" alt="Whole-episode interaction networks of a fifteen-agent baseline team and a social-plasticity team, both centred on agent 0, and the learned bonds of the social-plasticity team." loading="lazy"></span></div><p class="pan-hint">Swipe sideways to see the whole figure, or tap to enlarge it.</p>
         <figcaption><strong>A focal agent in a fifteen-agent team</strong> (2,600-token budget; one typical episode per arm). (a, b) Every interaction of the episode for the baseline and social plasticity: an edge joins two agents who exchanged at least one message, and agent 0's edges are dark. (c) The learned bonds <span class="m">W</span> of the social-plasticity team in (b), with width proportional to bond strength. Bonds also form without messages, because working near a teammate counts as co-firing too: agents 6 and 7 never message each other but share the episode's seventh-strongest bond (0.151, against a team mean of 0.099), and agents 1 and 2, who spawn 0.8 blocks apart, share its strongest (0.176) without exchanging a single message. Layouts are force-directed, so distance on the page is not distance in the world.</figcaption>
       </figure>
 
@@ -130,10 +162,56 @@
         </div>
       </div>
 
-      <h2 class="sub" id="forms" style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">New forms of coordination emerge as the team grows</h2>
-      <p class="lede" style="margin-left: 0;">One conversation at three agents, a soft focal point at five, side groups at seven, a hub that mediates coordination at ten, and decentralised groups at fifteen.</p>
+
+      <h2 class="sub" id="watch">Watch the team organise, from 3 to 15 agents</h2>
+      <p class="lede">One episode per arm and team size at the 2,600-token budget, the one closest to its cell's median Chamber 2 structure (at N&nbsp;=&nbsp;15, the two episodes above), each from its first step to its last in about 16 seconds. Agents are blocks that grow with their number of distinct partners; the four with the most partners at the end become ore blocks. A message lights its link up like redstone, and two agents credited for the same milestone burst with green orbs. The windows on the right show the share of agents with at least <span class="m">k</span> partners against random graphs with the same number of links, and partner counts over time. The Network view draws the same data as a plain chart.</p>
+      <div data-swarm-scope>
+      <div class="controls">
+        <div class="chips" role="group" aria-label="Team size">
+          <span class="lbl">Agents</span>
+          <button type="button" class="chip" data-swarm-n="3">3</button>
+          <button type="button" class="chip" data-swarm-n="5">5</button>
+          <button type="button" class="chip" data-swarm-n="7">7</button>
+          <button type="button" class="chip" data-swarm-n="10">10</button>
+          <button type="button" class="chip active" data-swarm-n="15">15</button>
+        </div>
+        <div class="chips" role="group" aria-label="Video style">
+          <span class="lbl">View</span>
+          <button type="button" class="chip active" data-swarm-view="game">Minecraft</button>
+          <button type="button" class="chip" data-swarm-view="net">Network</button>
+        </div>
+        <button class="chip ghost" id="swarm-restart" type="button" data-swarm-restart>↺ Restart both</button>
+      </div>
+      <div class="grid videos">
+        <figure class="card swarm">
+          <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_base.mp4" poster="assets/videos/scaling/swarm_mc_n15_base.jpg" data-swarm="assets/videos/scaling/swarm_{style}n{n}_base" muted loop playsinline preload="none"></video></div>
+          <figcaption>
+            <h3>Gemma-E4B <span class="tag">no social layer</span></h3>
+            <p>No learned bonds: whom to message is left to the prompt and each agent's own reasoning.</p>
+            <p class="prov" data-swarm-prov='{"3":"seed 456, episode 3","5":"seed 456, episode 2","7":"seed 42, episode 1","10":"seed 42, episode 3","15":"seed 42, episode 1"}'>N = 15 · 2,600 tokens per agent · seed 42, episode 1</p>
+          </figcaption>
+        </figure>
+        <figure class="card swarm">
+          <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_plastic.mp4" poster="assets/videos/scaling/swarm_mc_n15_plastic.jpg" data-swarm="assets/videos/scaling/swarm_{style}n{n}_plastic" muted loop playsinline preload="none"></video></div>
+          <figcaption>
+            <h3>Gemma-E4B <span class="tag heb">+Social plasticity</span></h3>
+            <p>Each agent also receives its row of learned bonds when it decides whom to address.</p>
+            <p class="prov" data-swarm-prov='{"3":"seed 42, episode 2","5":"seed 42, episode 2","7":"seed 42, episode 3","10":"seed 123, episode 3","15":"seed 123, episode 1"}'>N = 15 · 2,600 tokens per agent · seed 123, episode 1</p>
+          </figcaption>
+        </figure>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main alt" aria-label="Forms of coordination">
+  <div class="content">
+    <div class="container">
+      <h2 class="sub" id="forms">New forms of coordination emerge as the team grows</h2>
+      <p class="lede">One conversation at three agents, a soft focal point at five, side groups at seven, a hub that mediates coordination at ten, and decentralised groups at fifteen.</p>
       <figure class="figure-block" style="margin-top: 1.2em;">
-        <span class="image fit framed"><img src="assets/figures/ladder_snapshots.png" alt="Chamber 2 message graphs of one social-plasticity episode at 3, 5, 7, 10 and 15 agents, with Louvain communities coloured and a path through agent 0 highlighted at ten agents." loading="lazy"></span>
+        <div class="pan"><span class="image fit framed"><img src="assets/figures/ladder_snapshots.png" alt="Chamber 2 message graphs of one social-plasticity episode at 3, 5, 7, 10 and 15 agents, with Louvain communities coloured and a path through agent 0 highlighted at ten agents." loading="lazy"></span></div><p class="pan-hint">Swipe sideways to see the whole figure, or tap to enlarge it.</p>
         <figcaption><strong>New forms of coordination emerge as the team grows.</strong> Chamber 2 message graph of one social-plasticity episode per team size. Louvain communities in colour (agent 0's in light blue), agent 0 filled black, edge width proportional to messages on one scale. In (d), agents 2 and 8 never message each other but coordinate on the same anvil through agent 0 (black path).</figcaption>
       </figure>
       <div class="row" style="margin-top: 2.4em;">
@@ -165,42 +243,35 @@
         </div>
       </div>
 
-      <h2 class="sub" id="watch" style="font-weight: 300; font-size: 1.3em; margin-top: 2.2em;">Watch the team organise, from 3 to 15 agents</h2>
-      <p class="lede" style="margin-left: 0;">One episode per arm and team size at the 2,600-token budget, the one closest to its cell's median Chamber 2 structure (at N&nbsp;=&nbsp;15, the two episodes above), each from its first step to its last in about 16 seconds. Agents are blocks that grow with their number of distinct partners; the four with the most partners at the end become ore blocks. A message lights its link up like redstone, and two agents credited for the same milestone burst with green orbs. The windows on the right show the share of agents with at least <span class="m">k</span> partners against random graphs with the same number of links, and partner counts over time. The Network view draws the same data as a plain chart.</p>
-      <div class="controls">
-        <div class="chips" role="group" aria-label="Team size">
-          <span class="lbl">Agents</span>
-          <button class="chip" data-swarm-n="3">3</button>
-          <button class="chip" data-swarm-n="5">5</button>
-          <button class="chip" data-swarm-n="7">7</button>
-          <button class="chip" data-swarm-n="10">10</button>
-          <button class="chip active" data-swarm-n="15">15</button>
-        </div>
-        <div class="chips" role="group" aria-label="Video style">
-          <span class="lbl">View</span>
-          <button class="chip active" data-swarm-view="game">Minecraft</button>
-          <button class="chip" data-swarm-view="net">Network</button>
-        </div>
-        <button class="chip ghost" id="swarm-restart" type="button">↺ Restart both</button>
+    </div>
+  </div>
+</section>
+
+<section class="main" aria-label="Message budgets">
+  <div class="content">
+    <div class="container">
+      <h2 class="sub" id="budgets">Social plasticity helps under constrained communication budgets</h2>
+      <p class="lede">The largest average gain comes with only 600 tokens per agent (+2.9 points), against +2.6 at 10,400 tokens and +0.7 at 2,600. Under the tightest budget, social plasticity raises cooperative completion from 9.2% to 15.0% with three agents, from 13.7% to 17.0% with five and likewise with seven, and from 18.3% to 20.3% with fifteen. Which budget a team gets matters less than whether it has social plasticity: with it, the tightest budget gives the best result at three, five and ten agents, and at seven and fifteen it trails the largest budget by at most 1.3 points, within seed noise.</p>
+      <figure class="figure-block" style="max-width: 920px; margin: 1em auto 0;">
+        <span class="image fit framed"><img src="assets/figures/scaling_progress.png" alt="Team cooperative milestone completion over the episode for baseline and social plasticity, three budgets by five team sizes." loading="lazy"></span>
+        <figcaption><strong>Social plasticity helps most under constrained communication budgets:</strong> the gap between the arms is widest at 600 tokens (c), where social-plasticity teams beat baseline teams given 17× the budget (a). Team cooperative milestone completion over environment steps for each team size, one row per budget: (a) 10,400, (b) 2,600 and (c) 600 tokens per agent per episode. Shading is ±1 SE over seeds; dotted lines mark the chamber transitions.</figcaption>
+      </figure>
+
+      <figure class="figure-block" style="max-width: 1000px; margin: 2.4em auto 0;">
+        <span class="image fit framed"><img src="assets/figures/budget_consumption.png" alt="Share of the 600-token budget spent over the episode for the hub and the other agents by team size; agents out of budget before Chamber 3; side-group members against agents writing mostly to agent 0 at N = 15; messages that arrive after the recipient ran out." loading="lazy"></span>
+        <figcaption><strong>When agents run out of messages</strong> (600 tokens per agent). (a) Share of each agent's budget spent by environment step; solid lines are agent 0, dashed lines the other agents, light to dark N&nbsp;=&nbsp;3 to 15. (b) Agents out of budget before Chamber 3, and the median step the budget runs out (mean ± SE over runs). (c) At N&nbsp;=&nbsp;15, the step the budget runs out for members of side groups against agents writing mostly to agent 0, and the share of received messages that arrive after the recipient's own budget ran out, for the hub (solid) and the other agents (dashed).</figcaption>
+      </figure>
+      <div class="cols" style="margin-top: 1.6em;">
+      <div>
+        <h3>Talk is front-loaded</h3>
+        <p>Spending is concentrated in Chambers 1–2 in both arms, and social-plasticity agents use up their messages sooner: 46–59% run out before Chamber 3, against 31–52% of baseline agents. Most of their communication therefore happens in the first two chambers.</p>
       </div>
-      <div class="grid videos">
-        <figure class="card swarm">
-          <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_base.mp4" poster="assets/videos/scaling/swarm_mc_n15_base.jpg" data-swarm="assets/videos/scaling/swarm_{style}n{n}_base" muted loop playsinline preload="none"></video></div>
-          <figcaption>
-            <h3>Gemma-E4B <span class="tag">no social layer</span></h3>
-            <p>No learned bonds: whom to message is left to the prompt and each agent's own reasoning.</p>
-            <p class="prov" data-swarm-prov='{"3":"seed 456, episode 3","5":"seed 456, episode 2","7":"seed 42, episode 1","10":"seed 42, episode 3","15":"seed 42, episode 1"}'>N = 15 · 2,600 tokens per agent · seed 42, episode 1</p>
-          </figcaption>
-        </figure>
-        <figure class="card swarm">
-          <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_plastic.mp4" poster="assets/videos/scaling/swarm_mc_n15_plastic.jpg" data-swarm="assets/videos/scaling/swarm_{style}n{n}_plastic" muted loop playsinline preload="none"></video></div>
-          <figcaption>
-            <h3>Gemma-E4B <span class="tag heb">+Social plasticity</span></h3>
-            <p>Each agent also receives its row of learned bonds when it decides whom to address.</p>
-            <p class="prov" data-swarm-prov='{"3":"seed 42, episode 2","5":"seed 42, episode 2","7":"seed 42, episode 3","10":"seed 123, episode 3","15":"seed 123, episode 1"}'>N = 15 · 2,600 tokens per agent · seed 123, episode 1</p>
-          </figcaption>
-        </figure>
+      <div>
+        <h3>The hub runs dry first</h3>
+        <p>As teams grow, the hub runs out sooner and more of the messages sent to it arrive after it can no longer reply; for the other agents this share stays flat. Under the tightest budget, the hub of a fifteen-agent team runs out at a median step of 108, against 268 in teams of three.</p>
       </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -209,12 +280,23 @@
 
 <!-- layout:footer -->
 <footer id="footer">
+  <div class="container foot">
+    <div class="foot-id">
+      <p class="foot-title">Wired Together</p>
+      <p>Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
+      <p>Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html#paper">Paper and citation</a></li>
+      <li><a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a></li>
+      <li><a href="videos.html">Videos</a> · <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </div>
   <div class="container">
-    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
-    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+    <p class="credits">Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>.</p>
   </div>
 </footer>
-<script defer src="assets/js/main.js?v=20261015b"></script>
+<script defer src="assets/js/main.js?v=20261016a"></script>
 <!-- /layout:footer -->
 </body>
 </html>

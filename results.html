@@ -6,16 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Results — Wired Together</title>
 <meta name="description" content="RQ1–RQ3: social plasticity against baselines and central orchestration, interaction regimes, and memory and bonds after team recomposition.">
+<link rel="canonical" href="https://anacmarcu.github.io/wired-together-page/results.html">
 <meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
 <meta property="og:description" content="RQ1–RQ3: social plasticity against baselines and central orchestration, interaction regimes, and memory and bonds after team recomposition.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta property="og:url" content="https://anacmarcu.github.io/wired-together-page/results.html">
+<meta property="og:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="895">
+<meta property="og:image:alt" content="Learning and using persistent social relationships: social signals define co-firing, reward-modulated plasticity updates directed bonds, and the social graph shapes behaviour.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta name="twitter:description" content="RQ1–RQ3: social plasticity against baselines and central orchestration, interaction regimes, and memory and bonds after team recomposition.">
+<meta name="twitter:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
 <meta name="theme-color" content="#1e2f5c">
 <link rel="icon" type="image/png" href="assets/figures/logo_tapri.png">
+<script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261015b">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261016a">
 <!-- /layout:head -->
 </head>
 <body class="subpage">
@@ -24,16 +34,24 @@
 <nav id="navbar" aria-label="Main">
   <div class="bar">
     <a class="brand" href="index.html">Wired Together</a>
-    <ul>
-      <li><a href="index.html">Overview</a></li>
-      <li><a href="environment.html">Environment</a></li>
-      <li><a href="method.html">Method</a></li>
-      <li><a href="results.html" aria-current="page">Results</a></li>
-      <li><a href="scaling.html">Scaling</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" hidden><span class="burger" aria-hidden="true"></span>Menu</button>
+    <div class="menu" id="nav-menu">
+      <ul class="pages">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a href="environment.html">Environment</a></li>
+        <li><a href="results.html" aria-current="page">Results</a></li>
+        <li><a href="scaling.html">Scaling</a></li>
+        <li class="group">
+          <a class="group-link" href="videos.html">Demos<span class="caret" aria-hidden="true"></span></a>
+          <ul class="sub" aria-label="Demos">
+            <li><a href="videos.html">Videos<span class="blurb">Curated moments, condition by condition</span></a></li>
+            <li><a href="gallery.html">Gallery<span class="blurb">Every mined success and failure</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    </div>
   </div>
 </nav>
 <!-- /layout:nav -->
@@ -44,20 +62,78 @@
     <p class="eyebrow">Results</p>
     <h1>What we found</h1>
     <p class="lede">Three questions: does the learned graph improve cooperation (RQ1), which interactions construct useful bonds (RQ2), and how memory and learned relational state carry social experience into long-term cooperation (RQ3)? Three agents, 1,000-step episodes, mean ± SD across seeds, each seed averaging its three episodes. <em>Solo</em> and <em>Coop. %</em> are agent-level completion rates over the eight Chamber 1 and the seventeen Chamber 2–5 milestones.</p>
-      <nav aria-label="On this page"><ul class="toc"><li><a href="#rq1">RQ1 · performance</a></li><li><a href="#orchestration">Central orchestration</a></li><li><a href="#rq2">RQ2 · interaction regimes</a></li><li><a href="#rq3">RQ3 · team recomposition</a></li><li><a href="#more">Compute and perception</a></li><li><a href="#timelines">Full timelines</a></li></ul></nav>
   </div>
 </header>
+<nav class="subnav" aria-label="On this page"><ul><li><a href="#rq1">RQ1 · Performance</a></li><li><a href="#orchestration">Central orchestration</a></li><li><a href="#rq2">RQ2 · Interaction regimes</a></li><li><a href="#rq3">RQ3 · Team recomposition</a></li><li><a href="#more">Compute and perception</a></li><li><a href="#timelines">Full timelines</a></li></ul></nav>
 
 <section class="main" id="rq1" aria-labelledby="rq1-h">
   <header>
     <div class="container">
       <h2 id="rq1-h">RQ1 — Does social plasticity improve cooperative performance?</h2>
+      <p class="finding-line"><span class="label">Finding</span>Social plasticity is most reliable when coupled into learning: it improves cooperative completion in three of four RL fine-tuning configurations, while at inference time its benefit depends on the backbone.</p>
       <p class="lede">We compare social plasticity with matched no-graph baselines across three zero-shot VLM backbones (Qwen3.5-2B, Qwen3.5-9B and Gemma-E4B) and four RL fine-tuning configurations (IPPO and MAPPO with Qwen3.5-2B and Gemma-E4B), and on Gemma-E4B against a soft (VillagerAgent-style) and a hard (HMAS-2) central orchestrator.</p>
     </div>
   </header>
   <div class="content">
     <div class="container">
-      <h3 style="font-weight: 300; font-size: 1.2em; margin: 0;">Table 1 — Effect of social plasticity on cooperative task performance</h3>
+      <div class="overview">
+        <span class="label">Overview · Coop. % per agent, baseline → +social plasticity</span>
+        <ul class="chart-legend" aria-hidden="true"><li><i class="mk base"></i>Baseline, no graph</li><li><i class="mk sp"></i>+Social plasticity</li><li>whiskers ±1 SD</li></ul>
+        <div class="chart-pair">
+          <figure class="chart" aria-labelledby="ov1a">
+            <figcaption class="chart-title" id="ov1a"><strong>(a) Zero-shot VLM agents</strong> · the graph conditions deliberation</figcaption>
+<div class="plot" role="table" aria-label="Zero-shot cooperative completion per agent" style="--lo:0; --hi:15; --nt:3">
+  <div class="plot-row head" role="row"><span role="columnheader">Backbone</span><span aria-hidden="true"></span><span role="columnheader">Base → SP</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Qwen3.5-2B</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:4.6; --b:3.7"></i><i class="err up base" style="--a:2.3; --b:6.9"></i><i class="err down sp" style="--a:2; --b:5.4"></i><i class="dot base" style="--v:4.6" title="Baseline: 4.6 ± 2.3%"></i><i class="dot sp" style="--v:3.7" title="+Social plasticity: 3.7 ± 1.7%"></i></span>
+    <span class="plot-val" role="cell">4.6 → <b>3.7</b><span class="sr-only"> percent; ±2.3 and ±1.7</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Qwen3.5-9B</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:10.2; --b:9"></i><i class="err up base" style="--a:7.1; --b:13.3"></i><i class="err down sp" style="--a:5.5; --b:12.5"></i><i class="dot base" style="--v:10.2" title="Baseline: 10.2 ± 3.1%"></i><i class="dot sp" style="--v:9" title="+Social plasticity: 9.0 ± 3.5%"></i></span>
+    <span class="plot-val" role="cell">10.2 → <b>9.0</b><span class="sr-only"> percent; ±3.1 and ±3.5</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Gemma-E4B</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:4.4; --b:4.8"></i><i class="err up base" style="--a:2.4; --b:6.4"></i><i class="err down sp" style="--a:2.9; --b:6.7"></i><i class="dot base" style="--v:4.4" title="Baseline: 4.4 ± 2.0%"></i><i class="dot sp" style="--v:4.8" title="+Social plasticity: 4.8 ± 1.9%"></i></span>
+    <span class="plot-val" role="cell">4.4 → <b>4.8</b><span class="sr-only"> percent; ±2.0 and ±1.9</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:5">5</span><span style="--v:10">10</span><span style="--v:15">15%</span></span><span></span></div>
+</div>
+          </figure>
+          <figure class="chart" aria-labelledby="ov1b">
+            <figcaption class="chart-title" id="ov1b"><strong>(b) RL fine-tuned agents</strong> · the graph shapes learning</figcaption>
+<div class="plot" role="table" aria-label="RL fine-tuned cooperative completion per agent" style="--lo:0; --hi:15; --nt:3">
+  <div class="plot-row head" role="row"><span role="columnheader">Configuration</span><span aria-hidden="true"></span><span role="columnheader">Base → SP</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Qwen3.5-2B IPPO</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:2.9; --b:3.3"></i><i class="err up base" style="--a:1.6; --b:4.2"></i><i class="err down sp" style="--a:1.6; --b:5"></i><i class="dot base" style="--v:2.9" title="Baseline: 2.9 ± 1.3%"></i><i class="dot sp" style="--v:3.3" title="+Social plasticity: 3.3 ± 1.7%"></i></span>
+    <span class="plot-val" role="cell">2.9<sup>†</sup> → <b>3.3</b><sup>†</sup><span class="sr-only"> percent; ±1.3 and ±1.7</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Qwen3.5-2B MAPPO</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:1.5; --b:2.9"></i><i class="err up base" style="--a:0.2; --b:2.8"></i><i class="err down sp" style="--a:0.4; --b:5.4"></i><i class="dot base" style="--v:1.5" title="Baseline: 1.5 ± 1.3%"></i><i class="dot sp" style="--v:2.9" title="+Social plasticity: 2.9 ± 2.5%"></i></span>
+    <span class="plot-val" role="cell">1.5 → <b>2.9</b><sup>†</sup><span class="sr-only"> percent; ±1.3 and ±2.5</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Gemma-E4B IPPO</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:0.8; --b:3.5"></i><i class="err up base" style="--a:0.2; --b:1.4"></i><i class="err down sp" style="--a:1.5; --b:5.5"></i><i class="dot base" style="--v:0.8" title="Baseline: 0.8 ± 0.6%"></i><i class="dot sp" style="--v:3.5" title="+Social plasticity: 3.5 ± 2.0%"></i></span>
+    <span class="plot-val" role="cell">0.8 → <b>3.5</b><sup>†</sup><span class="sr-only"> percent; ±0.6 and ±2.0</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Gemma-E4B MAPPO</span>
+    <span class="track" aria-hidden="true"><i class="link" style="--a:2.2; --b:0.4"></i><i class="err up base" style="--a:0.8; --b:3.6"></i><i class="err down sp open" style="--a:0; --b:1.2"></i><i class="dot base" style="--v:2.2" title="Baseline: 2.2 ± 1.4%"></i><i class="dot sp" style="--v:0.4" title="+Social plasticity: 0.4 ± 0.8%"></i></span>
+    <span class="plot-val" role="cell">2.2 → <b>0.4</b><sup>†</sup><span class="sr-only"> percent; ±1.4 and ±0.8</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:5">5</span><span style="--v:10">10</span><span style="--v:15">15%</span></span><span></span></div>
+</div>
+          </figure>
+        </div>
+        <p class="chart-foot">Both panels share one axis: per-agent completion of the 17 Chamber 2–5 cooperative milestones. † below the six-seed target; whiskers cut at 0 have no left cap. The full table, with task return and Solo %, follows.</p>
+      </div>
+
+      <h3 class="table-title">Table 1 — Effect of social plasticity on cooperative task performance</h3>
       <p class="note">Mean ± SD across seeds. † marks conditions below the six-seed target. Task return includes the communication stream. Bold: best within a backbone block.</p>
 
       <div class="tables">
@@ -68,13 +144,13 @@
             <thead><tr><th>Condition</th><th>Task return ↑</th><th>Solo % ↑</th><th>Coop. % ↑</th></tr></thead>
             <tbody>
               <tr><td>Qwen3.5-2B</td><td>358 ± 122</td><td class="best">32.1 ± 5.0</td><td class="best">4.6 ± 2.3</td></tr>
-              <tr><td class="sub">+Social plasticity</td><td class="best">390 ± 109</td><td>30.3 ± 8.0</td><td>3.7 ± 1.7</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity</td><td class="best">390 ± 109</td><td>30.3 ± 8.0</td><td>3.7 ± 1.7</td></tr>
               <tr class="sep"><td>Qwen3.5-9B</td><td class="best">622 ± 88</td><td class="best">40.9 ± 4.2</td><td class="best">10.2 ± 3.1</td></tr>
-              <tr><td class="sub">+Social plasticity</td><td>599 ± 107</td><td>40.2 ± 2.8</td><td>9.0 ± 3.5</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity</td><td>599 ± 107</td><td>40.2 ± 2.8</td><td>9.0 ± 3.5</td></tr>
               <tr class="sep"><td>Gemma-E4B</td><td>521 ± 84</td><td>22.2 ± 2.3</td><td>4.4 ± 2.0</td></tr>
               <tr><td class="sub">+Soft central orch.</td><td>505 ± 89</td><td>25.5 ± 4.1</td><td>4.7 ± 1.8</td></tr>
               <tr><td class="sub">+Hard central orch. (HMAS-2)</td><td>477 ± 61</td><td>23.7 ± 0.9</td><td>3.9 ± 2.3</td></tr>
-              <tr><td class="sub">+Social plasticity</td><td class="best">548 ± 86</td><td class="best">26.5 ± 4.6</td><td class="best">4.8 ± 1.9</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity</td><td class="best">548 ± 86</td><td class="best">26.5 ± 4.6</td><td class="best">4.8 ± 1.9</td></tr>
             </tbody>
           </table>
           </div>
@@ -86,20 +162,20 @@
             <thead><tr><th>Condition</th><th>Task return ↑</th><th>Solo % ↑</th><th>Coop. % ↑</th></tr></thead>
             <tbody>
               <tr><td>Qwen3.5-2B IPPO †</td><td>425 ± 36</td><td>30.3 ± 3.3</td><td>2.9 ± 1.3</td></tr>
-              <tr><td class="sub">+Social plasticity †</td><td class="best">467 ± 63</td><td class="best">31.4 ± 4.0</td><td class="best">3.3 ± 1.7</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity †</td><td class="best">467 ± 63</td><td class="best">31.4 ± 4.0</td><td class="best">3.3 ± 1.7</td></tr>
               <tr class="sep"><td>Qwen3.5-2B MAPPO</td><td>390 ± 56</td><td>31.1 ± 3.9</td><td>1.5 ± 1.3</td></tr>
-              <tr><td class="sub">+Social plasticity †</td><td class="best">453 ± 92</td><td class="best">31.8 ± 5.4</td><td class="best">2.9 ± 2.5</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity †</td><td class="best">453 ± 92</td><td class="best">31.8 ± 5.4</td><td class="best">2.9 ± 2.5</td></tr>
               <tr class="sep"><td>Gemma-E4B IPPO</td><td>430 ± 70</td><td>21.5 ± 4.7</td><td>0.8 ± 0.6</td></tr>
-              <tr><td class="sub">+Social plasticity †</td><td class="best">493 ± 159</td><td class="best">22.2 ± 3.8</td><td class="best">3.5 ± 2.0</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity †</td><td class="best">493 ± 159</td><td class="best">22.2 ± 3.8</td><td class="best">3.5 ± 2.0</td></tr>
               <tr class="sep"><td>Gemma-E4B MAPPO</td><td class="best">380 ± 62</td><td>22.0 ± 5.2</td><td class="best">2.2 ± 1.4</td></tr>
-              <tr><td class="sub">+Social plasticity †</td><td>334 ± 70</td><td class="best">22.7 ± 5.2</td><td>0.4 ± 0.8</td></tr>
+              <tr class="sp-row"><td class="sub">+Social plasticity †</td><td>334 ± 70</td><td class="best">22.7 ± 5.2</td><td>0.4 ± 0.8</td></tr>
             </tbody>
           </table>
           </div>
         </div>
       </div>
 
-      <div class="callout">Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it outperforms the baseline and both orchestrators, with the highest task return, Solo % and Coop. %, whereas the gains do not transfer to the Qwen backbones.</div>
+      <div class="interpret"><span class="label">Interpretation</span>Relational state helps most when it shapes learning (b): social plasticity improves cooperative completion in three of four RL configurations. At inference time (a) the effect depends on the backbone: on Gemma-E4B it outperforms the baseline and both orchestrators, with the highest task return, Solo % and Coop. %, whereas the gains do not transfer to the Qwen backbones.</div>
 
     </div>
   </div>
@@ -109,11 +185,44 @@
   <header>
     <div class="container">
       <h2 id="orchestration-h">On a hard cooperative task, coordination emerges under social plasticity but not under central orchestration</h2>
-      <p class="lede">Social plasticity attains a higher task return than both central orchestrators (548 vs 505 soft and 477 hard) and higher cooperative completion (4.8% vs 4.7% and 3.9%), at the inference compute of the soft orchestrator and a third of the hard orchestrator's, which spends 72.5% of its tokens in orchestrator calls, mostly plan checks and revisions. A six-agent Chamber 4 kill with Gemma-E4B, the same milestone in all three runs. Top: learned bonds (a), orchestrator assignments (b), and the planner's assignments with each agent's objections (c); the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
+      <p class="lede">Social plasticity attains a higher task return than both central orchestrators (548 vs 505 soft and 477 hard) and higher cooperative completion (4.8% vs 4.7% and 3.9%), at the inference compute of the soft orchestrator and a third of the hard orchestrator's, which spends 72.5% of its tokens in orchestrator calls, mostly plan checks and revisions.</p>
     </div>
   </header>
   <div class="content">
     <div class="container">
+      <div class="overview">
+        <span class="label">Overview · Gemma-E4B, zero-shot, three agents</span>
+        <figure class="chart chart-narrow" aria-labelledby="ov2">
+          <figcaption class="chart-title" id="ov2"><strong>Task return</strong> (mean ± SD across seeds; the axis starts at 300) and per-agent cooperative completion</figcaption>
+          <ul class="chart-legend" aria-hidden="true"><li><i class="mk base"></i>Baseline</li><li><i class="mk soft"></i>Soft orchestrator</li><li><i class="mk hollow hard"></i>Hard orchestrator</li><li><i class="mk sp"></i>+Social plasticity</li></ul>
+<div class="plot" role="table" aria-label="Task return and cooperative completion by condition" style="--lo:300; --hi:700; --nt:4; --val-w:6.6rem">
+  <div class="plot-row head" role="row"><span role="columnheader">Condition</span><span aria-hidden="true"></span><span role="columnheader">Return · Coop.</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Baseline <span class="sub-label">no social graph</span></span>
+    <span class="track" aria-hidden="true"><i class="err base" style="--a:437; --b:605"></i><i class="dot base" style="--v:521" title="Baseline: 521 ± 84"></i></span>
+    <span class="plot-val" role="cell">521 <span class="x2">4.4% coop.</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">+Soft central orch. <span class="sub-label">VillagerAgent-style</span></span>
+    <span class="track" aria-hidden="true"><i class="err soft" style="--a:416; --b:594"></i><i class="dot soft" style="--v:505" title="Soft central orchestrator: 505 ± 89"></i></span>
+    <span class="plot-val" role="cell">505 <span class="x2">4.7% coop.</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">+Hard central orch. <span class="sub-label">HMAS-2</span></span>
+    <span class="track" aria-hidden="true"><i class="err hard" style="--a:416; --b:538"></i><i class="dot hollow hard" style="--v:477" title="Hard central orchestrator: 477 ± 61"></i></span>
+    <span class="plot-val" role="cell">477 <span class="x2">3.9% coop.</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label em" role="rowheader">+Social plasticity</span>
+    <span class="track" aria-hidden="true"><i class="err sp" style="--a:462; --b:634"></i><i class="dot sp" style="--v:548" title="+Social plasticity: 548 ± 86"></i></span>
+    <span class="plot-val" role="cell"><b>548</b> <span class="x2"><b>4.8%</b> coop.</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:300">300</span><span style="--v:400">400</span><span style="--v:500">500</span><span style="--v:600">600</span><span style="--v:700">700</span></span><span></span></div>
+</div>
+          <dl class="chart-sub"><div class="full"><dt>Inference compute per 1,000 steps (×10<sup>17</sup> FLOPs, at 2N<sub>eff</sub> FLOPs per token, N<sub>eff</sub> = 4.5B)</dt><dd>Social plasticity 1.51 · soft orchestrator 1.50 · hard orchestrator 5.04</dd></div></dl>
+        </figure>
+      </div>
+      <p class="note">A six-agent Chamber 4 kill with Gemma-E4B, the same milestone in all three runs. Top: learned bonds (a), orchestrator assignments (b), and the planner's assignments with each agent's objections (c); the star marks the kill, dots the attacks in the preceding ten steps, × a timeout and reassignment. Below: first-person frames and the messages exchanged.</p>
       <div class="row three">
         <figure>
           <span class="image fit framed"><img src="assets/figures/cf6_plasticity.png" alt="Social plasticity: bond strengths over the interval, first-person frames and messages; two agents converge on one zombie and kill it together." loading="lazy"></span>
@@ -137,14 +246,95 @@
   <header>
     <div class="container">
       <h2 id="rq2-h">RQ2 — How do social interaction regimes shape learned bonds?</h2>
-      <p class="lede">Bond strength reflects interaction frequency, not necessarily coordination value. Communication is selected most often and produces the strongest bonds, yet the lowest cooperative completion of any single cue: its bonds are informative about who talks, not who cooperates. Observation and imitation, used far less often, keep cooperative completion close to spatial engagement alone, and no explicit cue improves on it.</p>
+      <p class="finding-line"><span class="label">Finding</span>Bond strength reflects interaction frequency, not necessarily coordination value.</p>
+      <p class="lede">Communication is selected most often and produces the strongest bonds, yet the lowest cooperative completion of any single cue: its bonds are informative about who talks, not who cooperates. Observation and imitation, used far less often, keep cooperative completion close to spatial engagement alone, and no explicit cue improves on it.</p>
     </div>
   </header>
   <div class="content">
     <div class="container">
+      <div class="overview">
+        <span class="label">Overview · Gemma-E4B with social plasticity, by co-firing cues</span>
+        <div class="chart-pair">
+          <figure class="chart" aria-labelledby="ov3a">
+            <figcaption class="chart-title" id="ov3a"><strong>Mean bond <span class="m">W̄</span></strong> at the end of the episode</figcaption>
+<div class="plot" role="table" aria-label="Mean end-of-episode bond by co-firing cues" style="--lo:0; --hi:0.4; --nt:4">
+  <div class="plot-row head" role="row"><span role="columnheader">Co-firing cues</span><span aria-hidden="true"></span><span role="columnheader">W̄</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label em" role="rowheader">Spatial engagement</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.11" title="Spatial engagement: mean W 0.11"></i></span>
+    <span class="plot-val" role="cell">0.11</span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.34" title="comm: mean W 0.34"></i></span>
+    <span class="plot-val" role="cell">0.34</span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">obs</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.25" title="obs: mean W 0.25"></i></span>
+    <span class="plot-val" role="cell">0.25</span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">imit</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.15" title="imit: mean W 0.15"></i></span>
+    <span class="plot-val" role="cell">0.15</span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm + obs</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.38" title="comm + obs: mean W 0.38"></i></span>
+    <span class="plot-val" role="cell">0.38</span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm + obs + imit</span>
+    <span class="track" aria-hidden="true"><i class="bar sp" style="--v:0.37" title="comm + obs + imit: mean W 0.37"></i></span>
+    <span class="plot-val" role="cell">0.37</span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:0.1">0.1</span><span style="--v:0.2">0.2</span><span style="--v:0.3">0.3</span><span style="--v:0.4">0.4</span></span><span></span></div>
+</div>
+          </figure>
+          <figure class="chart" aria-labelledby="ov3b">
+            <figcaption class="chart-title" id="ov3b"><strong>Cooperative completion per agent</strong>, % · mean ± SD</figcaption>
+<div class="plot" role="table" aria-label="Cooperative completion per agent by co-firing cues" style="--lo:0; --hi:8; --nt:4">
+  <div class="plot-row head" role="row"><span role="columnheader">Co-firing cues</span><span aria-hidden="true"></span><span role="columnheader">Coop. %</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label em" role="rowheader">Spatial engagement</span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:5.3; --b:6.1"></i><i class="dot ink" style="--v:5.7" title="Spatial engagement: 5.7 ± 0.4%"></i></span>
+    <span class="plot-val" role="cell">5.7<span class="sr-only"> percent, ±0.4</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm</span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:1.3; --b:3.9"></i><i class="dot ink" style="--v:2.6" title="comm: 2.6 ± 1.3%"></i></span>
+    <span class="plot-val" role="cell">2.6<span class="sr-only"> percent, ±1.3</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">obs</span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:1.9; --b:7.7"></i><i class="dot ink" style="--v:4.8" title="obs: 4.8 ± 2.9%"></i></span>
+    <span class="plot-val" role="cell">4.8<span class="sr-only"> percent, ±2.9</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">imit</span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:4.6; --b:4.6"></i><i class="dot ink" style="--v:4.6" title="imit: 4.6 ± 0.0%"></i></span>
+    <span class="plot-val" role="cell">4.6<span class="sr-only"> percent, ±0.0</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm + obs</span>
+    <span class="track" aria-hidden="true"><i class="err ink open" style="--a:0; --b:5.4"></i><i class="dot ink" style="--v:2.4" title="comm + obs: 2.4 ± 3.0%"></i></span>
+    <span class="plot-val" role="cell">2.4<span class="sr-only"> percent, ±3.0</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">comm + obs + imit</span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:1.1; --b:1.9"></i><i class="dot ink" style="--v:1.5" title="comm + obs + imit: 1.5 ± 0.4%"></i></span>
+    <span class="plot-val" role="cell">1.5<span class="sr-only"> percent, ±0.4</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:2">2</span><span style="--v:4">4</span><span style="--v:6">6</span><span style="--v:8">8%</span></span><span></span></div>
+</div>
+          </figure>
+        </div>
+        <p class="chart-foot">The cue sets that include communication reach the largest <span class="m">W̄</span> and the lowest cooperative completion. <em>Spatial engagement</em> forms bonds from engaged co-location alone. The lower whisker of comm + obs is cut at 0.</p>
+      </div>
+      <p class="table-caption" id="rq2-table-cap">RQ2: how social interaction regimes shape learned bonds. Rows vary the cues that define co-firing; <em>Spatial engagement</em> forms bonds from engaged co-location alone. Task return excludes all social-act rewards. Per cue: share of social acts, share of positive bond change attributed to it (ΔW), and Spearman ρ between pairwise bond and use of that act; <span class="m">W̄</span> is the mean end-of-episode bond.</p>
       <div class="tablewrap">
-      <table>
-        <caption>RQ2: how social interaction regimes shape learned bonds. Rows vary the cues that define co-firing; <em>Spatial engagement</em> forms bonds from engaged co-location alone. Task return excludes all social-act rewards. Per cue: share of social acts, share of positive bond change attributed to it (ΔW), and Spearman ρ between pairwise bond and use of that act; <span class="m">W̄</span> is the mean end-of-episode bond.</caption>
+      <table aria-describedby="rq2-table-cap">
         <thead><tr><th scope="col">Co-firing cues</th><th scope="col">Task return ↑</th><th scope="col">Solo % ↑</th><th scope="col">Coop. % ↑</th><th scope="col">Mean W</th><th scope="col">Cue</th><th scope="col">Act use %</th><th scope="col">Attributed ΔW %</th><th scope="col">ρ</th></tr></thead>
         <tbody>
           <tr><th scope="row">Spatial engagement</th><td class="best">299 ± 29</td><td class="best">27.3 ± 5.5</td><td class="best">5.7 ± 0.4</td><td>0.11</td><td class="cue">—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -169,7 +359,7 @@
           <figcaption>The same comparison for solo completion: again spatial engagement alone is the only non-dominated condition. Agent-level completion against the mean bond strength each cue condition produces; bars are ±1 SD across seeds.</figcaption>
         </figure>
       </div>
-      <div class="callout"><strong>More social signals can reduce relational quality through action competition.</strong> When several cues compete for a single social-action slot, communication takes 75.7% of social actions in the full comm + obs + imit condition, observation falls to 3.4% and imitation is almost never selected, and the combined-cue conditions reach the lowest cooperative completion (2.4% and 1.5%).</div>
+      <div class="interpret"><span class="label">Action competition</span><strong>More social signals can reduce relational quality through action competition.</strong> When several cues compete for a single social-action slot, communication takes 75.7% of social actions in the full comm + obs + imit condition, observation falls to 3.4% and imitation is almost never selected, and the combined-cue conditions reach the lowest cooperative completion (2.4% and 1.5%).</div>
     </div>
   </div>
 </section>
@@ -178,11 +368,73 @@
   <header>
     <div class="container">
       <h2 id="rq3-h">RQ3 — How do memory and bonds carry social experience into a new team?</h2>
+      <p class="finding-line"><span class="label">Finding</span>Retained memory and bonds favour exploitation of the former partner, while bonds alone balance exploitation and exploration.</p>
       <p class="lede">Pairs trained together in Chambers 1–2 are merged into a six-agent team that restarts at Chamber 3, where each agent's switch opens the door of an agent from a different pair. We vary what the agents keep from their first team; everything keeps updating afterwards. Partner preference is the share of an agent's messages sent to its former partner (chance 0.20); bond-implied is the same share read off the bond table at each episode start.</p>
     </div>
   </header>
   <div class="content">
     <div class="container">
+      <div class="overview">
+        <span class="label">Overview · six-agent team after recomposition, Gemma-E4B with social plasticity</span>
+        <div class="chart-pair">
+          <figure class="chart" aria-labelledby="ov4a">
+            <figcaption class="chart-title" id="ov4a"><strong>Cooperative completion</strong>, % of the 12 Chamber 3–5 milestones · mean ± SD</figcaption>
+<div class="plot" role="table" aria-label="Cooperative completion after team recomposition" style="--lo:0; --hi:12; --nt:4">
+  <div class="plot-row head" role="row"><span role="columnheader">Kept from Phase A</span><span aria-hidden="true"></span><span role="columnheader">Coop. %</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Full transfer <span class="sub-label">memory and bonds kept</span></span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:4.6; --b:9.2"></i><i class="dot ink" style="--v:6.9" title="Full transfer: 6.9 ± 2.3%"></i></span>
+    <span class="plot-val" role="cell">6.9<span class="sr-only"> percent, ±2.3</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Memory only <span class="sub-label">bonds reset</span></span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:3.1; --b:5.3"></i><i class="dot ink" style="--v:4.2" title="Memory only: 4.2 ± 1.1%"></i></span>
+    <span class="plot-val" role="cell">4.2<span class="sr-only"> percent, ±1.1</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label em" role="rowheader">Bonds only <span class="sub-label">memory reset</span></span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:7.2; --b:9.4"></i><i class="dot ink" style="--v:8.3" title="Bonds only: 8.3 ± 1.1%"></i></span>
+    <span class="plot-val" role="cell">8.3<span class="sr-only"> percent, ±1.1</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Fresh start <span class="sub-label">both reset</span></span>
+    <span class="track" aria-hidden="true"><i class="err ink" style="--a:7.2; --b:8.6"></i><i class="dot ink" style="--v:7.9" title="Fresh start: 7.9 ± 0.7%"></i></span>
+    <span class="plot-val" role="cell">7.9<span class="sr-only"> percent, ±0.7</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:3">3</span><span style="--v:6">6</span><span style="--v:9">9</span><span style="--v:12">12%</span></span><span></span></div>
+</div>
+          </figure>
+          <figure class="chart" aria-labelledby="ov4b">
+            <figcaption class="chart-title" id="ov4b"><strong>Partner preference</strong>: share of messages sent to the former partner</figcaption>
+            <ul class="chart-legend" aria-hidden="true"><li><i class="mk ink"></i>Observed ± SD</li><li><i class="mk hollow ink"></i>Implied by the bond table</li><li><i class="mk ref-key"></i>Chance, 0.20</li></ul>
+<div class="plot" role="table" aria-label="Partner preference after team recomposition" style="--lo:0; --hi:1; --nt:4">
+  <div class="plot-row head" role="row"><span role="columnheader">Kept from Phase A</span><span aria-hidden="true"></span><span role="columnheader">Observed</span></div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Full transfer <span class="sub-label">memory and bonds kept</span></span>
+    <span class="track" aria-hidden="true"><i class="ref" style="--v:0.2"></i><i class="err ink" style="--a:0.43; --b:0.67"></i><i class="dot hollow ink" style="--v:0.4" title="Full transfer: bond-implied 0.4"></i><i class="dot ink" style="--v:0.55" title="Full transfer: observed 0.55 ± 0.12"></i></span>
+    <span class="plot-val" role="cell">0.55 <span class="x2">bond 0.40</span><span class="sr-only">, ±0.12</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Memory only <span class="sub-label">bonds reset</span></span>
+    <span class="track" aria-hidden="true"><i class="ref" style="--v:0.2"></i><i class="err ink open" style="--a:0; --b:0.41"></i><i class="dot hollow ink" style="--v:0.27" title="Memory only: bond-implied 0.27"></i><i class="dot ink" style="--v:0.18" title="Memory only: observed 0.18 ± 0.23"></i></span>
+    <span class="plot-val" role="cell">0.18 <span class="x2">bond 0.27</span><span class="sr-only">, ±0.23</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Bonds only <span class="sub-label">memory reset</span></span>
+    <span class="track" aria-hidden="true"><i class="ref" style="--v:0.2"></i><i class="err ink" style="--a:0; --b:0.28"></i><i class="dot hollow ink" style="--v:0.31" title="Bonds only: bond-implied 0.31"></i><i class="dot ink" style="--v:0.14" title="Bonds only: observed 0.14 ± 0.14"></i></span>
+    <span class="plot-val" role="cell">0.14 <span class="x2">bond 0.31</span><span class="sr-only">, ±0.14</span></span>
+  </div>
+  <div class="plot-row" role="row">
+    <span class="plot-label" role="rowheader">Fresh start <span class="sub-label">both reset</span></span>
+    <span class="track" aria-hidden="true"><i class="ref" style="--v:0.2"></i><i class="err ink" style="--a:0.08; --b:0.6"></i><i class="dot hollow ink" style="--v:0.28" title="Fresh start: bond-implied 0.28"></i><i class="dot ink" style="--v:0.34" title="Fresh start: observed 0.34 ± 0.26"></i></span>
+    <span class="plot-val" role="cell">0.34 <span class="x2">bond 0.28</span><span class="sr-only">, ±0.26</span></span>
+  </div>
+  <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:0.25">0.25</span><span style="--v:0.5">0.5</span><span style="--v:0.75">0.75</span><span style="--v:1">1</span></span><span></span></div>
+</div>
+          </figure>
+        </div>
+        <p class="chart-foot">One seed; mean ± SD over three episodes. Whiskers cut at 0 have no left cap.</p>
+      </div>
       <div class="tables">
         <div>
           <div class="tablewrap">
@@ -203,7 +455,7 @@
         <span class="image fit framed"><img src="assets/figures/rq3_case.png" alt="Full transfer in Chamber 3: three former pairs in a switch ring; former partners exchange 657 to 661 messages, the task-linked cross-pair links only 0 to 4, with four verbatim messages." loading="lazy"></span>
         <figcaption><strong>Retaining both memory and social bonds favours exploitation of previously successful partners.</strong> Full-transfer condition in Chamber 3. Grey arrows connect former Phase-A partners, while black arrows indicate cross-pair dependencies introduced by the switch task. Former partners exchange 657–661 messages, whereas task-relevant cross-pair links carry only 0–4, illustrating continued exploitation of established partnerships after team recomposition.</figcaption>
       </figure>
-      <div class="callout">Retaining both episodic memory and bonds favours exploitation of previously successful partners, whereas retaining only bonds balances exploitation and exploration. The bond graph acts as a compact distillation of social experience while remaining plastic enough to rewire toward new collaborators.</div>
+      <div class="interpret"><span class="label">Interpretation</span>Retaining both episodic memory and bonds favours exploitation of previously successful partners, whereas retaining only bonds balances exploitation and exploration. The bond graph acts as a compact distillation of social experience while remaining plastic enough to rewire toward new collaborators.</div>
     </div>
   </div>
 </section>
@@ -212,6 +464,7 @@
   <header>
     <div class="container">
       <h2 id="more-h">Compute and perception</h2>
+      <p class="finding-line"><span class="label">Finding</span>Every deliberation interval from 2 to 100 steps completes more milestones than no social module (10.3–11.9% against 9.7%), and an interval of 100 (11.0%) still beats the default of 8 (10.3%) at roughly 12× less compute.</p>
       <p class="lede">Two supporting analyses: how often to run the social module, and how backbone perception relates to zero-shot performance.</p>
     </div>
   </header>
@@ -310,12 +563,23 @@
 
 <!-- layout:footer -->
 <footer id="footer">
+  <div class="container foot">
+    <div class="foot-id">
+      <p class="foot-title">Wired Together</p>
+      <p>Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
+      <p>Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html#paper">Paper and citation</a></li>
+      <li><a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a></li>
+      <li><a href="videos.html">Videos</a> · <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </div>
   <div class="container">
-    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
-    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+    <p class="credits">Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>.</p>
   </div>
 </footer>
-<script defer src="assets/js/main.js?v=20261015b"></script>
+<script defer src="assets/js/main.js?v=20261016a"></script>
 <!-- /layout:footer -->
 </body>
 </html>

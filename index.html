@@ -6,16 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wired Together — Learning Persistent Relationships through Reward-Modulated Social Plasticity</title>
 <meta name="description" content="Wired Together: a multi-agent system as an adaptive social network whose directed relationships evolve through reward-modulated social plasticity. Paper, code, videos and results in the WIRE environment.">
+<link rel="canonical" href="https://anacmarcu.github.io/wired-together-page/">
 <meta property="og:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
 <meta property="og:description" content="Wired Together: a multi-agent system as an adaptive social network whose directed relationships evolve through reward-modulated social plasticity. Paper, code, videos and results in the WIRE environment.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/figures/graph_formation.png">
+<meta property="og:url" content="https://anacmarcu.github.io/wired-together-page/">
+<meta property="og:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="895">
+<meta property="og:image:alt" content="Learning and using persistent social relationships: social signals define co-firing, reward-modulated plasticity updates directed bonds, and the social graph shapes behaviour.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wired Together: Learning Persistent Relationships through Reward-Modulated Social Plasticity">
+<meta name="twitter:description" content="Wired Together: a multi-agent system as an adaptive social network whose directed relationships evolve through reward-modulated social plasticity. Paper, code, videos and results in the WIRE environment.">
+<meta name="twitter:image" content="https://anacmarcu.github.io/wired-together-page/assets/figures/graph_formation.png">
 <meta name="theme-color" content="#1e2f5c">
 <link rel="icon" type="image/png" href="assets/figures/logo_tapri.png">
+<script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261015b">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261016a">
 <!-- /layout:head -->
 </head>
 <body>
@@ -24,187 +34,350 @@
 <nav id="navbar" aria-label="Main">
   <div class="bar">
     <a class="brand" href="index.html">Wired Together</a>
-    <ul>
-      <li><a href="index.html" aria-current="page">Overview</a></li>
-      <li><a href="environment.html">Environment</a></li>
-      <li><a href="method.html">Method</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="scaling.html">Scaling</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-    <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" hidden><span class="burger" aria-hidden="true"></span>Menu</button>
+    <div class="menu" id="nav-menu">
+      <ul class="pages">
+        <li><a href="index.html" aria-current="page">Overview</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a href="environment.html">Environment</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="scaling.html">Scaling</a></li>
+        <li class="group">
+          <a class="group-link" href="videos.html">Demos<span class="caret" aria-hidden="true"></span></a>
+          <ul class="sub" aria-label="Demos">
+            <li><a href="videos.html">Videos<span class="blurb">Curated moments, condition by condition</span></a></li>
+            <li><a href="gallery.html">Gallery<span class="blurb">Every mined success and failure</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="ext" href="https://github.com/tapri-lab/wired-together">Code<span aria-hidden="true"> ↗</span></a>
+    </div>
   </div>
 </nav>
 <!-- /layout:nav -->
 
 <main id="main">
-<section id="hero">
-  <video autoplay muted loop playsinline poster="assets/videos/hero.jpg" aria-hidden="true">
-    <source src="assets/videos/hero.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
-  <div class="inner">
-    <h1>Wired Together</h1>
-    <p class="sub">Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
-    <p class="byline">Ana Cristiana Marcu · Anuj Singh · Chirag Raman</p>
-    <p class="affil">Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
-    <p class="logos"><img src="assets/figures/tapri_lab.png" alt="Tapri Lab" height="46"><img src="assets/figures/logo_tudelft.png" alt="TU Delft" height="34"></p>
-    <ul class="actions">
-      <li><a class="button" href="#resources">Paper</a></li>
-      <li><a class="button" href="https://github.com/tapri-lab/wired-together">Code</a></li>
-      <li><a class="button" href="results.html">Results</a></li>
-      <li><a class="button" href="videos.html">Videos</a></li>
-    </ul>
-    <p class="tagline">Agents that <em>co-fire</em> together, <em>wire</em> together.</p>
-  </div>
-</section>
 
-<section class="main" id="abstract" aria-labelledby="abstract-h">
-  <header>
-    <div class="container">
-      <h2 id="abstract-h">Abstract</h2>
-    </div>
-  </header>
-  <div class="content">
-    <div class="container">
-      <p class="prose">Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship. We model a multi-agent system as an adaptive social network whose directed bonds evolve online through reward-modulated social plasticity: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph feeds back into learning, through reward diffusion and bond-gated experience sharing, and into inference, through social deliberation.</p>
-      <p class="prose">In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational coupling improves cooperative completion in three of four RL fine-tuning configurations, and at inference time outperforms both a soft and a hard centralised orchestrator, the latter at a third of its compute. Communication builds the strongest bonds, while observation and imitation yield the highest cooperative completion, and retaining only bonds after team recomposition balances exploiting past partners with exploring new ones. Scaling teams from 3 to 15 agents raises budget-averaged team cooperative completion from 9.6% to 18.3%, and to 19.6% with social plasticity, and structured communication develops without assigned roles: small conversational groups, a focal agent, and coordination beyond immediate neighbours. Social plasticity raises cooperative progress further, especially under limited communication budgets. Learned relationships thus offer a decentralised, inspectable complement to orchestration.</p>
-    </div>
-  </div>
-</section>
-
-<section class="main alt" id="findings" aria-labelledby="findings-h">
-  <header>
-    <div class="container">
-      <h2 id="findings-h">Key findings</h2>
-      <p class="lede">Five results, each with its detail page.</p>
-    </div>
-  </header>
-  <div class="content">
-    <div class="container">
-      <div class="findings" style="grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));">
-        <div class="finding">
-          <span class="rq">Coupled into learning</span>
-          <span class="num">0.8 → 3.5%</span>
-          <p>With RL fine-tuning, social plasticity improves cooperative completion in three of four configurations; with Gemma-E4B IPPO it more than quadruples.</p>
-          <a class="more-link" href="results.html#rq1">Read RQ1 results <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="finding">
-          <span class="rq">Beats central orchestration</span>
-          <span class="num">548 vs 505 / 477</span>
-          <p>At inference time on Gemma-E4B it reaches a higher task return and cooperative completion than a soft and a hard central orchestrator, at a third of the hard one's compute.</p>
-          <a class="more-link" href="results.html#orchestration">Read the orchestration comparison <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="finding">
-          <span class="rq">The interaction regime matters</span>
-          <span class="num">W̄ 0.34, coop. 2.6%</span>
-          <p>Communication builds the strongest bonds but the lowest cooperative completion; observation and imitation stay close to spatial engagement alone.</p>
-          <a class="more-link" href="results.html#rq2">Read RQ2 results <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="finding">
-          <span class="rq">Bonds carry social experience</span>
-          <span class="num">8.3% coop.</span>
-          <p>After team recomposition, keeping only the bonds balances exploiting old partners with exploring new ones, and transfers best.</p>
-          <a class="more-link" href="results.html#rq3">Read RQ3 results <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="finding">
-          <span class="rq">Teams organise themselves</span>
-          <span class="num">9.6% → 18.3%</span>
-          <p>From 3 to 15 agents cooperation rises, and a focal hub with small conversational groups emerges; social plasticity helps most when messages are scarce.</p>
-          <a class="more-link" href="scaling.html">Read the scaling study <span aria-hidden="true">→</span></a>
-        </div>
+<!-- A · the research idea ─────────────────────────────────────────── -->
+<section class="hero" aria-labelledby="title">
+  <div class="container wide hero-grid">
+    <div class="hero-text">
+      <h1 id="title">Wired Together</h1>
+      <p class="hero-sub">Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
+      <p class="hero-lead">Agents learn not only how to cooperate, but <em>whom</em> to cooperate with.</p>
+      <p class="hero-body">We model a team of agents as an adaptive social network. Each agent holds a directed bond to every teammate; social co-activity marks a pair as eligible for change, and later outcomes consolidate or weaken the bond. The learned graph then feeds back into how agents learn and whom they turn to when they deliberate.</p>
+      <div class="cta">
+        <a class="btn primary" href="#paper">Read the paper</a>
+        <a class="btn" href="results.html">Explore the results</a>
+      </div>
+      <p class="cta-sub"><a href="https://github.com/tapri-lab/wired-together">Code on GitHub<span aria-hidden="true"> ↗</span></a><a href="videos.html">Watch the demos</a><span>arXiv link coming soon</span></p>
+      <div class="authors">
+        <p class="byline">Ana Cristiana Marcu · Anuj Singh · Chirag Raman</p>
+        <p class="affil">Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+        <p class="logos"><img src="assets/figures/tapri_lab.png" alt="Tapri Lab" width="93" height="46"><img src="assets/figures/logo_tudelft.png" alt="TU Delft" width="87" height="34"></p>
       </div>
     </div>
+    <figure class="hero-figure">
+      <div class="stage" data-stage><video src="assets/videos/scaling/swarm_n15_plastic.mp4" poster="assets/videos/scaling/swarm_n15_plastic.jpg" muted loop playsinline preload="metadata" aria-label="Fifteen agents with social plasticity: their interaction network growing over one episode, with agent 0 becoming the hub"></video></div>
+      <figcaption><strong>Fifteen agents, one episode, no assigned roles.</strong> Zero-shot Gemma-E4B agents with social plasticity, 1,000 environment steps in about 16 seconds. A link lights up when two agents exchange a message, green marks a milestone completed together, and each node grows with its number of distinct partners. <a href="#organisation">The full view</a></figcaption>
+    </figure>
   </div>
 </section>
 
-<section class="main" id="idea" aria-labelledby="idea-h">
-  <div class="content">
-    <div class="container split">
-      <div>
-        <figure class="figure-block">
-        <span class="image fit"><img src="assets/figures/graph_formation.png" alt="Graph formation: co-firing from social acts and engaged co-location creates eligibility traces; reward consolidates bonds; failures decay them." loading="lazy"></span>
-        <figcaption><strong>Learning and using persistent social relationships.</strong> Social interactions induce directed co-firing <span class="m">c<sub>ij</sub>(t)</span>, which accumulates evidence for updating the bond <span class="m">W<sub>ij</sub>(t)</span> through reward-modulated plasticity; the resulting graph <span class="m">W(t)</span> then shapes inference or learning through social deliberation, reward diffusion and experience sharing.</figcaption>
+<!-- B · the central idea ─────────────────────────────────────────── -->
+<section class="band tint" id="idea" aria-labelledby="idea-h">
+  <div class="container wide">
+    <header class="sec-head">
+      <p class="eyebrow">The central idea</p>
+      <h2 id="idea-h">A social graph learned from interaction and reward</h2>
+      <p class="lede">Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship, learned online and kept.</p>
+    </header>
+    <ol class="steps">
+      <li>
+        <span class="step-n" aria-hidden="true">1</span>
+        <h3>Interact</h3>
+        <p>Agents communicate, observe and imitate one another, and work close together while engaged. Each such event is a directed co-firing <span class="m">c<sub>ij</sub>(t)</span> that marks the pair as eligible to change.</p>
+        <span class="panel-ref">Figure panels (a)–(b)</span>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">2</span>
+        <h3>Consolidate</h3>
+        <p>Reward-modulated plasticity updates the directed bond <span class="m">W<sub>ij</sub>(t)</span>. An eligibility trace carries recent co-firing forward, so a later reward strengthens the bond, failure weakens it, and every bond slowly decays unless renewed.</p>
+        <span class="panel-ref">Panels (c)–(d)</span>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">3</span>
+        <h3>Use</h3>
+        <p>The graph <span class="m">W(t)</span> shapes what agents do next: during RL fine-tuning through reward diffusion and bond-gated experience sharing, and at inference time through bond-conditioned social deliberation.</p>
+        <span class="panel-ref">Panel (e)</span>
+      </li>
+    </ol>
+    <figure class="feature-figure">
+      <div class="pan"><span class="image fit framed"><img src="assets/figures/graph_formation.png" width="1800" height="895" alt="Figure 1. (a) Social signals such as messages and joint digging define co-activity events; (b) co-firing combines spatial engagement and social cues; (c) the social plasticity update grows a bond on co-firing with a salient outcome and decays it on non-co-firing with negative reward; (d) the resulting directed social graph W(t); (e) the graph shapes behaviour, through the social module at inference time and through reward diffusion and experience sharing during RL fine-tuning." loading="lazy"></span></div><p class="pan-hint">Swipe sideways to see the whole figure, or tap to enlarge it.</p>
+      <figcaption><strong>Learning and using persistent social relationships.</strong> Social interactions induce directed co-firing <span class="m">c<sub>ij</sub>(t)</span>, which accumulates evidence for updating the bond <span class="m">W<sub>ij</sub>(t)</span> through reward-modulated plasticity; the resulting graph <span class="m">W(t)</span> then shapes inference or learning through social deliberation, reward diffusion and experience sharing.</figcaption>
+    </figure>
+    <p class="more-row"><a class="go" href="method.html">The update rule, its equations and both couplings <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- C · key findings ─────────────────────────────────────────────── -->
+<section class="band" id="findings" aria-labelledby="findings-h">
+  <div class="container wide">
+    <header class="sec-head">
+      <p class="eyebrow">Key findings</p>
+      <h2 id="findings-h">What the learned graph changes</h2>
+      <p class="lede">Three headline results from WIRE, each against a matched baseline without the social graph. Teams of three unless stated, 1,000-step episodes, mean ± SD across seeds.</p>
+    </header>
+
+    <article class="result" aria-labelledby="f1-h">
+      <div class="result-text">
+        <p class="result-tag">RQ1 · RL fine-tuning</p>
+        <h3 id="f1-h">Social plasticity improves cooperation in three of four RL fine-tuning configurations.</h3>
+        <p>When the learned graph shapes learning, through reward diffusion and bond-gated experience sharing, per-agent cooperative completion rises for Qwen3.5-2B under IPPO and MAPPO and for Gemma-E4B under IPPO, where it more than quadruples (0.8% → 3.5%). Gemma-E4B MAPPO is the exception (2.2% → 0.4%).</p>
+        <p class="metric-note">Seed-to-seed spread is large: the whiskers span ±1 SD.</p>
+        <a class="go" href="results.html#rq1">Table 1 and the RQ1 results <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="chart" aria-labelledby="c1-t">
+        <figcaption class="chart-title" id="c1-t"><strong>Cooperative completion per agent</strong>, % of the 17 Chamber 2–5 milestones · RL fine-tuned agents, three per team</figcaption>
+        <ul class="chart-legend" aria-hidden="true"><li><i class="mk base"></i>Baseline, no graph</li><li><i class="mk sp"></i>+Social plasticity</li><li>whiskers ±1 SD</li></ul>
+        <div class="plot" role="table" aria-label="Cooperative completion per agent, baseline then with social plasticity" style="--lo:0; --hi:6; --nt:3">
+          <div class="plot-row head" role="row"><span role="columnheader">Configuration</span><span aria-hidden="true"></span><span role="columnheader">Base → SP</span></div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">Qwen3.5-2B IPPO</span>
+            <span class="track" aria-hidden="true"><i class="link" style="--a:2.9; --b:3.3"></i><i class="err up base" style="--a:1.6; --b:4.2"></i><i class="err down sp" style="--a:1.6; --b:5.0"></i><i class="dot base" style="--v:2.9" title="Baseline: 2.9 ± 1.3%"></i><i class="dot sp" style="--v:3.3" title="+Social plasticity: 3.3 ± 1.7%"></i></span>
+            <span class="plot-val" role="cell">2.9<sup>†</sup> → <b>3.3</b><sup>†</sup><span class="sr-only"> percent; ±1.3 and ±1.7</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">Qwen3.5-2B MAPPO</span>
+            <span class="track" aria-hidden="true"><i class="link" style="--a:1.5; --b:2.9"></i><i class="err up base" style="--a:0.2; --b:2.8"></i><i class="err down sp" style="--a:0.4; --b:5.4"></i><i class="dot base" style="--v:1.5" title="Baseline: 1.5 ± 1.3%"></i><i class="dot sp" style="--v:2.9" title="+Social plasticity: 2.9 ± 2.5%"></i></span>
+            <span class="plot-val" role="cell">1.5 → <b>2.9</b><sup>†</sup><span class="sr-only"> percent; ±1.3 and ±2.5</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label em" role="rowheader">Gemma-E4B IPPO</span>
+            <span class="track" aria-hidden="true"><i class="link" style="--a:0.8; --b:3.5"></i><i class="err up base" style="--a:0.2; --b:1.4"></i><i class="err down sp" style="--a:1.5; --b:5.5"></i><i class="dot base" style="--v:0.8" title="Baseline: 0.8 ± 0.6%"></i><i class="dot sp" style="--v:3.5" title="+Social plasticity: 3.5 ± 2.0%"></i></span>
+            <span class="plot-val" role="cell">0.8 → <b>3.5</b><sup>†</sup><span class="sr-only"> percent; ±0.6 and ±2.0</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">Gemma-E4B MAPPO</span>
+            <span class="track" aria-hidden="true"><i class="link" style="--a:2.2; --b:0.4"></i><i class="err up base" style="--a:0.8; --b:3.6"></i><i class="err down sp open" style="--a:0; --b:1.2"></i><i class="dot base" style="--v:2.2" title="Baseline: 2.2 ± 1.4%"></i><i class="dot sp" style="--v:0.4" title="+Social plasticity: 0.4 ± 0.8%"></i></span>
+            <span class="plot-val" role="cell">2.2 → <b>0.4</b><sup>†</sup><span class="sr-only"> percent; ±1.4 and ±0.8</span></span>
+          </div>
+          <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:2">2</span><span style="--v:4">4</span><span style="--v:6">6%</span></span><span></span></div>
+        </div>
+        <p class="chart-foot">† below the six-seed target. The lower whisker of Gemma-E4B MAPPO +Social plasticity is cut at 0. Source: Table 1(b).</p>
       </figure>
+    </article>
+
+    <article class="result" aria-labelledby="f2-h">
+      <div class="result-text">
+        <p class="result-tag">RQ1 · Against central orchestration</p>
+        <h3 id="f2-h">Social plasticity outperforms soft and hard central orchestration at inference time on Gemma-E4B.</h3>
+        <p>It reaches a task return of 548, against 505 for a soft (VillagerAgent-style) orchestrator and 477 for a hard (HMAS-2) one, and a cooperative completion of 4.8% against 4.7% and 3.9%. It does so at the soft orchestrator's inference compute and a third of the hard orchestrator's.</p>
+        <p class="metric-note">At inference time the benefit is backbone-dependent: it does not transfer uniformly to the Qwen backbones.</p>
+        <a class="go" href="results.html#orchestration">The orchestration comparison <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="chart" aria-labelledby="c2-t">
+        <figcaption class="chart-title" id="c2-t"><strong>Task return</strong> (higher is better) · zero-shot Gemma-E4B, three agents</figcaption>
+        <ul class="chart-legend" aria-hidden="true"><li><i class="mk base"></i>Baseline</li><li><i class="mk soft"></i>Soft orchestrator</li><li><i class="mk hollow hard"></i>Hard orchestrator</li><li><i class="mk sp"></i>+Social plasticity</li></ul>
+        <div class="plot" role="table" aria-label="Task return and cooperative completion by condition" style="--lo:300; --hi:700; --nt:4; --val-w:6.6rem">
+          <div class="plot-row head" role="row"><span role="columnheader">Condition</span><span aria-hidden="true"></span><span role="columnheader">Return · Coop.</span></div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">Baseline <span class="sub-label">no social graph</span></span>
+            <span class="track" aria-hidden="true"><i class="err base" style="--a:437; --b:605"></i><i class="dot base" style="--v:521" title="Baseline: 521 ± 84"></i></span>
+            <span class="plot-val" role="cell">521 <span class="x2">4.4% coop.</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">+Soft central orch. <span class="sub-label">VillagerAgent-style</span></span>
+            <span class="track" aria-hidden="true"><i class="err soft" style="--a:416; --b:594"></i><i class="dot soft" style="--v:505" title="Soft central orchestrator: 505 ± 89"></i></span>
+            <span class="plot-val" role="cell">505 <span class="x2">4.7% coop.</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">+Hard central orch. <span class="sub-label">HMAS-2</span></span>
+            <span class="track" aria-hidden="true"><i class="err hard" style="--a:416; --b:538"></i><i class="dot hollow hard" style="--v:477" title="Hard central orchestrator: 477 ± 61"></i></span>
+            <span class="plot-val" role="cell">477 <span class="x2">3.9% coop.</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label em" role="rowheader">+Social plasticity</span>
+            <span class="track" aria-hidden="true"><i class="err sp" style="--a:462; --b:634"></i><i class="dot sp" style="--v:548" title="+Social plasticity: 548 ± 86"></i></span>
+            <span class="plot-val" role="cell"><b>548</b> <span class="x2"><b>4.8%</b> coop.</span></span>
+          </div>
+          <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:300">300</span><span style="--v:400">400</span><span style="--v:500">500</span><span style="--v:600">600</span><span style="--v:700">700</span></span><span></span></div>
+        </div>
+        <dl class="chart-sub">
+          <div class="full"><dt>Inference compute per 1,000 steps (×10<sup>17</sup> FLOPs)</dt><dd>Social plasticity 1.51 · soft orchestrator 1.50 · hard orchestrator 5.04</dd></div>
+        </dl>
+        <p class="chart-foot">Mean ± 1 SD across seeds; the axis starts at 300. Task return includes the communication stream; Coop. is per-agent completion of the 17 Chamber 2–5 milestones. Source: Table 1(a).</p>
+      </figure>
+    </article>
+
+    <article class="result" aria-labelledby="f3-h">
+      <div class="result-text">
+        <p class="result-tag">Test-time scaling · 3 to 15 agents</p>
+        <h3 id="f3-h">Learned relationships strengthen emergent structure and cooperation as teams grow.</h3>
+        <p>Scaling zero-shot Gemma-E4B teams from 3 to 15 agents raises budget-averaged team cooperative completion from 9.6% to 18.3% without any social graph, a gain that comes with team size, not with plasticity. On top of it, social plasticity adds 1.3–3.5 points at every team size except N&nbsp;=&nbsp;10, where the arms tie, and forms tighter conversational groups than the baseline at every size. Its largest gain comes with the smallest message budget (+2.9 points at 600 tokens per agent).</p>
+        <p class="metric-note">Team completion counts each milestone once per team, so it is not comparable with the per-agent rates above.</p>
+        <a class="go" href="scaling.html">The scaling study <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="chart" aria-labelledby="c3-t">
+        <figcaption class="chart-title" id="c3-t"><strong>Team cooperative completion</strong>, % of the 17 Chamber 2–5 milestones completed by the team, averaged over three message budgets</figcaption>
+        <ul class="chart-legend" aria-hidden="true"><li><i class="mk hollow neutral"></i>3 agents</li><li><i class="mk neutral"></i>15 agents</li><li><i class="mk bar base"></i>Baseline</li><li><i class="mk bar sp"></i>+Social plasticity</li></ul>
+        <div class="plot" role="table" aria-label="Team cooperative completion at 3 and at 15 agents, by arm" style="--lo:0; --hi:25; --nt:5">
+          <div class="plot-row head" role="row"><span role="columnheader">Arm</span><span aria-hidden="true"></span><span role="columnheader">N = 3 → 15</span></div>
+          <div class="plot-row" role="row">
+            <span class="plot-label" role="rowheader">Baseline <span class="sub-label">no social graph</span></span>
+            <span class="track" aria-hidden="true"><i class="link base tinted" style="--a:9.6; --b:18.3"></i><i class="dot hollow base" style="--v:9.6" title="Baseline, 3 agents: 9.6%"></i><i class="dot base" style="--v:18.3" title="Baseline, 15 agents: 18.3%"></i></span>
+            <span class="plot-val" role="cell">9.6 → 18.3<span class="sr-only"> percent</span></span>
+          </div>
+          <div class="plot-row" role="row">
+            <span class="plot-label em" role="rowheader">+Social plasticity</span>
+            <span class="track" aria-hidden="true"><i class="link sp tinted" style="--a:13.1; --b:19.6"></i><i class="dot hollow sp" style="--v:13.1" title="+Social plasticity, 3 agents: 13.1%"></i><i class="dot sp" style="--v:19.6" title="+Social plasticity, 15 agents: 19.6%"></i></span>
+            <span class="plot-val" role="cell"><b>13.1 → 19.6</b><span class="sr-only"> percent</span></span>
+          </div>
+          <div class="plot-row axis-row" aria-hidden="true"><span></span><span class="axis"><span style="--v:0">0</span><span style="--v:5">5</span><span style="--v:10">10</span><span style="--v:15">15</span><span style="--v:20">20</span><span style="--v:25">25%</span></span><span></span></div>
+        </div>
+        <dl class="chart-sub">
+          <div><dt>Grouping beyond chance, N = 5</dt><dd>−0.02 <span class="arrow">→</span> +0.10</dd></div>
+          <div><dt>Grouping beyond chance, N = 15</dt><dd>+0.13 <span class="arrow">→</span> +0.22</dd></div>
+        </dl>
+        <p class="chart-foot">Grouping: weighted Louvain modularity of the Chamber 2 message graph above degree-preserving rewired graphs, baseline → social plasticity. Intermediate team sizes, budgets and seeds on the <a href="scaling.html">scaling page</a>.</p>
+      </figure>
+    </article>
+
+    <div class="findex">
+      <h3 id="all-findings">All five findings</h3>
+      <ol aria-labelledby="all-findings">
+        <li><a href="results.html#rq1"><span class="fx-tag"><small>RQ1</small>Coupled into learning</span><span class="fx-num">0.8% → 3.5%<small>per-agent coop., Gemma-E4B IPPO</small></span><span class="fx-text">With RL fine-tuning, social plasticity improves cooperative completion in three of four configurations; with Gemma-E4B IPPO it more than quadruples.</span><span class="fx-go" aria-hidden="true">→</span></a></li>
+        <li><a href="results.html#orchestration"><span class="fx-tag"><small>RQ1</small>Beats central orchestration</span><span class="fx-num">548 vs 505 / 477<small>task return, Gemma-E4B</small></span><span class="fx-text">At inference time on Gemma-E4B it reaches a higher task return and cooperative completion than a soft and a hard central orchestrator, at a third of the hard one's compute.</span><span class="fx-go" aria-hidden="true">→</span></a></li>
+        <li><a href="results.html#rq2"><span class="fx-tag"><small>RQ2</small>The interaction regime matters</span><span class="fx-num">W̄ 0.34, coop. 2.6%<small>communication as the only cue</small></span><span class="fx-text">Communication builds the strongest bonds but the lowest cooperative completion; observation and imitation stay close to spatial engagement alone.</span><span class="fx-go" aria-hidden="true">→</span></a></li>
+        <li><a href="results.html#rq3"><span class="fx-tag"><small>RQ3</small>Bonds carry social experience</span><span class="fx-num">8.3% coop.<small>bonds only, one seed</small></span><span class="fx-text">After team recomposition, keeping only the bonds balances exploiting old partners with exploring new ones, and transfers best.</span><span class="fx-go" aria-hidden="true">→</span></a></li>
+        <li><a href="scaling.html"><span class="fx-tag"><small>Scaling</small>Teams organise themselves</span><span class="fx-num">9.6% → 18.3%<small>team coop., baseline, N = 3 → 15</small></span><span class="fx-text">From 3 to 15 agents cooperation rises, and a focal hub with small conversational groups emerges; social plasticity helps most when messages are scarce.</span><span class="fx-go" aria-hidden="true">→</span></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- D · the environment ──────────────────────────────────────────── -->
+<section class="band tint" id="wire" aria-labelledby="wire-h">
+  <div class="container wide">
+    <header class="sec-head">
+      <p class="eyebrow">The environment</p>
+      <h2 id="wire-h">WIRE: five chambers, each harder to finish alone</h2>
+      <p class="lede">An embodied environment built in Craftium on the Luanti voxel engine. A team moves through five one-way chambers with increasing dependence between agents, so relationships formed early can matter again later.</p>
+    </header>
+    <figure class="wire-figure">
+      <div class="pan"><span class="image fit"><img src="assets/figures/wire.png" width="1916" height="380" alt="The five WIRE chambers in sequence: solo exploration, a cooperative anvil puzzle, a communication puzzle of three locked cells, combat practice against three zombies, and a boss encounter." loading="lazy"></span></div><p class="pan-hint">Swipe sideways to see the whole figure, or tap to enlarge it.</p>
+      <ol class="chambers">
+        <li><span class="ch-n">Ch 1</span><strong>Solo skills</strong>Move, dig, collect and hunt. Nothing is shared yet.</li>
+        <li><span class="ch-n">Ch 2</span><strong>Cooperative anvils</strong>An anvil breaks only when two agents dig it within the same short window.</li>
+        <li><span class="ch-n">Ch 3</span><strong>Switch ring</strong>Each agent's switch opens another agent's door, out of sight: release spreads only through targeted messages.</li>
+        <li><span class="ch-n">Ch 4</span><strong>Team combat</strong>Three zombies. A fatal hit costs −10 instead of killing, a rehearsal for focusing fire.</li>
+        <li><span class="ch-n">Ch 5</span><strong>Boss fight</strong>Three times a zombie's health, more than one agent can deal in time. Here death is permanent.</li>
+      </ol>
+      <figcaption class="sr-only">WIRE: five sequential chambers increase inter-agent dependence from individual skill acquisition (Ch1), to cooperative resource acquisition (Ch2), communication under partial observability (Ch3), team combat (Ch4), and a cooperative boss encounter (Ch5).</figcaption>
+    </figure>
+    <div class="wire-more">
+      <figure>
+        <div class="stage" data-stage><video src="assets/videos/hero.mp4" poster="assets/videos/hero.jpg" muted loop playsinline preload="none" aria-label="First-person views from WIRE: nine agents at annotated moments across the chambers"></video></div>
+        <figcaption>Nine agents' own first-person views at moments the paper annotates, replayed at six environment steps per second (upscaled, with short cross-fades and a light grade).</figcaption>
+      </figure>
+      <div>
+        <h3>See what the agents see</h3>
+        <p>Every recording on this site is an agent's own view: one rendered frame per environment step, with the messages the agents exchanged alongside.</p>
+        <ul class="linklist">
+          <li><a class="go" href="environment.html#tour">One episode, chamber by chamber <span aria-hidden="true">→</span></a></li>
+          <li><a class="go" href="videos.html">Coordination moments under each condition <span aria-hidden="true">→</span></a></li>
+          <li><a class="go" href="gallery.html">Every mined success and failure <span aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- E · emergent organisation ────────────────────────────────────── -->
+<section class="band dark" id="organisation" aria-labelledby="org-h">
+  <div class="container wide" data-swarm-scope>
+    <header class="sec-head">
+      <p class="eyebrow">Emergent organisation · fifteen agents</p>
+      <h2 id="org-h">Coordination emerges without assigned roles</h2>
+      <p class="lede">Fifteen zero-shot Gemma-E4B agents receive the same prompt apart from their names, and every message is addressed to exactly one teammate. Nobody is given a role, yet a focal agent becomes the team's hub and the others split into small conversational groups.</p>
+    </header>
+    <div class="controls">
+      <div class="chips" role="group" aria-label="Condition">
+        <span class="lbl">Condition</span>
+        <button class="chip active" type="button" data-swarm-arm="plastic">+Social plasticity</button>
+        <button class="chip" type="button" data-swarm-arm="base">Baseline</button>
+      </div>
+      <div class="chips" role="group" aria-label="View style">
+        <span class="lbl">View</span>
+        <button class="chip active" type="button" data-swarm-view="game">Minecraft</button>
+        <button class="chip" type="button" data-swarm-view="net">Network</button>
+      </div>
+      <button class="chip ghost" type="button" data-swarm-restart>↺ Restart</button>
+    </div>
+    <figure class="org-figure">
+      <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_plastic.mp4" poster="assets/videos/scaling/swarm_mc_n15_plastic.jpg" data-swarm="assets/videos/scaling/swarm_{style}n{n}_{arm}" data-swarm-label="Fifteen agents, {arm}: the interaction network growing over one episode" muted loop playsinline preload="none" aria-label="Fifteen agents, +Social plasticity: the interaction network growing over one episode"></video></div>
+      <figcaption><strong>One episode, from its first step to its last in about 16 seconds</strong> (2,600 message tokens per agent). Each block is an agent and grows with its number of distinct partners; the four with the most partners at the end become ore blocks. A message lights its link up like redstone, and two agents credited for the same milestone burst with green orbs. Right: the share of agents with at least <span class="m">k</span> partners against random graphs with the same number of links, and partner counts over time. <span data-swarm-prov='{"plastic:15":"seed 123, episode 1","base:15":"seed 42, episode 1"}' data-swarm-template="Shown: {arm}, {ep}.">Shown: +Social plasticity, seed 123, episode 1.</span></figcaption>
+    </figure>
+    <div class="org-facts">
+      <div>
+        <h3>A focal hub</h3>
+        <p>At N&nbsp;=&nbsp;15 the focal agent talks with <span class="num">about ten</span> distinct partners, the others with about three. It gains most of them in Chambers 1–2.</p>
       </div>
       <div>
-        <h2 id="idea-h">The idea</h2>
-        <p>Coordination is usually specified per task. We study a second axis: <em>with whom</em> agents have a relationship. Directed bonds between agents evolve online: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph then shapes learning, through reward diffusion and bond-gated experience sharing, and inference, through social deliberation.</p>
-        <a class="go" href="method.html">How the graph is formed and used <span aria-hidden="true">→</span></a>
+        <h3>Small conversational groups</h3>
+        <p>Each agent keeps a few frequent partners, so larger teams form more groups rather than larger ones: <span class="num">3.4–3.9</span> groups per episode at N&nbsp;=&nbsp;15.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="main alt" id="wire-teaser" aria-labelledby="wire-teaser-h">
-  <header>
-    <div class="container">
-      <h2 id="wire-teaser-h">The WIRE environment</h2>
-      <p class="lede">Five embodied chambers on the Luanti voxel engine, with increasing dependence between agents: solo skills, cooperative anvils, a switch ring under partial observability, team combat, and a boss fight.</p>
-    </div>
-  </header>
-  <div class="content">
-    <div class="container">
-      <figure class="figure-block">
-        <span class="image fit"><img src="assets/figures/wire.png" alt="The five WIRE chambers in sequence: solo skill acquisition, cooperative anvils, switch puzzle under partial observability, team combat, cooperative boss fight." loading="lazy"></span>
-        <figcaption><strong>WIRE.</strong> Five sequential chambers increase inter-agent dependence from individual skill acquisition (Ch1), to cooperative resource acquisition (Ch2), communication under partial observability (Ch3), team combat (Ch4), and a cooperative boss encounter (Ch5).</figcaption>
-      </figure>
-      <p style="text-align: center; margin-top: 1.6em;"><a class="go" href="environment.html">Watch one episode, chamber by chamber <span aria-hidden="true">→</span></a></p>
-    </div>
-  </div>
-</section>
-
-<section class="main" id="teams" aria-labelledby="teams-h">
-  <div class="content">
-    <div class="container split">
-      <figure class="card swarm">
-        <div class="stage" data-stage><video src="assets/videos/scaling/swarm_mc_n15_plastic.mp4" poster="assets/videos/scaling/swarm_mc_n15_plastic.jpg" muted loop playsinline preload="none" aria-label="Fifteen agents with social plasticity: the interaction network growing over one episode"></video></div>
-      </figure>
       <div>
-        <h2 id="teams-h">Teams organise themselves</h2>
-        <p>Fifteen agents with identical prompts, one episode in sixteen seconds. Nobody assigns roles, yet a focal agent becomes the team's hub (gold) and the rest split into small conversational groups. Each block is an agent and grows with its number of partners.</p>
-        <a class="go" href="scaling.html">Test-time scaling from 3 to 15 agents <span aria-hidden="true">→</span></a>
+        <h3>Tighter with social plasticity</h3>
+        <p>At N&nbsp;=&nbsp;15, grouping beyond chance is <span class="num">+0.22</span> with social plasticity against <span class="num">+0.13</span> for the baseline, and social plasticity forms tighter groups at every team size.</p>
       </div>
     </div>
+    <p class="more-row"><a class="go" href="scaling.html#watch">Watch teams of 3, 5, 7, 10 and 15 agents organise <span aria-hidden="true">→</span></a></p>
   </div>
 </section>
 
-<section class="main alt" id="resources" aria-labelledby="resources-h">
-  <header>
-    <div class="container">
-      <h2 id="resources-h">Paper, code and citation</h2>
-      <p class="lede">The paper and the code repository, which includes the WIRE environment, the agents, the plasticity rule and its couplings, the orchestrator baselines, the team-size and communication-budget sweep, and the analysis scripts.</p>
-    </div>
-  </header>
-  <div class="content">
-    <div class="container">
-
-      <div class="tablewrap" id="code">
-      <table class="downloads">
-        <thead><tr><th>Item</th><th>Holds</th><th></th></tr></thead>
-        <tbody>
-          <tr>
-            <td><strong>Paper</strong></td>
-            <td>The full paper with its appendix, on arXiv.</td>
-            <td><a class="dl" href="#" data-needs-url>arXiv</a></td>
-          </tr>
-          <tr class="code-row">
-            <td><strong>Code + WIRE</strong></td>
-            <td>The environment (Craftium/Luanti mods), the agents, the plasticity rule and both couplings, the orchestrator baselines, the team-size and communication-budget sweep, and the full analysis pipeline.</td>
-            <td><a class="dl" href="https://github.com/tapri-lab/wired-together">GitHub</a></td>
-          </tr>
-        </tbody>
-      </table>
+<!-- F · abstract, paper, code, citation ──────────────────────────── -->
+<section class="band" id="paper" aria-labelledby="paper-h">
+  <div class="container wide">
+    <header class="sec-head">
+      <p class="eyebrow">Paper</p>
+      <h2 id="paper-h">Abstract, code and citation</h2>
+    </header>
+    <div class="paper-grid">
+      <div class="abstract" id="abstract">
+        <h3>Abstract</h3>
+        <p>Coordination in multi-agent systems is typically specified per task, by a fixed topology, a dialogue protocol, or a planner that assigns work. We study a second axis of design: <em>with whom</em> agents have a relationship. We model a multi-agent system as an adaptive social network whose directed bonds evolve online through reward-modulated social plasticity: social co-activity marks a pair as eligible, and later outcomes consolidate or weaken the bond. The learned graph feeds back into learning, through reward diffusion and bond-gated experience sharing, and into inference, through social deliberation.</p>
+        <p>In <strong>WIRE</strong>, an embodied environment of five chambers with increasing coordination demands, relational coupling improves cooperative completion in three of four RL fine-tuning configurations, and at inference time outperforms both a soft and a hard centralised orchestrator, the latter at a third of its compute. Communication builds the strongest bonds, while observation and imitation yield the highest cooperative completion, and retaining only bonds after team recomposition balances exploiting past partners with exploring new ones. Scaling teams from 3 to 15 agents raises budget-averaged team cooperative completion from 9.6% to 18.3%, and to 19.6% with social plasticity, and structured communication develops without assigned roles: small conversational groups, a focal agent, and coordination beyond immediate neighbours. Social plasticity raises cooperative progress further, especially under limited communication budgets. Learned relationships thus offer a decentralised, inspectable complement to orchestration.</p>
       </div>
-      <h3 style="font-weight: 300; font-size: 1.2em; margin-top: 2em;">Citation</h3>
-      <pre><code>@misc{marcu2026wiredtogether,
+      <div class="resources">
+        <h3>Resources</h3>
+        <ul class="reslist" id="code">
+          <li>
+            <div><strong>Paper</strong><span class="desc">The full paper with its appendix, on arXiv.</span></div>
+            <a class="act" href="#" data-needs-url>arXiv</a>
+          </li>
+          <li class="code-row">
+            <div><strong>Code + WIRE</strong><span class="desc">The environment (Craftium/Luanti mods), the agents, the plasticity rule and both couplings, the orchestrator baselines, the team-size and communication-budget sweep, and the full analysis pipeline.</span></div>
+            <a class="act" href="https://github.com/tapri-lab/wired-together">GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+          <li>
+            <div><strong>Demos</strong><span class="desc">First-person recordings with step-synced message transcripts, curated and in full.</span></div>
+            <a class="act" href="videos.html">Videos</a>
+          </li>
+        </ul>
+        <h3 id="cite-h">Citation</h3>
+        <div class="cite">
+          <pre id="bibtex"><code>@misc{marcu2026wiredtogether,
   title  = {Wired Together: Learning Persistent Relationships through
             Reward-Modulated Social Plasticity},
   author = {Marcu, Ana Cristiana and Singh, Anuj and Raman, Chirag},
   year   = {2026},
   note   = {arXiv preprint}
 }</code></pre>
+          <button class="copy-btn" type="button" data-copy="#bibtex" data-status="copy-status" hidden>Copy</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
     </div>
   </div>
 </section>
@@ -213,12 +386,23 @@
 
 <!-- layout:footer -->
 <footer id="footer">
+  <div class="container foot">
+    <div class="foot-id">
+      <p class="foot-title">Wired Together</p>
+      <p>Learning Persistent Relationships through Reward-Modulated Social Plasticity</p>
+      <p>Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html#paper">Paper and citation</a></li>
+      <li><a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a></li>
+      <li><a href="videos.html">Videos</a> · <a href="gallery.html">Gallery</a></li>
+    </ul>
+  </div>
   <div class="container">
-    <p><strong>Wired Together</strong> · Ana Cristiana Marcu, Anuj Singh, Chirag Raman · Tapri Lab, Department of Pattern Recognition and Bioinformatics, Delft University of Technology</p>
-    <p>Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>. <a href="https://github.com/tapri-lab/wired-together">Code on GitHub</a>.</p>
+    <p class="credits">Recordings are unedited agent views from WIRE, built on <a href="https://github.com/mikelma/craftium">Craftium</a> and <a href="https://www.luanti.org/">Luanti</a>.</p>
   </div>
 </footer>
-<script defer src="assets/js/main.js?v=20261015b"></script>
+<script defer src="assets/js/main.js?v=20261016a"></script>
 <!-- /layout:footer -->
 </body>
 </html>
